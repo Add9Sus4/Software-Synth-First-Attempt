@@ -33,6 +33,8 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
    
    ----------------------------------------------------------------------------------*/
   
+  openGLTestClass = new OpenGLTestClass(this, IRECT(10, kHeight - 100 - 10, 100 - 10, kHeight - 10));
+  
   midiMsg = new IMidiMsg();
   cycleInterval = 176;
   count = 0;
@@ -114,6 +116,8 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
 
   pGraphics->AttachControl(new IKnobMultiControl(this, kGainX, kGainY, kGain, &knob));
 
+  pGraphics->AttachControl(openGLTestClass);
+  
   AttachGraphics(pGraphics);
 
   //MakePreset("preset 1", ... );

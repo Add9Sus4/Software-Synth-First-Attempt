@@ -55,4 +55,5 @@ dependencies: \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Symphony.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Voice.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Envelope.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/OpenGLTestClass.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/../../WDL/IPlug/IPlug_include_in_plug_src.h

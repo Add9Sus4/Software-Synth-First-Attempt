@@ -13,6 +13,7 @@
 #include "Chorus.hpp"
 #include "BlockEffectProcessingChain.hpp"
 #include "Symphony.hpp"
+#include "OpenGLTestClass.hpp"
 
 class AudioComponents : public IPlug
 {
@@ -57,6 +58,7 @@ private:
   IMidiMsg *midiMsg;
   int cycleInterval;
   int count;
+  OpenGLTestClass *openGLTestClass;
 };
 
 #endif
