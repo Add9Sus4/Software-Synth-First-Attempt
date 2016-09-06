@@ -874,7 +874,16 @@
 				C25FEFB71D73ACFC002D122F /* Filter.hpp */,
 				C25FEFAC1D73978C002D122F /* OscillatorGroup.cpp */,
 				C25FEFAD1D73978C002D122F /* OscillatorGroup.hpp */,
-				C25FEF6F1D738732002D122F /* WaveTables */,
+				C25FEF701D738751002D122F /* SineWaveTable.cpp */,
+				C25FEF711D738751002D122F /* SineWaveTable.hpp */,
+				C25FEF7A1D738BD7002D122F /* SawWaveTable.cpp */,
+				C25FEF7B1D738BD7002D122F /* SawWaveTable.hpp */,
+				C25FEF841D738C70002D122F /* SquareWaveTable.cpp */,
+				C25FEF851D738C70002D122F /* SquareWaveTable.hpp */,
+				C25FEF8E1D738CD1002D122F /* TriangleWaveTable.cpp */,
+				C25FEF8F1D738CD1002D122F /* TriangleWaveTable.hpp */,
+				C25FEF981D738EBA002D122F /* NoiseWaveTable.cpp */,
+				C25FEF991D738EBA002D122F /* NoiseWaveTable.hpp */,
 				C25FEF651D73733C002D122F /* Phasor.cpp */,
 				C25FEF661D73733C002D122F /* Phasor.hpp */,
 				C25FEF471D735DDD002D122F /* WaveTable.cpp */,
@@ -1476,23 +1485,6 @@
 				4F78D8BD13B63A4E0032E0F3 /* wdltypes.h */,
 			);
 			name = WDL;
-			sourceTree = "<group>";
-		};
-		C25FEF6F1D738732002D122F /* WaveTables */ = {
-			isa = PBXGroup;
-			children = (
-				C25FEF701D738751002D122F /* SineWaveTable.cpp */,
-				C25FEF711D738751002D122F /* SineWaveTable.hpp */,
-				C25FEF7A1D738BD7002D122F /* SawWaveTable.cpp */,
-				C25FEF7B1D738BD7002D122F /* SawWaveTable.hpp */,
-				C25FEF841D738C70002D122F /* SquareWaveTable.cpp */,
-				C25FEF851D738C70002D122F /* SquareWaveTable.hpp */,
-				C25FEF8E1D738CD1002D122F /* TriangleWaveTable.cpp */,
-				C25FEF8F1D738CD1002D122F /* TriangleWaveTable.hpp */,
-				C25FEF981D738EBA002D122F /* NoiseWaveTable.cpp */,
-				C25FEF991D738EBA002D122F /* NoiseWaveTable.hpp */,
-			);
-			name = WaveTables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

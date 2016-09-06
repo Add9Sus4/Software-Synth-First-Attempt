@@ -62,8 +62,6 @@ double Envelope::process(double sample) {
             break;
     }
     goToNextStageIfApplicable();
-//    std::cout << "Sample: " << sample << std::endl;
-//    std::cout << "Envelope stage: " << stage << ", envelope value: " << currentValue << std::endl;
     return sample * currentValue;
 }
 

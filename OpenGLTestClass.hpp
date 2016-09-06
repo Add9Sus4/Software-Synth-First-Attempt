@@ -5,11 +5,15 @@
  Created by Aaron Dawson on 9/3/16.
 
  Example of OpenGL GUI (basically, make a subclass of IControl and have it do the graphics stuff)
+ 
+ I pretty much copied this from the IPlugOpenGL example project just to get the functionality working.
 
  Alternatively, AudioComponents could itself be an IControl (at least, I think this is possible)
 
  This class's drawing area is defined by pR which is an IRECT (containing width and height values)
  The drawing area thus goes from (0, 0) - top left - to (width, height) - bottom right.
+ 
+ All drawing functions must go in the area between the comments DRAW and END DRAW
  */
 
 #ifndef OpenGLTestClass_hpp
@@ -25,6 +29,9 @@
 
 class OpenGLTestClass : public IControl {
 private:
+    
+    /* Think of a context as an object that holds all of OpenGL; when a context is destroyed, OpenGL is destroyed. */
+        // The CGLContextObj type is the fundamental data type for an OpenGL Context on Mac.
     CGLContextObj mGLContext;
     WDL_TypedBuf<unsigned char> mData;
     int height;
@@ -69,8 +76,7 @@ public:
     
     long setContext()
     {
-        // Set the current context
-        
+        /* Set the current context. In order for any OpenGL commands to work, a context must be current; all OpenGL commands affect the state of whichever context is current. */
         if(CGLSetCurrentContext(mGLContext))
         {
             DBGMSG("Could not make context current.");
@@ -277,7 +283,9 @@ public:
         glLineWidth(1.1);
         glPointSize(2.6);
         
-        //DRAW
+        // ----------------- DRAW ----------------- ALL DRAWING HAPPENS BELOW THIS LINE
+        
+        // Diagonal line across the viewing area
         glColor3f(1.0, 0.0, 0.0);
         glBegin(GL_LINE_STRIP);
         glVertex2d(0, 0);
@@ -292,7 +300,7 @@ public:
         }
         glEnd();
         
-        // END DRAW
+        // ----------------- END DRAW ----------------- ALL DRAWING HAPPENS ABOVE THIS LINE
         
         
         glFlush();
