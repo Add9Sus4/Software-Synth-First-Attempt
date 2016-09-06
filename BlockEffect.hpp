@@ -14,7 +14,7 @@
 class BlockEffect {
     
 public:
-    virtual void process(double *inBlock, double *outBlock, int blockSize);
+    virtual void process(double *inBlock, double *outBlock, int blockSize) = 0;
 };
 
 #endif /* BlockEffect_hpp */

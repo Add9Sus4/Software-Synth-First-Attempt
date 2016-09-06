@@ -7,7 +7,3 @@
 //
 
 #include "SampleEffect.hpp"
-
-double SampleEffect::process(double sample) {
-    return sample;
-}

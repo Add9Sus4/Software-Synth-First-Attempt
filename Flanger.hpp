@@ -52,7 +52,29 @@ public:
     }
 
     double process(double sample);
-    WaveForm *createWaveForm(WaveType waveType, double frequency);
+    WaveForm *createWaveForm(WaveType waveType, double frequency) {
+        WaveForm *waveForm;
+        switch (waveType) {
+            case SINE:
+                waveForm = new SineWaveForm(frequency);
+                break;
+            case SAW:
+                waveForm = new SawWaveForm(frequency);
+                break;
+            case SQUARE:
+                waveForm = new PulseWaveForm(frequency, 0.50);
+                break;
+            case TRIANGLE:
+                waveForm = new TriangleWaveForm(frequency);
+                break;
+            case NOISE:
+                waveForm = new NoiseWaveForm(frequency);
+                break;
+            default:
+                break;
+        }
+        return waveForm;
+    }
     
 };
 

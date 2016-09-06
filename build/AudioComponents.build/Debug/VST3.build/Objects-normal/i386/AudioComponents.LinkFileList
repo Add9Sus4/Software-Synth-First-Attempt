@@ -13,8 +13,6 @@
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/IGraphicsCocoa.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/Log.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/IPopupMenu.o
-/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/SineWaveTable.o
-/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/TriangleWaveTable.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/IParam.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/IControl.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/IBitmapMonoText.o
@@ -22,12 +20,9 @@
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/IPlugVST3.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/memorystream.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/pluginview.o
-/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/SawWaveTable.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/macmain.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/pluginfactoryvst3.o
-/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/SquareWaveTable.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/vstaudioeffect.o
-/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/WaveTable.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/vstbus.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/vstcomponent.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/vstcomponentbase.o
@@ -39,7 +34,6 @@
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/vstpresetfile.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/vstrepresentation.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/vstsinglecomponenteffect.o
-/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/NoiseWaveTable.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/conststringtable.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/funknown.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/VST3.build/Objects-normal/i386/ustring.o

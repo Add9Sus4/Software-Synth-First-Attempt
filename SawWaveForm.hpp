@@ -23,7 +23,12 @@ public:
     };
     
     // Populates the samples buffer with values.
-    void initializeWaveForm(int length);
+    void initializeWaveForm(int length) {
+        samples = new double[length];
+        for (int i=0; i<length; i++) {
+            samples[i] = -1.0 + 2.0*i/(double)length;
+        }
+    }
 };
 
 #endif /* SawWaveForm_hpp */

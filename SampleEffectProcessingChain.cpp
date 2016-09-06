@@ -9,9 +9,6 @@
 #include "SampleEffectProcessingChain.hpp"
 
 
-void SampleEffectProcessingChain::addEffect(SampleEffect *effect) {
-    effects.push_back(effect);
-}
 
 double SampleEffectProcessingChain::process(double sample) {
     double newSample = sample;

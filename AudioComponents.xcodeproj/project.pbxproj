@@ -285,14 +285,6 @@
 		C25FEF281D73550D002D122F /* Oscillator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF201D73550D002D122F /* Oscillator.hpp */; };
 		C25FEF3B1D7357E4002D122F /* AudioChannel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF341D7357E4002D122F /* AudioChannel.hpp */; };
 		C25FEF3C1D7357E4002D122F /* AudioChannel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF341D7357E4002D122F /* AudioChannel.hpp */; };
-		C25FEF491D735DDD002D122F /* WaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF471D735DDD002D122F /* WaveTable.cpp */; };
-		C25FEF4A1D735DDD002D122F /* WaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF471D735DDD002D122F /* WaveTable.cpp */; };
-		C25FEF4B1D735DDD002D122F /* WaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF471D735DDD002D122F /* WaveTable.cpp */; };
-		C25FEF4C1D735DDD002D122F /* WaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF471D735DDD002D122F /* WaveTable.cpp */; };
-		C25FEF4D1D735DDD002D122F /* WaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF471D735DDD002D122F /* WaveTable.cpp */; };
-		C25FEF4E1D735DDD002D122F /* WaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF471D735DDD002D122F /* WaveTable.cpp */; };
-		C25FEF4F1D735DDD002D122F /* WaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF481D735DDD002D122F /* WaveTable.hpp */; };
-		C25FEF501D735DDD002D122F /* WaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF481D735DDD002D122F /* WaveTable.hpp */; };
 		C25FEF671D73733C002D122F /* Phasor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF651D73733C002D122F /* Phasor.cpp */; };
 		C25FEF681D73733C002D122F /* Phasor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF651D73733C002D122F /* Phasor.cpp */; };
 		C25FEF691D73733C002D122F /* Phasor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF651D73733C002D122F /* Phasor.cpp */; };
@@ -301,46 +293,6 @@
 		C25FEF6C1D73733C002D122F /* Phasor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF651D73733C002D122F /* Phasor.cpp */; };
 		C25FEF6D1D73733C002D122F /* Phasor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF661D73733C002D122F /* Phasor.hpp */; };
 		C25FEF6E1D73733C002D122F /* Phasor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF661D73733C002D122F /* Phasor.hpp */; };
-		C25FEF721D738751002D122F /* SineWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF701D738751002D122F /* SineWaveTable.cpp */; };
-		C25FEF731D738751002D122F /* SineWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF701D738751002D122F /* SineWaveTable.cpp */; };
-		C25FEF741D738751002D122F /* SineWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF701D738751002D122F /* SineWaveTable.cpp */; };
-		C25FEF751D738751002D122F /* SineWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF701D738751002D122F /* SineWaveTable.cpp */; };
-		C25FEF761D738751002D122F /* SineWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF701D738751002D122F /* SineWaveTable.cpp */; };
-		C25FEF771D738751002D122F /* SineWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF701D738751002D122F /* SineWaveTable.cpp */; };
-		C25FEF781D738751002D122F /* SineWaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF711D738751002D122F /* SineWaveTable.hpp */; };
-		C25FEF791D738751002D122F /* SineWaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF711D738751002D122F /* SineWaveTable.hpp */; };
-		C25FEF7C1D738BD7002D122F /* SawWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF7A1D738BD7002D122F /* SawWaveTable.cpp */; };
-		C25FEF7D1D738BD7002D122F /* SawWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF7A1D738BD7002D122F /* SawWaveTable.cpp */; };
-		C25FEF7E1D738BD7002D122F /* SawWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF7A1D738BD7002D122F /* SawWaveTable.cpp */; };
-		C25FEF7F1D738BD7002D122F /* SawWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF7A1D738BD7002D122F /* SawWaveTable.cpp */; };
-		C25FEF801D738BD7002D122F /* SawWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF7A1D738BD7002D122F /* SawWaveTable.cpp */; };
-		C25FEF811D738BD7002D122F /* SawWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF7A1D738BD7002D122F /* SawWaveTable.cpp */; };
-		C25FEF821D738BD7002D122F /* SawWaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF7B1D738BD7002D122F /* SawWaveTable.hpp */; };
-		C25FEF831D738BD7002D122F /* SawWaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF7B1D738BD7002D122F /* SawWaveTable.hpp */; };
-		C25FEF861D738C70002D122F /* SquareWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF841D738C70002D122F /* SquareWaveTable.cpp */; };
-		C25FEF871D738C70002D122F /* SquareWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF841D738C70002D122F /* SquareWaveTable.cpp */; };
-		C25FEF881D738C70002D122F /* SquareWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF841D738C70002D122F /* SquareWaveTable.cpp */; };
-		C25FEF891D738C70002D122F /* SquareWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF841D738C70002D122F /* SquareWaveTable.cpp */; };
-		C25FEF8A1D738C70002D122F /* SquareWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF841D738C70002D122F /* SquareWaveTable.cpp */; };
-		C25FEF8B1D738C70002D122F /* SquareWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF841D738C70002D122F /* SquareWaveTable.cpp */; };
-		C25FEF8C1D738C70002D122F /* SquareWaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF851D738C70002D122F /* SquareWaveTable.hpp */; };
-		C25FEF8D1D738C70002D122F /* SquareWaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF851D738C70002D122F /* SquareWaveTable.hpp */; };
-		C25FEF901D738CD1002D122F /* TriangleWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF8E1D738CD1002D122F /* TriangleWaveTable.cpp */; };
-		C25FEF911D738CD1002D122F /* TriangleWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF8E1D738CD1002D122F /* TriangleWaveTable.cpp */; };
-		C25FEF921D738CD1002D122F /* TriangleWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF8E1D738CD1002D122F /* TriangleWaveTable.cpp */; };
-		C25FEF931D738CD1002D122F /* TriangleWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF8E1D738CD1002D122F /* TriangleWaveTable.cpp */; };
-		C25FEF941D738CD1002D122F /* TriangleWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF8E1D738CD1002D122F /* TriangleWaveTable.cpp */; };
-		C25FEF951D738CD1002D122F /* TriangleWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF8E1D738CD1002D122F /* TriangleWaveTable.cpp */; };
-		C25FEF961D738CD1002D122F /* TriangleWaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF8F1D738CD1002D122F /* TriangleWaveTable.hpp */; };
-		C25FEF971D738CD1002D122F /* TriangleWaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF8F1D738CD1002D122F /* TriangleWaveTable.hpp */; };
-		C25FEF9A1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF981D738EBA002D122F /* NoiseWaveTable.cpp */; };
-		C25FEF9B1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF981D738EBA002D122F /* NoiseWaveTable.cpp */; };
-		C25FEF9C1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF981D738EBA002D122F /* NoiseWaveTable.cpp */; };
-		C25FEF9D1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF981D738EBA002D122F /* NoiseWaveTable.cpp */; };
-		C25FEF9E1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF981D738EBA002D122F /* NoiseWaveTable.cpp */; };
-		C25FEF9F1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF981D738EBA002D122F /* NoiseWaveTable.cpp */; };
-		C25FEFA01D738EBA002D122F /* NoiseWaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF991D738EBA002D122F /* NoiseWaveTable.hpp */; };
-		C25FEFA11D738EBA002D122F /* NoiseWaveTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEF991D738EBA002D122F /* NoiseWaveTable.hpp */; };
 		C25FEFAE1D73978C002D122F /* OscillatorGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEFAC1D73978C002D122F /* OscillatorGroup.cpp */; };
 		C25FEFAF1D73978C002D122F /* OscillatorGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEFAC1D73978C002D122F /* OscillatorGroup.cpp */; };
 		C25FEFB01D73978C002D122F /* OscillatorGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEFAC1D73978C002D122F /* OscillatorGroup.cpp */; };
@@ -381,6 +333,9 @@
 		C25FEFEF1D73DF6B002D122F /* BlockDelay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEFE81D73DF6B002D122F /* BlockDelay.cpp */; };
 		C25FEFF01D73DF6B002D122F /* BlockDelay.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEFE91D73DF6B002D122F /* BlockDelay.hpp */; };
 		C25FEFF11D73DF6B002D122F /* BlockDelay.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEFE91D73DF6B002D122F /* BlockDelay.hpp */; };
+		C2D82EB61D7EEEAD007948D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */; };
+		C2D82EB71D7EEEB4007948D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */; };
+		C2D82EB81D7EEEBD007948D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -758,20 +713,8 @@
 		C25FEF1F1D73550D002D122F /* Oscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillator.cpp; sourceTree = "<group>"; };
 		C25FEF201D73550D002D122F /* Oscillator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Oscillator.hpp; sourceTree = "<group>"; };
 		C25FEF341D7357E4002D122F /* AudioChannel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioChannel.hpp; sourceTree = "<group>"; };
-		C25FEF471D735DDD002D122F /* WaveTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveTable.cpp; sourceTree = "<group>"; };
-		C25FEF481D735DDD002D122F /* WaveTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WaveTable.hpp; sourceTree = "<group>"; };
 		C25FEF651D73733C002D122F /* Phasor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Phasor.cpp; sourceTree = "<group>"; };
 		C25FEF661D73733C002D122F /* Phasor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Phasor.hpp; sourceTree = "<group>"; };
-		C25FEF701D738751002D122F /* SineWaveTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SineWaveTable.cpp; sourceTree = "<group>"; };
-		C25FEF711D738751002D122F /* SineWaveTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SineWaveTable.hpp; sourceTree = "<group>"; };
-		C25FEF7A1D738BD7002D122F /* SawWaveTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SawWaveTable.cpp; sourceTree = "<group>"; };
-		C25FEF7B1D738BD7002D122F /* SawWaveTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SawWaveTable.hpp; sourceTree = "<group>"; };
-		C25FEF841D738C70002D122F /* SquareWaveTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SquareWaveTable.cpp; sourceTree = "<group>"; };
-		C25FEF851D738C70002D122F /* SquareWaveTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SquareWaveTable.hpp; sourceTree = "<group>"; };
-		C25FEF8E1D738CD1002D122F /* TriangleWaveTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TriangleWaveTable.cpp; sourceTree = "<group>"; };
-		C25FEF8F1D738CD1002D122F /* TriangleWaveTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TriangleWaveTable.hpp; sourceTree = "<group>"; };
-		C25FEF981D738EBA002D122F /* NoiseWaveTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoiseWaveTable.cpp; sourceTree = "<group>"; };
-		C25FEF991D738EBA002D122F /* NoiseWaveTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NoiseWaveTable.hpp; sourceTree = "<group>"; };
 		C25FEFAC1D73978C002D122F /* OscillatorGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscillatorGroup.cpp; sourceTree = "<group>"; };
 		C25FEFAD1D73978C002D122F /* OscillatorGroup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OscillatorGroup.hpp; sourceTree = "<group>"; };
 		C25FEFB61D73ACFC002D122F /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Filter.cpp; sourceTree = "<group>"; };
@@ -782,6 +725,43 @@
 		C25FEFDF1D73D753002D122F /* SampleDelay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SampleDelay.hpp; sourceTree = "<group>"; };
 		C25FEFE81D73DF6B002D122F /* BlockDelay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockDelay.cpp; sourceTree = "<group>"; };
 		C25FEFE91D73DF6B002D122F /* BlockDelay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockDelay.hpp; sourceTree = "<group>"; };
+		C2D82E8F1D7EEE78007948D4 /* BlockEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockEffect.cpp; sourceTree = "<group>"; };
+		C2D82E901D7EEE78007948D4 /* BlockEffect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockEffect.hpp; sourceTree = "<group>"; };
+		C2D82E911D7EEE78007948D4 /* BlockEffectProcessingChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockEffectProcessingChain.cpp; sourceTree = "<group>"; };
+		C2D82E921D7EEE78007948D4 /* BlockEffectProcessingChain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockEffectProcessingChain.hpp; sourceTree = "<group>"; };
+		C2D82E931D7EEE78007948D4 /* Chorus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chorus.cpp; sourceTree = "<group>"; };
+		C2D82E941D7EEE78007948D4 /* Chorus.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Chorus.hpp; sourceTree = "<group>"; };
+		C2D82E951D7EEE78007948D4 /* Distortion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Distortion.cpp; sourceTree = "<group>"; };
+		C2D82E961D7EEE78007948D4 /* Distortion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Distortion.hpp; sourceTree = "<group>"; };
+		C2D82E971D7EEE78007948D4 /* Envelope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Envelope.cpp; sourceTree = "<group>"; };
+		C2D82E981D7EEE78007948D4 /* Envelope.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Envelope.hpp; sourceTree = "<group>"; };
+		C2D82E991D7EEE78007948D4 /* Flanger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Flanger.cpp; sourceTree = "<group>"; };
+		C2D82E9A1D7EEE78007948D4 /* Flanger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Flanger.hpp; sourceTree = "<group>"; };
+		C2D82E9B1D7EEE78007948D4 /* NoiseWaveForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoiseWaveForm.cpp; sourceTree = "<group>"; };
+		C2D82E9C1D7EEE78007948D4 /* NoiseWaveForm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NoiseWaveForm.hpp; sourceTree = "<group>"; };
+		C2D82E9D1D7EEE78007948D4 /* OpenGLTestClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLTestClass.cpp; sourceTree = "<group>"; };
+		C2D82E9E1D7EEE78007948D4 /* OpenGLTestClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OpenGLTestClass.hpp; sourceTree = "<group>"; };
+		C2D82E9F1D7EEE78007948D4 /* PulseWaveForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PulseWaveForm.cpp; sourceTree = "<group>"; };
+		C2D82EA01D7EEE78007948D4 /* PulseWaveForm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PulseWaveForm.hpp; sourceTree = "<group>"; };
+		C2D82EA11D7EEE78007948D4 /* SampleEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleEffect.cpp; sourceTree = "<group>"; };
+		C2D82EA21D7EEE78007948D4 /* SampleEffect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SampleEffect.hpp; sourceTree = "<group>"; };
+		C2D82EA31D7EEE78007948D4 /* SampleEffectProcessingChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleEffectProcessingChain.cpp; sourceTree = "<group>"; };
+		C2D82EA41D7EEE78007948D4 /* SampleEffectProcessingChain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SampleEffectProcessingChain.hpp; sourceTree = "<group>"; };
+		C2D82EA51D7EEE78007948D4 /* SawWaveForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SawWaveForm.cpp; sourceTree = "<group>"; };
+		C2D82EA61D7EEE78007948D4 /* SawWaveForm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SawWaveForm.hpp; sourceTree = "<group>"; };
+		C2D82EA71D7EEE78007948D4 /* SineWaveForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SineWaveForm.cpp; sourceTree = "<group>"; };
+		C2D82EA81D7EEE78007948D4 /* SineWaveForm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SineWaveForm.hpp; sourceTree = "<group>"; };
+		C2D82EA91D7EEE78007948D4 /* SymmetricalSoftClip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SymmetricalSoftClip.cpp; sourceTree = "<group>"; };
+		C2D82EAA1D7EEE78007948D4 /* SymmetricalSoftClip.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SymmetricalSoftClip.hpp; sourceTree = "<group>"; };
+		C2D82EAB1D7EEE78007948D4 /* Symphony.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Symphony.cpp; sourceTree = "<group>"; };
+		C2D82EAC1D7EEE78007948D4 /* Symphony.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Symphony.hpp; sourceTree = "<group>"; };
+		C2D82EAD1D7EEE78007948D4 /* TriangleWaveForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TriangleWaveForm.cpp; sourceTree = "<group>"; };
+		C2D82EAE1D7EEE78007948D4 /* TriangleWaveForm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TriangleWaveForm.hpp; sourceTree = "<group>"; };
+		C2D82EAF1D7EEE78007948D4 /* Voice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Voice.cpp; sourceTree = "<group>"; };
+		C2D82EB01D7EEE78007948D4 /* Voice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Voice.hpp; sourceTree = "<group>"; };
+		C2D82EB11D7EEE78007948D4 /* WaveForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveForm.cpp; sourceTree = "<group>"; };
+		C2D82EB21D7EEE78007948D4 /* WaveForm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WaveForm.hpp; sourceTree = "<group>"; };
+		C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -790,6 +770,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D82EB71D7EEEB4007948D4 /* OpenGL.framework in Frameworks */,
 				4F8D4C2F13E97806004F7633 /* lice.a in Frameworks */,
 				4F20EF2D132C69FE0030E34C /* Cocoa.framework in Frameworks */,
 				4F20EF2E132C69FE0030E34C /* Carbon.framework in Frameworks */,
@@ -800,6 +781,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D82EB81D7EEEBD007948D4 /* OpenGL.framework in Frameworks */,
 				4F8D4C2813E9778D004F7633 /* lice.a in Frameworks */,
 				4F3AE1D412C0E5E2001FD7A4 /* Carbon.framework in Frameworks */,
 				4F3AE1D512C0E5E2001FD7A4 /* Cocoa.framework in Frameworks */,
@@ -848,6 +830,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D82EB61D7EEEAD007948D4 /* OpenGL.framework in Frameworks */,
 				4F8D4BCD13E97671004F7633 /* lice.a in Frameworks */,
 				4F78D87513B637E50032E0F3 /* Carbon.framework in Frameworks */,
 				4F78D7D013B637790032E0F3 /* CoreMIDI.framework in Frameworks */,
@@ -864,6 +847,43 @@
 		089C166AFE841209C02AAC07 /* IPlugExample */ = {
 			isa = PBXGroup;
 			children = (
+				C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */,
+				C2D82E8F1D7EEE78007948D4 /* BlockEffect.cpp */,
+				C2D82E901D7EEE78007948D4 /* BlockEffect.hpp */,
+				C2D82E911D7EEE78007948D4 /* BlockEffectProcessingChain.cpp */,
+				C2D82E921D7EEE78007948D4 /* BlockEffectProcessingChain.hpp */,
+				C2D82E931D7EEE78007948D4 /* Chorus.cpp */,
+				C2D82E941D7EEE78007948D4 /* Chorus.hpp */,
+				C2D82E951D7EEE78007948D4 /* Distortion.cpp */,
+				C2D82E961D7EEE78007948D4 /* Distortion.hpp */,
+				C2D82E971D7EEE78007948D4 /* Envelope.cpp */,
+				C2D82E981D7EEE78007948D4 /* Envelope.hpp */,
+				C2D82E991D7EEE78007948D4 /* Flanger.cpp */,
+				C2D82E9A1D7EEE78007948D4 /* Flanger.hpp */,
+				C2D82E9B1D7EEE78007948D4 /* NoiseWaveForm.cpp */,
+				C2D82E9C1D7EEE78007948D4 /* NoiseWaveForm.hpp */,
+				C2D82E9D1D7EEE78007948D4 /* OpenGLTestClass.cpp */,
+				C2D82E9E1D7EEE78007948D4 /* OpenGLTestClass.hpp */,
+				C2D82E9F1D7EEE78007948D4 /* PulseWaveForm.cpp */,
+				C2D82EA01D7EEE78007948D4 /* PulseWaveForm.hpp */,
+				C2D82EA11D7EEE78007948D4 /* SampleEffect.cpp */,
+				C2D82EA21D7EEE78007948D4 /* SampleEffect.hpp */,
+				C2D82EA31D7EEE78007948D4 /* SampleEffectProcessingChain.cpp */,
+				C2D82EA41D7EEE78007948D4 /* SampleEffectProcessingChain.hpp */,
+				C2D82EA51D7EEE78007948D4 /* SawWaveForm.cpp */,
+				C2D82EA61D7EEE78007948D4 /* SawWaveForm.hpp */,
+				C2D82EA71D7EEE78007948D4 /* SineWaveForm.cpp */,
+				C2D82EA81D7EEE78007948D4 /* SineWaveForm.hpp */,
+				C2D82EA91D7EEE78007948D4 /* SymmetricalSoftClip.cpp */,
+				C2D82EAA1D7EEE78007948D4 /* SymmetricalSoftClip.hpp */,
+				C2D82EAB1D7EEE78007948D4 /* Symphony.cpp */,
+				C2D82EAC1D7EEE78007948D4 /* Symphony.hpp */,
+				C2D82EAD1D7EEE78007948D4 /* TriangleWaveForm.cpp */,
+				C2D82EAE1D7EEE78007948D4 /* TriangleWaveForm.hpp */,
+				C2D82EAF1D7EEE78007948D4 /* Voice.cpp */,
+				C2D82EB01D7EEE78007948D4 /* Voice.hpp */,
+				C2D82EB11D7EEE78007948D4 /* WaveForm.cpp */,
+				C2D82EB21D7EEE78007948D4 /* WaveForm.hpp */,
 				C25FEFE81D73DF6B002D122F /* BlockDelay.cpp */,
 				C25FEFE91D73DF6B002D122F /* BlockDelay.hpp */,
 				C25FEFDE1D73D753002D122F /* SampleDelay.cpp */,
@@ -874,20 +894,8 @@
 				C25FEFB71D73ACFC002D122F /* Filter.hpp */,
 				C25FEFAC1D73978C002D122F /* OscillatorGroup.cpp */,
 				C25FEFAD1D73978C002D122F /* OscillatorGroup.hpp */,
-				C25FEF701D738751002D122F /* SineWaveTable.cpp */,
-				C25FEF711D738751002D122F /* SineWaveTable.hpp */,
-				C25FEF7A1D738BD7002D122F /* SawWaveTable.cpp */,
-				C25FEF7B1D738BD7002D122F /* SawWaveTable.hpp */,
-				C25FEF841D738C70002D122F /* SquareWaveTable.cpp */,
-				C25FEF851D738C70002D122F /* SquareWaveTable.hpp */,
-				C25FEF8E1D738CD1002D122F /* TriangleWaveTable.cpp */,
-				C25FEF8F1D738CD1002D122F /* TriangleWaveTable.hpp */,
-				C25FEF981D738EBA002D122F /* NoiseWaveTable.cpp */,
-				C25FEF991D738EBA002D122F /* NoiseWaveTable.hpp */,
 				C25FEF651D73733C002D122F /* Phasor.cpp */,
 				C25FEF661D73733C002D122F /* Phasor.hpp */,
-				C25FEF471D735DDD002D122F /* WaveTable.cpp */,
-				C25FEF481D735DDD002D122F /* WaveTable.hpp */,
 				C25FEF341D7357E4002D122F /* AudioChannel.hpp */,
 				C25FEF1F1D73550D002D122F /* Oscillator.cpp */,
 				C25FEF201D73550D002D122F /* Oscillator.hpp */,
@@ -1501,7 +1509,6 @@
 				4FF016F7134E14E2001447BA /* mutex.h in Headers */,
 				C25FEFE71D73D753002D122F /* SampleDelay.hpp in Headers */,
 				C25FEFBF1D73ACFC002D122F /* Filter.hpp in Headers */,
-				C25FEF831D738BD7002D122F /* SawWaveTable.hpp in Headers */,
 				4FF016F8134E14E2001447BA /* ptrlist.h in Headers */,
 				4FF016F9134E14E2001447BA /* wdlstring.h in Headers */,
 				4FD16D1913B634E5001D0217 /* swell.h in Headers */,
@@ -1522,17 +1529,13 @@
 				C25FEFC91D73B6E0002D122F /* FormantFilter.hpp in Headers */,
 				4F78D94913B63BA50032E0F3 /* Containers.h in Headers */,
 				4F78D94A13B63BA50032E0F3 /* Hosts.h in Headers */,
-				C25FEF501D735DDD002D122F /* WaveTable.hpp in Headers */,
 				C25FEF281D73550D002D122F /* Oscillator.hpp in Headers */,
 				C25FEFF11D73DF6B002D122F /* BlockDelay.hpp in Headers */,
 				4F78D95113B63BA50032E0F3 /* IGraphicsCocoa.h in Headers */,
 				4F78D95213B63BA50032E0F3 /* Log.h in Headers */,
-				C25FEF791D738751002D122F /* SineWaveTable.hpp in Headers */,
-				C25FEFA11D738EBA002D122F /* NoiseWaveTable.hpp in Headers */,
 				4F78D95413B63BA50032E0F3 /* IPopupMenu.h in Headers */,
 				4F78D95613B63BA50032E0F3 /* IPlugStructs.h in Headers */,
 				4F78D95A13B63BA50032E0F3 /* IPlug_Prefix.pch in Headers */,
-				C25FEF8D1D738C70002D122F /* SquareWaveTable.hpp in Headers */,
 				4F78D95B13B63BA50032E0F3 /* IParam.h in Headers */,
 				4F78D95D13B63BA50032E0F3 /* IMidiQueue.h in Headers */,
 				4F78D95F13B63BA50032E0F3 /* IGraphicsCarbon.h in Headers */,
@@ -1540,7 +1543,6 @@
 				4F78DA0713B63CD90032E0F3 /* IPlugAU.h in Headers */,
 				4F3EE94913B65A350097B791 /* IPlugOSDetect.h in Headers */,
 				4FDA440913F3E4F2000B4551 /* IBitmapMonoText.h in Headers */,
-				C25FEF971D738CD1002D122F /* TriangleWaveTable.hpp in Headers */,
 				4FA88B931444E4C4006CB8DA /* dfx-au-utilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1556,7 +1558,6 @@
 				4F78DABA13B640530032E0F3 /* RtMidi.h in Headers */,
 				4F78DAB113B640470032E0F3 /* swell-menugen.h in Headers */,
 				C25FEFF01D73DF6B002D122F /* BlockDelay.hpp in Headers */,
-				C25FEF781D738751002D122F /* SineWaveTable.hpp in Headers */,
 				4F78DAB213B640470032E0F3 /* swell-dlggen.h in Headers */,
 				4F78DAB313B640470032E0F3 /* swellappmain.h in Headers */,
 				4F78DA7713B640050032E0F3 /* resource.h in Headers */,
@@ -1569,7 +1570,6 @@
 				4F78DA8E13B640050032E0F3 /* wdlendian.h in Headers */,
 				4F78DA8F13B640050032E0F3 /* swell.h in Headers */,
 				4F78DA9013B640050032E0F3 /* swell-functions.h in Headers */,
-				C25FEFA01D738EBA002D122F /* NoiseWaveTable.hpp in Headers */,
 				C25FEFE61D73D753002D122F /* SampleDelay.hpp in Headers */,
 				C25FEF3B1D7357E4002D122F /* AudioChannel.hpp in Headers */,
 				C25FEF271D73550D002D122F /* Oscillator.hpp in Headers */,
@@ -1584,19 +1584,15 @@
 				4F78DA9813B640050032E0F3 /* IKeyboardControl.h in Headers */,
 				4F78DA9913B640050032E0F3 /* IPlugBase.h in Headers */,
 				4F78DA9A13B640050032E0F3 /* IGraphicsMac.h in Headers */,
-				C25FEF821D738BD7002D122F /* SawWaveTable.hpp in Headers */,
 				4F78DA9C13B640050032E0F3 /* Containers.h in Headers */,
 				4F78DA9D13B640050032E0F3 /* Hosts.h in Headers */,
 				4F78DA9E13B640050032E0F3 /* IGraphicsCocoa.h in Headers */,
 				4F78DA9F13B640050032E0F3 /* Log.h in Headers */,
 				4F78DAA013B640050032E0F3 /* IPopupMenu.h in Headers */,
-				C25FEF8C1D738C70002D122F /* SquareWaveTable.hpp in Headers */,
 				4F78DAA113B640050032E0F3 /* IPlugStructs.h in Headers */,
-				C25FEF961D738CD1002D122F /* TriangleWaveTable.hpp in Headers */,
 				4F78DAA213B640050032E0F3 /* IPlug_Prefix.pch in Headers */,
 				4F78DAA313B640050032E0F3 /* IParam.h in Headers */,
 				4F78DAA413B640050032E0F3 /* IMidiQueue.h in Headers */,
-				C25FEF4F1D735DDD002D122F /* WaveTable.hpp in Headers */,
 				4F78DAA513B640050032E0F3 /* IGraphicsCarbon.h in Headers */,
 				4F78DAA613B640050032E0F3 /* IGraphics.h in Headers */,
 				4F3EE94613B65A350097B791 /* IPlugOSDetect.h in Headers */,
@@ -1936,25 +1932,19 @@
 				4F78D9BD13B63BA50032E0F3 /* Hosts.cpp in Sources */,
 				4F78D9BF13B63BA50032E0F3 /* IGraphicsMac.mm in Sources */,
 				4F78D9C013B63BA50032E0F3 /* IGraphics.cpp in Sources */,
-				C25FEF871D738C70002D122F /* SquareWaveTable.cpp in Sources */,
 				4F78D9C113B63BA50032E0F3 /* IGraphicsCarbon.cpp in Sources */,
 				4F78D9C213B63BA50032E0F3 /* IGraphicsCocoa.mm in Sources */,
 				C25FEF681D73733C002D122F /* Phasor.cpp in Sources */,
-				C25FEF731D738751002D122F /* SineWaveTable.cpp in Sources */,
 				4F78D9C313B63BA50032E0F3 /* Log.cpp in Sources */,
 				4F78D9C413B63BA50032E0F3 /* IPopupMenu.cpp in Sources */,
 				C25FEF221D73550D002D122F /* Oscillator.cpp in Sources */,
 				4F78D9C813B63BA50032E0F3 /* IParam.cpp in Sources */,
 				4F78D9C913B63BA50032E0F3 /* IControl.cpp in Sources */,
-				C25FEF9B1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */,
-				C25FEF4A1D735DDD002D122F /* WaveTable.cpp in Sources */,
 				4F78D9F313B63C6A0032E0F3 /* IPlugVST.cpp in Sources */,
 				C25FEFC31D73B6E0002D122F /* FormantFilter.cpp in Sources */,
 				4FDA440C13F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
 				C25FEFAF1D73978C002D122F /* OscillatorGroup.cpp in Sources */,
 				C25FEFEB1D73DF6B002D122F /* BlockDelay.cpp in Sources */,
-				C25FEF7D1D738BD7002D122F /* SawWaveTable.cpp in Sources */,
-				C25FEF911D738CD1002D122F /* TriangleWaveTable.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1968,11 +1958,8 @@
 				4F78D94713B63BA50032E0F3 /* IPlugStructs.cpp in Sources */,
 				4F78D94B13B63BA50032E0F3 /* Hosts.cpp in Sources */,
 				C25FEFED1D73DF6B002D122F /* BlockDelay.cpp in Sources */,
-				C25FEF4C1D735DDD002D122F /* WaveTable.cpp in Sources */,
-				C25FEF9D1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */,
 				C25FEF241D73550D002D122F /* Oscillator.cpp in Sources */,
 				C25FEFE31D73D753002D122F /* SampleDelay.cpp in Sources */,
-				C25FEF931D738CD1002D122F /* TriangleWaveTable.cpp in Sources */,
 				4F78D94D13B63BA50032E0F3 /* IGraphicsMac.mm in Sources */,
 				4F78D94E13B63BA50032E0F3 /* IGraphics.cpp in Sources */,
 				4F78D94F13B63BA50032E0F3 /* IGraphicsCarbon.cpp in Sources */,
@@ -1983,11 +1970,8 @@
 				4F78D95513B63BA50032E0F3 /* IPopupMenu.cpp in Sources */,
 				C25FEFB11D73978C002D122F /* OscillatorGroup.cpp in Sources */,
 				4F78D95C13B63BA50032E0F3 /* IParam.cpp in Sources */,
-				C25FEF891D738C70002D122F /* SquareWaveTable.cpp in Sources */,
 				C25FEF6A1D73733C002D122F /* Phasor.cpp in Sources */,
-				C25FEF751D738751002D122F /* SineWaveTable.cpp in Sources */,
 				4F78D96113B63BA50032E0F3 /* IControl.cpp in Sources */,
-				C25FEF7F1D738BD7002D122F /* SawWaveTable.cpp in Sources */,
 				4F78DA0813B63CD90032E0F3 /* IPlugAU.cpp in Sources */,
 				4F78DA0A13B63CD90032E0F3 /* IPlugAU_ViewFactory.mm in Sources */,
 				4FDA440813F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
@@ -2000,16 +1984,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F7F5C4913E95EC8002918FD /* AudioComponents.cpp in Sources */,
-				C25FEF9E1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */,
 				4F7F5C5013E95EC8002918FD /* swell-gdi.mm in Sources */,
 				4F7F5C5113E95EC8002918FD /* IPlugBase.cpp in Sources */,
-				C25FEF761D738751002D122F /* SineWaveTable.cpp in Sources */,
 				4F7F5C5213E95EC8002918FD /* IPlugStructs.cpp in Sources */,
 				4F7F5C5313E95EC8002918FD /* Hosts.cpp in Sources */,
 				4F7F5C5413E95EC8002918FD /* IGraphicsMac.mm in Sources */,
-				C25FEF941D738CD1002D122F /* TriangleWaveTable.cpp in Sources */,
 				C25FEFE41D73D753002D122F /* SampleDelay.cpp in Sources */,
-				C25FEF801D738BD7002D122F /* SawWaveTable.cpp in Sources */,
 				4F7F5C5513E95EC8002918FD /* IGraphics.cpp in Sources */,
 				4F7F5C5613E95EC8002918FD /* IGraphicsCarbon.cpp in Sources */,
 				4F7F5C5713E95EC8002918FD /* IGraphicsCocoa.mm in Sources */,
@@ -2017,10 +1997,8 @@
 				C25FEFB21D73978C002D122F /* OscillatorGroup.cpp in Sources */,
 				4F7F5C5813E95EC8002918FD /* Log.cpp in Sources */,
 				4F7F5C5913E95EC8002918FD /* IPopupMenu.cpp in Sources */,
-				C25FEF8A1D738C70002D122F /* SquareWaveTable.cpp in Sources */,
 				C25FEF251D73550D002D122F /* Oscillator.cpp in Sources */,
 				4F7F5C5A13E95EC8002918FD /* IParam.cpp in Sources */,
-				C25FEF4D1D735DDD002D122F /* WaveTable.cpp in Sources */,
 				4F7F5C5B13E95EC8002918FD /* IControl.cpp in Sources */,
 				4F7F5C7113E95FB2002918FD /* IPlugRTAS.cpp in Sources */,
 				4F7F5CAD13E9607A002918FD /* digicode1.cpp in Sources */,
@@ -2057,8 +2035,6 @@
 				4F9828BE140A9EB700F3FCC1 /* IGraphicsCocoa.mm in Sources */,
 				4F9828BF140A9EB700F3FCC1 /* Log.cpp in Sources */,
 				4F9828C0140A9EB700F3FCC1 /* IPopupMenu.cpp in Sources */,
-				C25FEF741D738751002D122F /* SineWaveTable.cpp in Sources */,
-				C25FEF921D738CD1002D122F /* TriangleWaveTable.cpp in Sources */,
 				4F9828C1140A9EB700F3FCC1 /* IParam.cpp in Sources */,
 				4F9828C2140A9EB700F3FCC1 /* IControl.cpp in Sources */,
 				4F9828C3140A9EB700F3FCC1 /* IBitmapMonoText.cpp in Sources */,
@@ -2066,12 +2042,9 @@
 				4F9828C4140A9EB700F3FCC1 /* IPlugVST3.cpp in Sources */,
 				4F9828C5140A9EB700F3FCC1 /* memorystream.cpp in Sources */,
 				4F9828C6140A9EB700F3FCC1 /* pluginview.cpp in Sources */,
-				C25FEF7E1D738BD7002D122F /* SawWaveTable.cpp in Sources */,
 				4F9828C7140A9EB700F3FCC1 /* macmain.cpp in Sources */,
 				4F9828C8140A9EB700F3FCC1 /* pluginfactoryvst3.cpp in Sources */,
-				C25FEF881D738C70002D122F /* SquareWaveTable.cpp in Sources */,
 				4F9828C9140A9EB700F3FCC1 /* vstaudioeffect.cpp in Sources */,
-				C25FEF4B1D735DDD002D122F /* WaveTable.cpp in Sources */,
 				4F9828CA140A9EB700F3FCC1 /* vstbus.cpp in Sources */,
 				4F9828CB140A9EB700F3FCC1 /* vstcomponent.cpp in Sources */,
 				4F9828CC140A9EB700F3FCC1 /* vstcomponentbase.cpp in Sources */,
@@ -2083,7 +2056,6 @@
 				4F9828D1140A9EB700F3FCC1 /* vstpresetfile.cpp in Sources */,
 				4F9828D2140A9EB700F3FCC1 /* vstrepresentation.cpp in Sources */,
 				4F9828D3140A9EB700F3FCC1 /* vstsinglecomponenteffect.cpp in Sources */,
-				C25FEF9C1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */,
 				4F9828D4140A9EB700F3FCC1 /* conststringtable.cpp in Sources */,
 				4F9828D5140A9EB700F3FCC1 /* funknown.cpp in Sources */,
 				4F9828D6140A9EB700F3FCC1 /* ustring.cpp in Sources */,
@@ -2101,21 +2073,15 @@
 				4FB6001B1567CB0A0020189A /* IPlugStructs.cpp in Sources */,
 				4FB6001C1567CB0A0020189A /* Hosts.cpp in Sources */,
 				C25FEFEF1D73DF6B002D122F /* BlockDelay.cpp in Sources */,
-				C25FEF4E1D735DDD002D122F /* WaveTable.cpp in Sources */,
-				C25FEF951D738CD1002D122F /* TriangleWaveTable.cpp in Sources */,
-				C25FEF811D738BD7002D122F /* SawWaveTable.cpp in Sources */,
 				4FB6001D1567CB0A0020189A /* IGraphicsMac.mm in Sources */,
 				4FB6001E1567CB0A0020189A /* IGraphics.cpp in Sources */,
 				4FB6001F1567CB0A0020189A /* IGraphicsCarbon.cpp in Sources */,
 				4FB600201567CB0A0020189A /* IGraphicsCocoa.mm in Sources */,
 				4FB600211567CB0A0020189A /* Log.cpp in Sources */,
-				C25FEF9F1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */,
 				4FB600221567CB0A0020189A /* IPopupMenu.cpp in Sources */,
 				4FB600231567CB0A0020189A /* IParam.cpp in Sources */,
 				C25FEFBD1D73ACFC002D122F /* Filter.cpp in Sources */,
-				C25FEF771D738751002D122F /* SineWaveTable.cpp in Sources */,
 				C25FEFC71D73B6E0002D122F /* FormantFilter.cpp in Sources */,
-				C25FEF8B1D738C70002D122F /* SquareWaveTable.cpp in Sources */,
 				4FB600241567CB0A0020189A /* IControl.cpp in Sources */,
 				4FB600251567CB0A0020189A /* IBitmapMonoText.cpp in Sources */,
 				4FB600261567CB0A0020189A /* AAX_Exports.cpp in Sources */,
@@ -2139,7 +2105,6 @@
 				4FD16D1613B634D2001D0217 /* swell-ini.cpp in Sources */,
 				4FD16D3A13B63582001D0217 /* swell-kb.mm in Sources */,
 				4FD16D3C13B6358C001D0217 /* swell-miscdlg.mm in Sources */,
-				C25FEF721D738751002D122F /* SineWaveTable.cpp in Sources */,
 				4FD16D3E13B63595001D0217 /* swell-menu.mm in Sources */,
 				4FD16D4013B635A0001D0217 /* swell-misc.mm in Sources */,
 				4FD16D4213B635AB001D0217 /* swell-wnd.mm in Sources */,
@@ -2147,12 +2112,9 @@
 				4FD16D4713B635C8001D0217 /* swellappmain.mm in Sources */,
 				4F78D8C413B63A700032E0F3 /* RtAudio.cpp in Sources */,
 				C25FEF671D73733C002D122F /* Phasor.cpp in Sources */,
-				C25FEF7C1D738BD7002D122F /* SawWaveTable.cpp in Sources */,
 				C25FEFAE1D73978C002D122F /* OscillatorGroup.cpp in Sources */,
 				4F78D8C513B63A700032E0F3 /* RtMidi.cpp in Sources */,
-				C25FEF861D738C70002D122F /* SquareWaveTable.cpp in Sources */,
 				4F78D90A13B63BA50032E0F3 /* IPlugStandalone.cpp in Sources */,
-				C25FEF901D738CD1002D122F /* TriangleWaveTable.cpp in Sources */,
 				4F78D90B13B63BA50032E0F3 /* IPlugBase.cpp in Sources */,
 				4F78D90C13B63BA50032E0F3 /* IPlugStructs.cpp in Sources */,
 				4F78D90D13B63BA50032E0F3 /* Hosts.cpp in Sources */,
@@ -2167,13 +2129,11 @@
 				4F78D91813B63BA50032E0F3 /* IParam.cpp in Sources */,
 				4F78D91913B63BA50032E0F3 /* IControl.cpp in Sources */,
 				4F78DA5A13B63F150032E0F3 /* AudioComponents.cpp in Sources */,
-				C25FEF491D735DDD002D122F /* WaveTable.cpp in Sources */,
 				4FD16CA213B6327D001D0217 /* app_main.cpp in Sources */,
 				4FD16CA313B6327D001D0217 /* app_dialog.cpp in Sources */,
 				4FB3624F13B648FE00DB6B76 /* main.mm in Sources */,
 				4FDA440E13F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
 				C25FEFE01D73D753002D122F /* SampleDelay.cpp in Sources */,
-				C25FEF9A1D738EBA002D122F /* NoiseWaveTable.cpp in Sources */,
 				C25FEF211D73550D002D122F /* Oscillator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

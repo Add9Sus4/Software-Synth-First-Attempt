@@ -53,7 +53,6 @@ public:
     WaveForm(double frequency) {
         length = 4096;
         phasor = new Phasor(frequency, WavePhase::FREE);
-        initializeWaveForm(length);
         inverted = false;
     };
     
@@ -61,7 +60,6 @@ public:
     WaveForm(double frequency, double initialPhase) {
         length = 4096;
         phasor = new Phasor(frequency, initialPhase, WavePhase::FREE);
-        initializeWaveForm(length);
         inverted = false;
     };
     
@@ -74,9 +72,6 @@ public:
     // Returns the number of samples in this waveForm
     int getLength() { return length; }
     
-    // Populates the samples buffer with values.
-    virtual void initializeWaveForm(int length) {};
-    
     // Returns the current index at which the waveForm begins.
     int getWaveFormStartPosition() { return waveFormStartPosition; }
     
@@ -84,12 +79,16 @@ public:
     void setFormStartPosition(int sampleIndex);
     
     // Returns the next sample
-    double getNextSample();
+    double getNextSample() {
+        int nearestIndex = phasor->getPhase()*(length-1);
+        phasor->incrementPhase();
+        return (inverted == true) ? samples[nearestIndex]*-1.0f : samples[nearestIndex];
+    }
     
-    virtual void setPulseWidth(double pulseWidth) {};
+    void setPulseWidth(double pulseWidth) {};
     
     // Set frequency of phasor
-    void setFrequency(double frequency);
+    void setFrequency(double frequency) { phasor->setFrequency(frequency); }
 };
 
 #endif /* WaveForm_hpp */

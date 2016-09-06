@@ -31,28 +31,104 @@ private:
 public:
     
     // Creates a new voice
-    Voice();
+    Voice() {
+        // Initially, voice is not in use
+        noteNumber = VOICE_NOT_IN_USE;
+        
+        // TODO: Implement voice creation.
+        
+        // Create oscillator group. For now, just assume some default argments
+        oscillatorGroup = new OscillatorGroup(16, Bb_2, WaveType::SAW);
+        
+        // Create envelope.
+        ampEnvelopeLeft = new Envelope();
+        ampEnvelopeRight = new Envelope();
+    }
     
     // Returns the noteNumber of this voice
     int getNoteNumber() { return noteNumber; }
     
     // Returns true if the voice is currently not in use
-    bool isInactive();
+    bool isInactive() {
+         return (noteNumber == VOICE_NOT_IN_USE) ? true : false;
+    }
     
     // Activates a voice by assigning it an note number and starting all relevant processing (oscillators, lfos, envelopes, etc)
-    void activate(double frequency, int noteNumber);
+    void activate(double frequency, int noteNumber) {
+        
+        // Assign noteNumber to voice
+        this->noteNumber = noteNumber;
+        
+        // TODO: Implement voice activation
+        oscillatorGroup->setFrequency(frequency);
+        
+        ampEnvelopeLeft->start();
+        ampEnvelopeRight->start();
+    }
     
     // Deactivates a voice by assigning its noteNumber to VOICE_NOT_IN_USE and stopping all relevant processing (oscillators, lfos, envelopes, etc)
-    void deactivate();
+    void deactivate() {
+        // Set noteNumber to not in use
+        //    noteNumber = VOICE_NOT_IN_USE;
+        
+        // TODO: Implement voice deactivation
+        ampEnvelopeLeft->release();
+        ampEnvelopeRight->release();
+    }
     
-    void forceDeactivate();
+    void forceDeactivate() {
+        noteNumber = VOICE_NOT_IN_USE;
+        ampEnvelopeRight->stop();
+        ampEnvelopeLeft->stop();
+    }
     
     // Returns true if all envelopes are inactive
-    bool envIsInactive();
+    bool envIsInactive() {
+        if (ampEnvelopeLeft->isInactive() && ampEnvelopeRight->isInactive()) {
+            return true;
+        }
+        return false;
+    }
     
     // Get combined output samples from oscillator group
-    double *getSamplesLeft(int blockSize);
-    double *getSamplesRight(int blockSize);
+    double *getSamplesLeft(int blockSize) {
+        double *samples = new double[blockSize];
+        for (int i=0; i<blockSize; i++) {
+            samples[i] = 0.0;
+        }
+        
+        // Only get samples if the voice is active (otherwise, just send 0s)
+        if (!envIsInactive()) {
+            double *oscGroupSamples = oscillatorGroup->getSamplesLeft(blockSize);
+            for (int i=0; i<blockSize; i++) {
+                samples[i] += ampEnvelopeLeft->process(oscGroupSamples[i]);
+            }
+            delete oscGroupSamples;
+        } else {
+            noteNumber = VOICE_NOT_IN_USE;
+        }
+        
+        return samples;
+    }
+    double *getSamplesRight(int blockSize) {
+        double *samples = new double[blockSize];
+        for (int i=0; i<blockSize; i++) {
+            samples[i] = 0.0;
+        }
+        
+        // Only get samples if the voice is active (otherwise, just send 0s)
+        if (!envIsInactive()) {
+            double *oscGroupSamples = oscillatorGroup->getSamplesRight(blockSize);
+            for (int i=0; i<blockSize; i++) {
+                samples[i] += ampEnvelopeRight->process(oscGroupSamples[i]);
+            }
+            delete oscGroupSamples;
+        } else {
+            noteNumber = VOICE_NOT_IN_USE;
+        }
+        
+        return samples;
+    }
 };
 
 #endif /* Voice_hpp */

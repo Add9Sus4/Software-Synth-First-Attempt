@@ -10,6 +10,7 @@
 #define SineWaveForm_hpp
 
 #include <stdio.h>
+#include <math.h>
 #include "WaveForm.hpp"
 
 class SineWaveForm : public WaveForm {
@@ -23,7 +24,12 @@ public:
     };
     
     // Populates the samples buffer with values.
-    void initializeWaveForm(int length);
+    void initializeWaveForm(int length) {
+        samples = new double[length];
+        for (int i=0; i<length; i++) {
+            samples[i] = sin(i*2*M_PI/(double)length);
+        }
+    }
 };
 
 #endif /* SineWaveForm_hpp */

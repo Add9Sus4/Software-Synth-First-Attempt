@@ -20,7 +20,9 @@ private:
     
 public:
     double process(double sample); // Processes a sample using all the effects in the chain.
-    void addEffect(SampleEffect *effect); // Adds an effect to the vector of effects
+    void addEffect(SampleEffect *effect) {
+            effects.push_back(effect);
+    }// Adds an effect to the vector of effects
 };
 
 #endif /* ProcessingChain_hpp */

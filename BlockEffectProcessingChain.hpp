@@ -19,7 +19,9 @@ private:
     
 public:
     void process(double *inBlock, double *outBlock, int blockSize); // Processes a sample using all the effects in the chain.
-    void addEffect(BlockEffect *effect); // Adds an effect to the vector of effects
+    void addEffect(BlockEffect *effect) {
+          effects.push_back(effect);
+    }// Adds an effect to the vector of effects
 };
 
 #endif /* BlockEffectProcessingChain_hpp */
