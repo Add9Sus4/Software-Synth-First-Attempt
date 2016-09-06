@@ -52,14 +52,14 @@ public:
     // Constructor for the waveForm
     WaveForm(double frequency) {
         length = 4096;
-        phasor = new Phasor(frequency, WavePhase::FREE);
+        phasor = new Phasor(frequency, WavePhase::SYNC);
         inverted = false;
     };
     
     // Constructor for the waveForm
     WaveForm(double frequency, double initialPhase) {
         length = 4096;
-        phasor = new Phasor(frequency, initialPhase, WavePhase::FREE);
+        phasor = new Phasor(frequency, initialPhase, WavePhase::SYNC);
         inverted = false;
     };
     

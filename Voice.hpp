@@ -139,6 +139,10 @@ public:
     void changeDetuneAmt(double newDetune) {
         oscillatorGroup->changeDetuneAmt(newDetune);
     }
+    
+    void changePanAmt(double newPan) {
+        oscillatorGroup->changePanAmt(newPan);
+    }
 };
 
 #endif /* Voice_hpp */

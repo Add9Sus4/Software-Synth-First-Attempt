@@ -145,6 +145,12 @@ public:
             voices[i]->changeDetuneAmt(newDetune);
         }
     }
+    
+    void changePanAmt(double newPan) {
+        for(std::vector<int>::size_type i = 0; i != voices.size(); i++) {
+            voices[i]->changePanAmt(newPan);
+        }
+    }
 };
 
 #endif /* Symphony_hpp */

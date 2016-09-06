@@ -23,13 +23,13 @@ private:
 public:
     Phasor(double frequency, WavePhase wavePhase) {
         this->frequency = frequency;
-        setPhase(wavePhase);
+//        setPhase(wavePhase);
     };
     
     Phasor(double frequency, double initialPhase, WavePhase wavePhase) {
         this->phase = initialPhase;
         this->frequency = frequency;
-        setPhase(wavePhase);
+//        setPhase(wavePhase);
     };
     
     double getPhase() { return phase; }

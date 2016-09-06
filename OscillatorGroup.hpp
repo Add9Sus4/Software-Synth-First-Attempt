@@ -24,6 +24,7 @@ class OscillatorGroup {
     WaveType waveType;
     
     double detune;
+    double pan; // 0 (mono) to 1 (full width)
     
     double frequency;
     
@@ -34,6 +35,7 @@ public:
         this->frequency = frequency;
         this->waveType = waveType;
         detune = 1.0;
+        pan = 1.0;
         // Panning for the oscillators (used for stereo spread)
         double *pans = new double[numOscillators];
         
@@ -73,7 +75,7 @@ public:
         
         // Create and initialize all the oscillators
         for (int i=0; i<numOscillators; i++) {
-            oscillators.push_back(new Oscillator(frequencies[i], pans[i], waveType));
+            oscillators.push_back(new Oscillator(frequencies[i], pans[i]*pan, waveType));
         }
         
         // free pointers
@@ -103,6 +105,26 @@ public:
     void changeDetuneAmt(double newDetune) {
         detune = newDetune;
         setFrequency(frequency);
+    }
+    
+    void changePanAmt(double newPan) {
+        pan = newPan;
+        // Panning for the oscillators (used for stereo spread)
+        double *pans = new double[oscillators.size()];
+        /* Calculate the panning interval between each oscillator (oscillators are equidistant from
+         each other; in the future different spread algorithms will be available, like in Serum).
+         Scaled by the number of oscillators so that all pan values stay in the interval (-1.0)..(1.0) */
+        double panInterval = 2.0/((double)oscillators.size()-1.0);
+        // Calculate pan and frequency values for each oscillator in the group
+        for (int i=0; i<oscillators.size(); i++) {
+            pans[i] = -1.0 + panInterval*(double)i; // pans go from -1.0 to 1.0
+            if (pans[i] < -1.0) pans[i] = -1.0; // set pan to -1.0 if too low
+            if (pans[i] > 1.0) pans[i] = 1.0; // set pan to 1.0 if too high
+        }
+        for(std::vector<int>::size_type i = 0; i != oscillators.size(); i++) {
+            oscillators[i]->setPan(pans[i]*pan);
+        }
+        delete pans;
     }
     
 };

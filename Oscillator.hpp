@@ -48,6 +48,8 @@ protected:
     // -1.0 (hard left) to 1.0 (hard right)
     double pan;
     
+    double phase;
+    
 public:
     
     Oscillator(double frequency, double pan, WaveType waveType) {
@@ -55,30 +57,37 @@ public:
         
         pulseWidth = 0.5;
         
+        // Sync mode
+        double phase = 0.0;
+        
+        // Free mode
+        phase = ((double)(rand() % 1000)/999.0);
+        this->phase = phase;
+        
         switch (waveType) {
             case SINE:
-                waveFormLeft = new SineWaveForm(frequency);
-                waveFormRight = new SineWaveForm(frequency);
+                waveFormLeft = new SineWaveForm(frequency, phase);
+                waveFormRight = new SineWaveForm(frequency, phase);
                 break;
             case SAW:
-                waveFormLeft = new SawWaveForm(frequency);
-                waveFormRight = new SawWaveForm(frequency);
+                waveFormLeft = new SawWaveForm(frequency, phase);
+                waveFormRight = new SawWaveForm(frequency, phase);
                 break;
             case SQUARE:
                 waveFormLeft = new PulseWaveForm(frequency, 0.5);
                 waveFormRight = new PulseWaveForm(frequency, 0.5);
                 break;
             case TRIANGLE:
-                waveFormLeft = new TriangleWaveForm(frequency);
-                waveFormRight = new TriangleWaveForm(frequency);
+                waveFormLeft = new TriangleWaveForm(frequency, phase);
+                waveFormRight = new TriangleWaveForm(frequency, phase);
                 break;
             case NOISE:
-                waveFormLeft = new NoiseWaveForm(frequency);
-                waveFormRight = new NoiseWaveForm(frequency);
+                waveFormLeft = new NoiseWaveForm(frequency, phase);
+                waveFormRight = new NoiseWaveForm(frequency, phase);
                 break;
             case PULSE:
-                waveFormLeft = new PulseWaveForm(frequency);
-                waveFormRight = new PulseWaveForm(frequency);
+                waveFormLeft = new PulseWaveForm(frequency, phase);
+                waveFormRight = new PulseWaveForm(frequency, phase);
                 break;
             default:
                 break;
@@ -137,28 +146,28 @@ public:
         
         switch (waveType) {
             case SINE:
-                waveFormLeft = new SineWaveForm(frequency);
-                waveFormRight = new SineWaveForm(frequency);
+                waveFormLeft = new SineWaveForm(frequency, phase);
+                waveFormRight = new SineWaveForm(frequency, phase);
                 break;
             case SAW:
-                waveFormLeft = new SawWaveForm(frequency);
-                waveFormRight = new SawWaveForm(frequency);
+                waveFormLeft = new SawWaveForm(frequency, phase);
+                waveFormRight = new SawWaveForm(frequency, phase);
                 break;
             case SQUARE:
                 waveFormLeft = new PulseWaveForm(frequency, 0.5);
                 waveFormRight = new PulseWaveForm(frequency, 0.5);
                 break;
             case TRIANGLE:
-                waveFormLeft = new TriangleWaveForm(frequency);
-                waveFormRight = new TriangleWaveForm(frequency);
+                waveFormLeft = new TriangleWaveForm(frequency, phase);
+                waveFormRight = new TriangleWaveForm(frequency, phase);
                 break;
             case NOISE:
-                waveFormLeft = new NoiseWaveForm(frequency);
-                waveFormRight = new NoiseWaveForm(frequency);
+                waveFormLeft = new NoiseWaveForm(frequency, phase);
+                waveFormRight = new NoiseWaveForm(frequency, phase);
                 break;
             case PULSE:
-                waveFormLeft = new PulseWaveForm(frequency);
-                waveFormRight = new PulseWaveForm(frequency);
+                waveFormLeft = new PulseWaveForm(frequency, phase);
+                waveFormRight = new PulseWaveForm(frequency, phase);
                 break;
             default:
                 break;
@@ -186,6 +195,10 @@ public:
     
     // Sets the frequency of the oscillator
     void setFrequency(double frequency);
+    
+    void setPan(double pan) {
+        this->pan = pan;
+    }
     
 };
 
