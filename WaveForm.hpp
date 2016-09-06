@@ -59,7 +59,7 @@ public:
     // Constructor for the waveForm
     WaveForm(double frequency, double initialPhase) {
         length = 4096;
-        phasor = new Phasor(frequency, initialPhase, WavePhase::SYNC);
+        phasor = new Phasor(frequency, initialPhase);
         inverted = false;
     };
     
@@ -89,6 +89,8 @@ public:
     
     // Set frequency of phasor
     void setFrequency(double frequency) { phasor->setFrequency(frequency); }
+    
+    void setPhase(double phase) { phasor->setPhase(phase); }
 };
 
 #endif /* WaveForm_hpp */

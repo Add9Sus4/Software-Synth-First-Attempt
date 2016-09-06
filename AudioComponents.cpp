@@ -9,6 +9,7 @@ enum EParams
 {
   kGain = 0,
   kWaveform,
+  kPhaseMode,
   kDetune,
   kPan,
   kNumParams
@@ -31,6 +32,7 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   TRACE;
   
   GetParam(kWaveform)->InitInt("Waveform image multi", 0, 0, 5, "");
+  GetParam(kPhaseMode)->InitInt("Phase Mode", 1, 0, 1, "");
   GetParam(kDetune)->InitDouble("Detune", 1.0, 0.0, 2.0, 0.01, "");
   GetParam(kPan)->InitDouble("Pan", 1.0, 0.0, 1.0, 0.01, "");
   
@@ -124,8 +126,10 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   IBitmap knob = pGraphics->LoadIBitmap(KNOB_ID, KNOB_FN, kKnobFrames);
   
   IBitmap bitmap = pGraphics->LoadIBitmap(ISWITCHCONTROL_6_ID, ISWITCHCONTROL_6_FN, 6, false);
+  IBitmap phaseMode = pGraphics->LoadIBitmap(PHASE_MODE_ID, PHASE_MODE_FN, 2, false);
   
   pGraphics->AttachControl(new ISwitchControl(this, 216, 72, kWaveform, &bitmap));
+  pGraphics->AttachControl(new ISwitchControl(this, 216, 172, kPhaseMode, &phaseMode));
 
   pGraphics->AttachControl(new IKnobMultiControl(this, kGainX, kGainY, kGain, &knob));
   pGraphics->AttachControl(new IKnobMultiControl(this, 50, 100, kDetune, &knob));
@@ -241,8 +245,18 @@ void AudioComponents::OnParamChange(int paramIdx)
     case kPan:
       symphony->changePanAmt(GetParam(kPan)->Value());
       break;
+    case kPhaseMode:
+      int phaseValue;
+      phaseValue = (int)GetParam(kPhaseMode)->Value();
+      if (phaseValue == 0) {
+        symphony->changePhaseMode(WavePhase::SYNC);
+      } else {
+        symphony->changePhaseMode(WavePhase::FREE);
+      }
+      break;
     case kWaveform:
-      int value = (int)GetParam(kWaveform)->Value();
+      int value;
+      value = (int)GetParam(kWaveform)->Value();
       if (value == 0) {
         symphony->changeWaveType(WaveType::SAW);
       } else if (value == 1) {
@@ -262,7 +276,7 @@ void AudioComponents::OnParamChange(int paramIdx)
 //      std::cout << "waveform changed, value: " << GetParam(kWaveform)->Value() << std::endl;
       break;
 
-//    default:
-//      break;
+    default:
+      break;
   }
 }

@@ -21,20 +21,18 @@ private:
     double frequency;
     
 public:
-    Phasor(double frequency, WavePhase wavePhase) {
+    Phasor(double frequency) {
         this->frequency = frequency;
-//        setPhase(wavePhase);
     };
     
-    Phasor(double frequency, double initialPhase, WavePhase wavePhase) {
+    Phasor(double frequency, double initialPhase) {
         this->phase = initialPhase;
         this->frequency = frequency;
-//        setPhase(wavePhase);
     };
     
     double getPhase() { return phase; }
     
-    void setPhase(WavePhase wavePhase);
+    void setPhase(double phase) { this->phase = phase; }
     
     void incrementPhase();
     

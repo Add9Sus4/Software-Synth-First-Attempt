@@ -143,6 +143,10 @@ public:
     void changePanAmt(double newPan) {
         oscillatorGroup->changePanAmt(newPan);
     }
+    
+    void changePhaseMode(WavePhase wavePhase) {
+        oscillatorGroup->changePhaseMode(wavePhase);
+    }
 };
 
 #endif /* Voice_hpp */

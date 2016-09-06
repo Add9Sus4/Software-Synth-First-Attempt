@@ -151,6 +151,13 @@ public:
             voices[i]->changePanAmt(newPan);
         }
     }
+    
+    void changePhaseMode(WavePhase wavePhase) {
+        for(std::vector<int>::size_type i = 0; i != voices.size(); i++) {
+            voices[i]->changePhaseMode(wavePhase);
+            voices[i]->forceDeactivate();
+        }
+    }
 };
 
 #endif /* Symphony_hpp */

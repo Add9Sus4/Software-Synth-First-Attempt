@@ -127,6 +127,12 @@ public:
         delete pans;
     }
     
+    void changePhaseMode(WavePhase wavePhase) {
+        for(std::vector<int>::size_type i = 0; i != oscillators.size(); i++) {
+            oscillators[i]->setPhaseMode(wavePhase);
+        }
+    }
+    
 };
 
 #endif /* OscillatorGroup_hpp */

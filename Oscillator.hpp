@@ -50,9 +50,12 @@ protected:
     
     double phase;
     
+    WavePhase wavePhase; // FREE or SYNC
+    
 public:
     
     Oscillator(double frequency, double pan, WaveType waveType) {
+        this->wavePhase = WavePhase::FREE;
         this->waveType = waveType;
         
         pulseWidth = 0.5;
@@ -61,7 +64,10 @@ public:
         double phase = 0.0;
         
         // Free mode
-        phase = ((double)(rand() % 1000)/999.0);
+        if (wavePhase == WavePhase::FREE) {
+            phase = ((double)(rand() % 1000)/999.0);
+        }
+        
         this->phase = phase;
         
         switch (waveType) {
@@ -112,8 +118,8 @@ public:
                 waveFormRight = new SawWaveForm(frequency, initialPhase);
                 break;
             case SQUARE:
-                waveFormLeft = new PulseWaveForm(frequency, 0.5);
-                waveFormRight = new PulseWaveForm(frequency, 0.5);
+                waveFormLeft = new PulseWaveForm(frequency, initialPhase);
+                waveFormRight = new PulseWaveForm(frequency, initialPhase);
                 break;
             case TRIANGLE:
                 waveFormLeft = new TriangleWaveForm(frequency, initialPhase);
@@ -154,8 +160,8 @@ public:
                 waveFormRight = new SawWaveForm(frequency, phase);
                 break;
             case SQUARE:
-                waveFormLeft = new PulseWaveForm(frequency, 0.5);
-                waveFormRight = new PulseWaveForm(frequency, 0.5);
+                waveFormLeft = new PulseWaveForm(frequency, phase);
+                waveFormRight = new PulseWaveForm(frequency, phase);
                 break;
             case TRIANGLE:
                 waveFormLeft = new TriangleWaveForm(frequency, phase);
@@ -198,6 +204,20 @@ public:
     
     void setPan(double pan) {
         this->pan = pan;
+    }
+    
+    void setPhaseMode(WavePhase wavePhase) {
+        
+        double newPhase = 0.0;
+        
+        
+        if (wavePhase == WavePhase::FREE) {
+            newPhase = ((double)(rand() % 1000)/999.0);
+        }
+        this->phase = newPhase;
+        this->wavePhase = wavePhase;
+        waveFormLeft->setPhase(newPhase);
+        waveFormRight->setPhase(newPhase);
     }
     
 };

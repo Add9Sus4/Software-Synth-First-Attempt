@@ -339,6 +339,12 @@
 		C25FEFEF1D73DF6B002D122F /* BlockDelay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEFE81D73DF6B002D122F /* BlockDelay.cpp */; };
 		C25FEFF01D73DF6B002D122F /* BlockDelay.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEFE91D73DF6B002D122F /* BlockDelay.hpp */; };
 		C25FEFF11D73DF6B002D122F /* BlockDelay.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEFE91D73DF6B002D122F /* BlockDelay.hpp */; };
+		C2B90A331D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
+		C2B90A341D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
+		C2B90A351D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
+		C2B90A361D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
+		C2B90A371D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
+		C2B90A381D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
 		C2D82EB61D7EEEAD007948D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */; };
 		C2D82EB71D7EEEB4007948D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */; };
 		C2D82EB81D7EEEBD007948D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */; };
@@ -732,6 +738,7 @@
 		C25FEFDF1D73D753002D122F /* SampleDelay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SampleDelay.hpp; sourceTree = "<group>"; };
 		C25FEFE81D73DF6B002D122F /* BlockDelay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockDelay.cpp; sourceTree = "<group>"; };
 		C25FEFE91D73DF6B002D122F /* BlockDelay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockDelay.hpp; sourceTree = "<group>"; };
+		C2B90A321D7F1C9A005D422E /* phaseMode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phaseMode.png; sourceTree = "<group>"; };
 		C2D82E8F1D7EEE78007948D4 /* BlockEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockEffect.cpp; sourceTree = "<group>"; };
 		C2D82E901D7EEE78007948D4 /* BlockEffect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockEffect.hpp; sourceTree = "<group>"; };
 		C2D82E911D7EEE78007948D4 /* BlockEffectProcessingChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockEffectProcessingChain.cpp; sourceTree = "<group>"; };
@@ -1427,6 +1434,7 @@
 		4FD16A0213B6303B001D0217 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				C2B90A321D7F1C9A005D422E /* phaseMode.png */,
 				C22651551D7F052C004E9A13 /* waveform.png */,
 				4F23B9E413B647A00097A67E /* knob.png */,
 			);
@@ -1840,6 +1848,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B90A341D7F1C9A005D422E /* phaseMode.png in Resources */,
 				C22651571D7F052C004E9A13 /* waveform.png in Resources */,
 				4F23B9F313B647A00097A67E /* knob.png in Resources */,
 			);
@@ -1849,6 +1858,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B90A361D7F1C9A005D422E /* phaseMode.png in Resources */,
 				C22651591D7F052C004E9A13 /* waveform.png in Resources */,
 				4F23BA0C13B647A00097A67E /* knob.png in Resources */,
 			);
@@ -1858,6 +1868,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B90A371D7F1C9A005D422E /* phaseMode.png in Resources */,
 				C226515A1D7F052C004E9A13 /* waveform.png in Resources */,
 				4F7F5C4613E95EC8002918FD /* knob.png in Resources */,
 			);
@@ -1867,6 +1878,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B90A351D7F1C9A005D422E /* phaseMode.png in Resources */,
 				C22651581D7F052C004E9A13 /* waveform.png in Resources */,
 				4F9828B1140A9EB700F3FCC1 /* knob.png in Resources */,
 			);
@@ -1876,6 +1888,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B90A381D7F1C9A005D422E /* phaseMode.png in Resources */,
 				C226515B1D7F052C004E9A13 /* waveform.png in Resources */,
 				4FB600161567CB0A0020189A /* knob.png in Resources */,
 			);
@@ -1885,6 +1898,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B90A331D7F1C9A005D422E /* phaseMode.png in Resources */,
 				4F78D88613B6382B0032E0F3 /* AudioComponents.icns in Resources */,
 				C22651561D7F052C004E9A13 /* waveform.png in Resources */,
 				4F78D89913B639100032E0F3 /* InfoPlist.strings in Resources */,
