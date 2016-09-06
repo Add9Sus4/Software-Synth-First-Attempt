@@ -135,6 +135,10 @@ public:
     }
     
     WaveType getWaveType() { return oscillatorGroup->getWaveType(); }
+    
+    void changeDetuneAmt(double newDetune) {
+        oscillatorGroup->changeDetuneAmt(newDetune);
+    }
 };
 
 #endif /* Voice_hpp */

@@ -9,6 +9,7 @@ enum EParams
 {
   kGain = 0,
   kWaveform,
+  kDetune,
   kNumParams
 };
 
@@ -29,6 +30,7 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   TRACE;
   
   GetParam(kWaveform)->InitInt("Waveform image multi", 0, 0, 5, "");
+  GetParam(kDetune)->InitDouble("Detune", 1.0, 0.0, 2.0, 0.01, "");
   
   /* --------------------------CREATE THE EFFECTS ---------------------------
    
@@ -124,6 +126,7 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   pGraphics->AttachControl(new ISwitchControl(this, 216, 72, kWaveform, &bitmap));
 
   pGraphics->AttachControl(new IKnobMultiControl(this, kGainX, kGainY, kGain, &knob));
+  pGraphics->AttachControl(new IKnobMultiControl(this, 50, 100, kDetune, &knob));
 
   pGraphics->AttachControl(openGLTestClass);
   
@@ -228,6 +231,9 @@ void AudioComponents::OnParamChange(int paramIdx)
   {
     case kGain:
       mGain = GetParam(kGain)->Value() / 100.;
+      break;
+    case kDetune:
+      symphony->changeDetuneAmt(GetParam(kDetune)->Value());
       break;
     case kWaveform:
       int value = (int)GetParam(kWaveform)->Value();

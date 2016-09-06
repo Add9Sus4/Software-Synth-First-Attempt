@@ -23,11 +23,17 @@ class OscillatorGroup {
     
     WaveType waveType;
     
+    double detune;
+    
+    double frequency;
+    
 public:
     
     // Create a new oscillator group with specified number of oscillators, frequency, and wave type
     OscillatorGroup(int numOscillators, double frequency, WaveType waveType) {
+        this->frequency = frequency;
         this->waveType = waveType;
+        detune = 1.0;
         // Panning for the oscillators (used for stereo spread)
         double *pans = new double[numOscillators];
         
@@ -53,7 +59,7 @@ public:
             pans[i] = -1.0 + panInterval*(double)i; // pans go from -1.0 to 1.0
             if (pans[i] < -1.0) pans[i] = -1.0; // set pan to -1.0 if too low
             if (pans[i] > 1.0) pans[i] = 1.0; // set pan to 1.0 if too high
-            frequencies[i] = frequency + (double)i*detuneAmt; // frequencies offset by detune amount
+            frequencies[i] = frequency + (double)i*detuneAmt*detune; // frequencies offset by detune amount
             frequencySum += frequencies[i]; // Add to frequency sum
         }
         
@@ -93,6 +99,11 @@ public:
     }
     
     WaveType getWaveType() { return waveType; }
+    
+    void changeDetuneAmt(double newDetune) {
+        detune = newDetune;
+        setFrequency(frequency);
+    }
     
 };
 

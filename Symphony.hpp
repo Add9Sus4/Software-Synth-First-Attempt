@@ -139,6 +139,12 @@ public:
             }
         }
     }
+    
+    void changeDetuneAmt(double newDetune) {
+        for(std::vector<int>::size_type i = 0; i != voices.size(); i++) {
+            voices[i]->changeDetuneAmt(newDetune);
+        }
+    }
 };
 
 #endif /* Symphony_hpp */

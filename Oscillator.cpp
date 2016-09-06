@@ -47,6 +47,7 @@ void Oscillator::setPulseWidth(double pulseWidth) {
 }
 
 void Oscillator::setFrequency(double frequency) {
+    this->frequency = frequency;
     waveFormLeft->setFrequency(frequency);
     waveFormRight->setFrequency(frequency);
 }

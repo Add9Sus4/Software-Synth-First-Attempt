@@ -50,6 +50,7 @@ void OscillatorGroup::setPulseWidth(double pulseWidth) {
 }
 
 void OscillatorGroup::setFrequency(double frequency ) {
+    this->frequency = frequency;
     
     double *frequencies = new double[oscillators.size()];
     
@@ -64,7 +65,7 @@ void OscillatorGroup::setFrequency(double frequency ) {
     
     // Calculate pan and frequency values for each oscillator in the group
     for(std::vector<int>::size_type i = 0; i != oscillators.size(); i++) {
-        frequencies[i] = frequency + (double)i*detuneAmt; // frequencies offset by detune amount
+        frequencies[i] = frequency + (double)i*detuneAmt*detune; // frequencies offset by detune amount
         frequencySum += frequencies[i]; // Add to frequency sum
     }
     
