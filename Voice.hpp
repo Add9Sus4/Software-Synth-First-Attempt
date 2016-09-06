@@ -129,6 +129,12 @@ public:
         
         return samples;
     }
+    
+    void changeWaveType(WaveType waveType) {
+        oscillatorGroup->changeWaveType(waveType);
+    }
+    
+    WaveType getWaveType() { return oscillatorGroup->getWaveType(); }
 };
 
 #endif /* Voice_hpp */

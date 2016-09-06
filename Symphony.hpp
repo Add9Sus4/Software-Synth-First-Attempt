@@ -130,6 +130,15 @@ public:
         }
         return samples;
     }
+    
+    void changeWaveType(WaveType waveType) {
+        for(std::vector<int>::size_type i = 0; i != voices.size(); i++) {
+            if (voices[i]->getWaveType() != waveType) {
+                voices[i]->changeWaveType(waveType);
+                voices[i]->forceDeactivate();
+            }
+        }
+    }
 };
 
 #endif /* Symphony_hpp */

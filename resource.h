@@ -65,9 +65,11 @@ instrument determined by PLUG _IS _INST
 
 // Unique IDs for each image resource.
 #define KNOB_ID 101
+#define ISWITCHCONTROL_6_ID     102
 
 // Image resource locations for this plug.
 #define KNOB_FN "resources/img/knob.png"
+#define ISWITCHCONTROL_6_FN       "resources/img/waveform.png"
 
 // GUI default dimensions
 #define GUI_WIDTH 300

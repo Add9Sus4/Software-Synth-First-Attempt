@@ -8,6 +8,7 @@ const int kNumPrograms = 1;
 enum EParams
 {
   kGain = 0,
+  kWaveform,
   kNumParams
 };
 
@@ -26,6 +27,8 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   :	IPLUG_CTOR(kNumParams, kNumPrograms, instanceInfo), mGain(1.)
 {
   TRACE;
+  
+  GetParam(kWaveform)->InitInt("Waveform image multi", 0, 0, 5, "");
   
   /* --------------------------CREATE THE EFFECTS ---------------------------
    
@@ -108,11 +111,17 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   //arguments are: name, defaultVal, minVal, maxVal, step, label
   GetParam(kGain)->InitDouble("Gain", 50., 0., 100.0, 0.01, "%");
   GetParam(kGain)->SetShape(2.);
+  
+  
 
   IGraphics* pGraphics = MakeGraphics(this, kWidth, kHeight);
   pGraphics->AttachPanelBackground(&COLOR_RED);
 
   IBitmap knob = pGraphics->LoadIBitmap(KNOB_ID, KNOB_FN, kKnobFrames);
+  
+  IBitmap bitmap = pGraphics->LoadIBitmap(ISWITCHCONTROL_6_ID, ISWITCHCONTROL_6_FN, 6, false);
+  
+  pGraphics->AttachControl(new ISwitchControl(this, 216, 72, kWaveform, &bitmap));
 
   pGraphics->AttachControl(new IKnobMultiControl(this, kGainX, kGainY, kGain, &knob));
 
@@ -131,13 +140,15 @@ void AudioComponents::ProcessDoubleReplacing(double** inputs, double** outputs, 
   
 //  if (count++ == cycleInterval) {
 //    if (flag) {
-//      midiMsg->MakeNoteOnMsg(47, 127, 0);
-//      ProcessMidiMsg(midiMsg);
+////      midiMsg->MakeNoteOnMsg(47, 127, 0);
+////      ProcessMidiMsg(midiMsg);
 //      flag = !flag;
+//      symphony->changeWaveType(WaveType::SAW);
 //    } else {
-//      midiMsg->MakeNoteOffMsg(47, 0);
-//      ProcessMidiMsg(midiMsg);
+////      midiMsg->MakeNoteOffMsg(47, 0);
+////      ProcessMidiMsg(midiMsg);
 //      flag = !flag;
+//      symphony->changeWaveType(WaveType::SINE);
 //    }
 //    count = 0;
 //  }
@@ -218,8 +229,28 @@ void AudioComponents::OnParamChange(int paramIdx)
     case kGain:
       mGain = GetParam(kGain)->Value() / 100.;
       break;
-
-    default:
+    case kWaveform:
+      int value = (int)GetParam(kWaveform)->Value();
+      if (value == 0) {
+        symphony->changeWaveType(WaveType::SAW);
+      } else if (value == 1) {
+        symphony->changeWaveType(WaveType::SINE);
+      } else if (value == 2) {
+        symphony->changeWaveType(WaveType::SQUARE);
+      } else if (value == 3) {
+        symphony->changeWaveType(WaveType::TRIANGLE);
+      } else if (value == 4) {
+        symphony->changeWaveType(WaveType::PULSE);
+      } else if (value == 5) {
+        symphony->changeWaveType(WaveType::NOISE);
+      } else {
+        
+      }
+      
+//      std::cout << "waveform changed, value: " << GetParam(kWaveform)->Value() << std::endl;
       break;
+
+//    default:
+//      break;
   }
 }

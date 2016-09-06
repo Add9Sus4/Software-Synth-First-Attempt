@@ -59,6 +59,7 @@ private:
   int cycleInterval;
   int count;
   OpenGLTestClass *openGLTestClass;
+  
 };
 
 #endif

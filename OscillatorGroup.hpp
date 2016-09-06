@@ -21,11 +21,13 @@ class OscillatorGroup {
     // Vector containging all the oscillators for this group
     std::vector<Oscillator *> oscillators;
     
+    WaveType waveType;
+    
 public:
     
     // Create a new oscillator group with specified number of oscillators, frequency, and wave type
     OscillatorGroup(int numOscillators, double frequency, WaveType waveType) {
-        
+        this->waveType = waveType;
         // Panning for the oscillators (used for stereo spread)
         double *pans = new double[numOscillators];
         
@@ -82,6 +84,15 @@ public:
     
     // Sets the frequency for the oscillators;
     void setFrequency(double frequency);
+    
+    void changeWaveType(WaveType waveType) {
+        for(std::vector<int>::size_type i = 0; i != oscillators.size(); i++) {
+            oscillators[i]->changeWaveType(waveType);
+        }
+        this->waveType = waveType;
+    }
+    
+    WaveType getWaveType() { return waveType; }
     
 };
 

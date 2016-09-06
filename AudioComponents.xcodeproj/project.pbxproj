@@ -275,6 +275,12 @@
 		4FF016F8134E14E2001447BA /* ptrlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F5134E14E2001447BA /* ptrlist.h */; };
 		4FF016F9134E14E2001447BA /* wdlstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F6134E14E2001447BA /* wdlstring.h */; };
 		4FF0171A134E153A001447BA /* heapbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF01719134E153A001447BA /* heapbuf.h */; };
+		C22651561D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
+		C22651571D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
+		C22651581D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
+		C22651591D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
+		C226515A1D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
+		C226515B1D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
 		C25FEF211D73550D002D122F /* Oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF1F1D73550D002D122F /* Oscillator.cpp */; };
 		C25FEF221D73550D002D122F /* Oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF1F1D73550D002D122F /* Oscillator.cpp */; };
 		C25FEF231D73550D002D122F /* Oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF1F1D73550D002D122F /* Oscillator.cpp */; };
@@ -710,6 +716,7 @@
 		52FBBED00D0CF139001C8B8A /* AudioComponents.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = AudioComponents.cpp; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		52FBBED20D0CF13D001C8B8A /* AudioComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = AudioComponents.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		52FBBED30D0CF143001C8B8A /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		C22651551D7F052C004E9A13 /* waveform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waveform.png; sourceTree = "<group>"; };
 		C25FEF1F1D73550D002D122F /* Oscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillator.cpp; sourceTree = "<group>"; };
 		C25FEF201D73550D002D122F /* Oscillator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Oscillator.hpp; sourceTree = "<group>"; };
 		C25FEF341D7357E4002D122F /* AudioChannel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioChannel.hpp; sourceTree = "<group>"; };
@@ -1420,6 +1427,7 @@
 		4FD16A0213B6303B001D0217 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				C22651551D7F052C004E9A13 /* waveform.png */,
 				4F23B9E413B647A00097A67E /* knob.png */,
 			);
 			name = img;
@@ -1832,6 +1840,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22651571D7F052C004E9A13 /* waveform.png in Resources */,
 				4F23B9F313B647A00097A67E /* knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1840,6 +1849,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22651591D7F052C004E9A13 /* waveform.png in Resources */,
 				4F23BA0C13B647A00097A67E /* knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1848,6 +1858,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C226515A1D7F052C004E9A13 /* waveform.png in Resources */,
 				4F7F5C4613E95EC8002918FD /* knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1856,6 +1867,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22651581D7F052C004E9A13 /* waveform.png in Resources */,
 				4F9828B1140A9EB700F3FCC1 /* knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1864,6 +1876,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C226515B1D7F052C004E9A13 /* waveform.png in Resources */,
 				4FB600161567CB0A0020189A /* knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1873,6 +1886,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F78D88613B6382B0032E0F3 /* AudioComponents.icns in Resources */,
+				C22651561D7F052C004E9A13 /* waveform.png in Resources */,
 				4F78D89913B639100032E0F3 /* InfoPlist.strings in Resources */,
 				4F78D89A13B639100032E0F3 /* MainMenu.xib in Resources */,
 				4F23B9FD13B647A00097A67E /* knob.png in Resources */,

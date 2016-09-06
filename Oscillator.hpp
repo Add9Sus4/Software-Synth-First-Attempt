@@ -127,6 +127,47 @@ public:
         this->frequency = frequency;
     };
     
+    void changeWaveType(WaveType waveType) {
+        this->waveType = waveType;
+        
+        pulseWidth = 0.5;
+        
+        WaveForm *tempLeft = waveFormLeft;
+        WaveForm *tempRight = waveFormRight;
+        
+        switch (waveType) {
+            case SINE:
+                waveFormLeft = new SineWaveForm(frequency);
+                waveFormRight = new SineWaveForm(frequency);
+                break;
+            case SAW:
+                waveFormLeft = new SawWaveForm(frequency);
+                waveFormRight = new SawWaveForm(frequency);
+                break;
+            case SQUARE:
+                waveFormLeft = new PulseWaveForm(frequency, 0.5);
+                waveFormRight = new PulseWaveForm(frequency, 0.5);
+                break;
+            case TRIANGLE:
+                waveFormLeft = new TriangleWaveForm(frequency);
+                waveFormRight = new TriangleWaveForm(frequency);
+                break;
+            case NOISE:
+                waveFormLeft = new NoiseWaveForm(frequency);
+                waveFormRight = new NoiseWaveForm(frequency);
+                break;
+            case PULSE:
+                waveFormLeft = new PulseWaveForm(frequency);
+                waveFormRight = new PulseWaveForm(frequency);
+                break;
+            default:
+                break;
+        }
+        delete tempLeft;
+        delete tempRight;
+        
+    }
+    
     void invertPhase() { waveFormLeft->invertPhase(); waveFormRight->invertPhase(); }
     
     void restorePhase() { waveFormLeft->restorePhase(); waveFormRight->restorePhase(); }
