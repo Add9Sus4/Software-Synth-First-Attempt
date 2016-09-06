@@ -3,6 +3,8 @@
 #include "IControl.h"
 #include "resource.h"
 
+#define HEIGHT_INC  100
+
 const int kNumPrograms = 1;
 
 enum EParams
@@ -12,6 +14,10 @@ enum EParams
   kPhaseMode,
   kDetune,
   kPan,
+  kAttack,
+  kDecay,
+  kSustain,
+  kRelease,
   kNumParams
 };
 
@@ -20,8 +26,24 @@ enum ELayout
   kWidth = GUI_WIDTH,
   kHeight = GUI_HEIGHT,
 
-  kGainX = 100,
-  kGainY = 100,
+  kGainX = 25,
+  kGainY = 25,
+  kDetuneX = 25,
+  kDetuneY = kGainY + HEIGHT_INC,
+  kPanX = 125,
+  kPanY = kDetuneY + HEIGHT_INC,
+  kWaveformX = 25,
+  kWaveformY = kPanY + HEIGHT_INC,
+  kPhaseModeX = 25,
+  kPhaseModeY = kWaveformY + HEIGHT_INC,
+  kAttackX = 200,
+  kAttackY = 25,
+  kDecayX = 250,
+  kDecayY = 25,
+  kSustainX = 300,
+  kSustainY = 25,
+  kReleaseX = 350,
+  kReleaseY = 25,
   kKnobFrames = 60
 };
 
@@ -35,6 +57,10 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   GetParam(kPhaseMode)->InitInt("Phase Mode", 1, 0, 1, "");
   GetParam(kDetune)->InitDouble("Detune", 1.0, 0.0, 2.0, 0.01, "");
   GetParam(kPan)->InitDouble("Pan", 1.0, 0.0, 1.0, 0.01, "");
+  GetParam(kAttack)->InitInt("Attack", ATTACK_DEFAULT, ATTACK_MIN, ATTACK_MAX, "");
+  GetParam(kDecay)->InitInt("Decay", DECAY_DEFAULT, DECAY_MIN, DECAY_MAX, "");
+  GetParam(kSustain)->InitDouble("Sustain", SUSTAIN_DEFAULT, SUSTAIN_MIN, SUSTAIN_MAX, 0.01, "");
+  GetParam(kRelease)->InitInt("Release", RELEASE_DEFAULT, RELEASE_MIN, RELEASE_MAX, "");
   
   /* --------------------------CREATE THE EFFECTS ---------------------------
    
@@ -49,7 +75,7 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   count = 0;
   
   // Symphony
-  symphony = new Symphony(1);
+  symphony = new Symphony(6);
   
   // Oscillators
   oscillatorGroup = new OscillatorGroup(16, Bb_2, WaveType::SAW);
@@ -118,22 +144,55 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   GetParam(kGain)->InitDouble("Gain", 50., 0., 100.0, 0.01, "%");
   GetParam(kGain)->SetShape(2.);
   
-  
-
   IGraphics* pGraphics = MakeGraphics(this, kWidth, kHeight);
   pGraphics->AttachPanelBackground(&COLOR_RED);
+  
+  
+  
 
   IBitmap knob = pGraphics->LoadIBitmap(KNOB_ID, KNOB_FN, kKnobFrames);
   
   IBitmap bitmap = pGraphics->LoadIBitmap(ISWITCHCONTROL_6_ID, ISWITCHCONTROL_6_FN, 6, false);
   IBitmap phaseMode = pGraphics->LoadIBitmap(PHASE_MODE_ID, PHASE_MODE_FN, 2, false);
-  
-  pGraphics->AttachControl(new ISwitchControl(this, 216, 72, kWaveform, &bitmap));
-  pGraphics->AttachControl(new ISwitchControl(this, 216, 172, kPhaseMode, &phaseMode));
 
+  IRECT tmpRect2(kGainX-100, kGainY-12, 200, 30);
+  IText textProps2(12, &COLOR_BLACK, "Arial", IText::kStyleNormal, IText::kAlignCenter, 0, IText::kQualityDefault);
+  pGraphics->AttachControl(new ITextControl(this, tmpRect2, &textProps2, "Gain"));
   pGraphics->AttachControl(new IKnobMultiControl(this, kGainX, kGainY, kGain, &knob));
-  pGraphics->AttachControl(new IKnobMultiControl(this, 50, 100, kDetune, &knob));
-  pGraphics->AttachControl(new IKnobMultiControl(this, 50, 50, kPan, &knob));
+  
+  IRECT tmpRect(kDetuneX-100, kDetuneY-12, 200, 30);
+  IText textProps(12, &COLOR_BLACK, "Arial", IText::kStyleNormal, IText::kAlignCenter, 0, IText::kQualityDefault);
+  pGraphics->AttachControl(new ITextControl(this, tmpRect, &textProps, "Detune"));
+  pGraphics->AttachControl(new IKnobMultiControl(this, kDetuneX, kDetuneY, kDetune, &knob));
+  
+  IRECT tmpRect3(kPanX-100, kPanY-12, 200, 30);
+  IText textProps3(12, &COLOR_BLACK, "Arial", IText::kStyleNormal, IText::kAlignCenter, 0, IText::kQualityDefault);
+  pGraphics->AttachControl(new ITextControl(this, tmpRect3, &textProps3, "Pan"));
+  pGraphics->AttachControl(new IKnobMultiControl(this, kPanX, kPanY, kPan, &knob));
+  
+  IRECT tmpRect4(kAttackX-100, kAttackY-12, 200, 30);
+  IText textProps4(12, &COLOR_BLACK, "Arial", IText::kStyleNormal, IText::kAlignCenter, 0, IText::kQualityDefault);
+  pGraphics->AttachControl(new ITextControl(this, tmpRect4, &textProps4, "Attack"));
+  pGraphics->AttachControl(new IKnobMultiControl(this, kAttackX, kAttackY, kAttack, &knob));
+  
+  IRECT tmpRect5(kDecayX-100, kDecayY-12, 200, 30);
+  IText textProps5(12, &COLOR_BLACK, "Arial", IText::kStyleNormal, IText::kAlignCenter, 0, IText::kQualityDefault);
+  pGraphics->AttachControl(new ITextControl(this, tmpRect5, &textProps5, "Decay"));
+  pGraphics->AttachControl(new IKnobMultiControl(this, kDecayX, kDecayY, kDecay, &knob));
+  
+  IRECT tmpRect6(kSustainX-100, kSustainY-12, 200, 30);
+  IText textProps6(12, &COLOR_BLACK, "Arial", IText::kStyleNormal, IText::kAlignCenter, 0, IText::kQualityDefault);
+  pGraphics->AttachControl(new ITextControl(this, tmpRect6, &textProps6, "Sustain"));
+  pGraphics->AttachControl(new IKnobMultiControl(this, kSustainX, kSustainY, kSustain, &knob));
+  
+  IRECT tmpRect7(kReleaseX-100, kReleaseY-12, 200, 30);
+  IText textProps7(12, &COLOR_BLACK, "Arial", IText::kStyleNormal, IText::kAlignCenter, 0, IText::kQualityDefault);
+  pGraphics->AttachControl(new ITextControl(this, tmpRect7, &textProps7, "Release"));
+  pGraphics->AttachControl(new IKnobMultiControl(this, kReleaseX, kReleaseY, kRelease, &knob));
+  
+  pGraphics->AttachControl(new ISwitchControl(this, kWaveformX, kWaveformY, kWaveform, &bitmap));
+  
+  pGraphics->AttachControl(new ISwitchControl(this, kPhaseModeX, kPhaseModeY, kPhaseMode, &phaseMode));
 
   pGraphics->AttachControl(openGLTestClass);
   
@@ -244,6 +303,18 @@ void AudioComponents::OnParamChange(int paramIdx)
       break;
     case kPan:
       symphony->changePanAmt(GetParam(kPan)->Value());
+      break;
+    case kAttack:
+      symphony->changeAttackAmt((int)GetParam(kAttack)->Value());
+      break;
+    case kDecay:
+      symphony->changeDecayAmt((int)GetParam(kDecay)->Value());
+      break;
+    case kSustain:
+      symphony->changeSustainAmt(GetParam(kSustain)->Value());
+      break;
+    case kRelease:
+      symphony->changeReleaseAmt((int)GetParam(kRelease)->Value());
       break;
     case kPhaseMode:
       int phaseValue;

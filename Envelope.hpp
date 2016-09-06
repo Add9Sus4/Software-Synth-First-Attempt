@@ -14,6 +14,19 @@
 #include <iostream>
 #include <vector>
 
+#define ATTACK_MIN  10
+#define ATTACK_DEFAULT  661
+#define ATTACK_MAX  44100/2
+#define DECAY_MIN   10
+#define DECAY_DEFAULT   10000
+#define DECAY_MAX   44100/2
+#define SUSTAIN_MIN 0.0
+#define SUSTAIN_DEFAULT 0.2
+#define SUSTAIN_MAX 1.0
+#define RELEASE_MIN 10
+#define RELEASE_DEFAULT 10100
+#define RELEASE_MAX 44100/2
+
 enum EnvelopeStage {
     INACTIVE,
     ATTACK,
@@ -26,16 +39,10 @@ enum EnvelopeStage {
 class Envelope {
 private:
     
-    // A class representing a point in the envelope (private inner class, since only the Envelope class need know about it)
-    class EnvelopePoint {
-    public:
-        int x; // number of samples from beginning (0 to ENV_MAX_LENGTH)
-        double y; // envelope amount (0.0 to 1.0)
-        EnvelopePoint(double x, double y):x(x),y(y){}
-    };
-    
-    // A vector containing all the points of the envelope
-    std::vector<EnvelopePoint *> envelopePoints;
+    int attack;
+    int decay;
+    double sustain;
+    int rel;
     
     // Current stage of the envelope
     EnvelopeStage stage;
@@ -45,34 +52,27 @@ private:
     // The current value of the envelope at this point in time
     double currentValue;
     
+    int sampleIndex;
+    
 public:
     
     // Create a new envelope
-    Envelope() {
-        // Create 4 initial points (initial, attack, decay, release) with default values
-        EnvelopePoint *initial = new EnvelopePoint(0, 0.0); // Start at this point on note on message
-        EnvelopePoint *attack = new EnvelopePoint(661, 1.0); // Go to this point
-        EnvelopePoint *decay = new EnvelopePoint(10661, 0.2); // Then go to this point and wait (second argument here is sustain)
-        EnvelopePoint *release = new EnvelopePoint(20761, 0.0); // When note off message is received, go to this point
+    Envelope(int attack, int decay, double sustain, int rel) {
         
-        // Calculate slopes (used to get next envelope value, depending on envelope stage)
-        attackIncrement = (attack->y - initial->y)/(double)(attack->x - initial->x);
-        decayIncrement = (decay->y - attack->y)/(double)(decay->x - attack->x);
-        releaseIncrement = (release->y - decay->y)/(double)(release->x - decay->x);
+        currentValue = 0.0;
+        sampleIndex = 0;
         
-        //    printf("attackIncrement: %f, decayIncrement: %f, releaseIncrement: %f\n", attackIncrement, decayIncrement, releaseIncrement);
+        this->attack = attack;
+        this->decay = decay;
+        this->sustain = sustain;
+        this->rel = rel;
         
-        // Add points to vector
-        envelopePoints.push_back(initial);
-        envelopePoints.push_back(attack);
-        envelopePoints.push_back(decay);
-        envelopePoints.push_back(release);
+        attackIncrement = 1.0/(double)attack;
+        decayIncrement = -(1.0 - sustain)/(double)decay;
+        releaseIncrement = -sustain/(double)rel;
         
         // Set initial stage to INACTIVE
         stage = EnvelopeStage::INACTIVE;
-        
-        // Set current value of the envelope to 0
-        currentValue = 0.0;
     }
     
     // Returns true if this envelope is inactive
@@ -92,15 +92,18 @@ public:
                 break;
             case EnvelopeStage::ATTACK:
                 newSample = currentValue += attackIncrement;
+                sampleIndex++;
                 break;
             case EnvelopeStage::DECAY:
                 newSample = currentValue += decayIncrement;
+                sampleIndex++;
                 break;
             case EnvelopeStage::SUSTAIN:
                 newSample = currentValue;
                 break;
             case EnvelopeStage::RELEASE:
                 newSample = currentValue += releaseIncrement;
+                sampleIndex++;
                 break;
             default:
                 break;
@@ -120,8 +123,8 @@ public:
             case EnvelopeStage::ATTACK:
                 
                 // If attack is over, start decay
-                if (currentValue >= envelopePoints[1]->y) {
-                    currentValue = envelopePoints[1]->y;
+                if (sampleIndex >= attack) {
+                    currentValue = 1.0;
                     stage = EnvelopeStage::DECAY;
                     return;
                 }
@@ -130,8 +133,8 @@ public:
             case EnvelopeStage::DECAY:
                 
                 // If decay is over, start sustain
-                if (currentValue <= envelopePoints[2]->y) {
-                    currentValue = envelopePoints[2]->y;
+                if (sampleIndex >= attack + decay) {
+                    currentValue = sustain;
                     stage = EnvelopeStage::SUSTAIN;
                     return;
                 }
@@ -144,8 +147,9 @@ public:
             case EnvelopeStage::RELEASE:
                 
                 // If release is over, set to inactive
-                if (currentValue <= envelopePoints[3]->y) {
+                if (sampleIndex >= attack + decay + rel) {
                     currentValue = 0.0;
+                    sampleIndex = 0;
                     stage = EnvelopeStage::INACTIVE;
                     return;
                 }
@@ -157,22 +161,37 @@ public:
 
     }
     
+    void setADSR(int attack, int decay, double sustain, int rel) {
+        this->attack = attack;
+        this->decay = decay;
+        this->sustain = sustain;
+        this->rel = rel;
+        
+        attackIncrement = 1.0/(double)attack;
+        decayIncrement = -(1.0 - sustain)/(double)decay;
+        releaseIncrement = -sustain/(double)rel;
+    }
+    
     // Starts the envelope
     void start() {
+        currentValue = 0.0;
+        sampleIndex = 0;
         stage = EnvelopeStage::ATTACK;
 
     }
     
     // Enters release phase of envelope
     void release() {
+        sampleIndex = attack + decay;
+        releaseIncrement = -currentValue/(double)rel;
         stage = EnvelopeStage::RELEASE;
-
     }
     
     // Stops the envelope
     void stop() {
         stage = EnvelopeStage::INACTIVE;
-
+        currentValue = 0.0;
+        sampleIndex = 0;
     }
 };
 

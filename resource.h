@@ -74,8 +74,8 @@ instrument determined by PLUG _IS _INST
 #define PHASE_MODE_FN       "resources/img/phaseMode.png"
 
 // GUI default dimensions
-#define GUI_WIDTH 300
-#define GUI_HEIGHT 300
+#define GUI_WIDTH 800
+#define GUI_HEIGHT 600
 
 // on MSVC, you must define SA_API in the resource editor preprocessor macros as well as the c++ ones
 #if defined(SA_API) && !defined(OS_IOS)

@@ -28,10 +28,19 @@ private:
     Envelope *ampEnvelopeLeft;
     Envelope *ampEnvelopeRight;
     
+    int attack;
+    int decay;
+    double sustain;
+    int release;
+    
 public:
     
     // Creates a new voice
-    Voice() {
+    Voice(int attack, int decay, double sustain, int release) {
+        this->attack = attack;
+        this->decay = decay;
+        this->sustain = sustain;
+        this->release = release;
         // Initially, voice is not in use
         noteNumber = VOICE_NOT_IN_USE;
         
@@ -41,8 +50,8 @@ public:
         oscillatorGroup = new OscillatorGroup(16, Bb_2, WaveType::SAW);
         
         // Create envelope.
-        ampEnvelopeLeft = new Envelope();
-        ampEnvelopeRight = new Envelope();
+        ampEnvelopeLeft = new Envelope(attack, decay, sustain, release);
+        ampEnvelopeRight = new Envelope(attack, decay, sustain, release);
     }
     
     // Returns the noteNumber of this voice
@@ -61,7 +70,8 @@ public:
         
         // TODO: Implement voice activation
         oscillatorGroup->setFrequency(frequency);
-        
+        ampEnvelopeLeft->setADSR(attack, decay, sustain, release);
+        ampEnvelopeRight->setADSR(attack, decay, sustain, release);
         ampEnvelopeLeft->start();
         ampEnvelopeRight->start();
     }
@@ -146,6 +156,13 @@ public:
     
     void changePhaseMode(WavePhase wavePhase) {
         oscillatorGroup->changePhaseMode(wavePhase);
+    }
+    
+    void setADSR(int attack, int decay, double sustain, int release) {
+        this->attack = attack;
+        this->decay = decay;
+        this->sustain = sustain;
+        this->release = release;
     }
 };
 

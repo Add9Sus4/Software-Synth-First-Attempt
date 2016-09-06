@@ -24,10 +24,22 @@ private:
     
     // A vector containing all the current active notes
     std::vector<int> activeNoteNumbers;
+    
+    int g_attack;
+    int g_decay;
+    double g_sustain;
+    int g_release;
+    
 public:
     
     // Create new symphony
     Symphony(int numVoices) {
+        
+        g_attack = ATTACK_DEFAULT;
+        g_decay = DECAY_DEFAULT;
+        g_sustain = SUSTAIN_DEFAULT;
+        g_release = RELEASE_DEFAULT;
+        
         // Check to make sure numVoices is valid
         if (numVoices > MAX_VOICES || numVoices < 1) {
             std::cout << "Invalid value for 'numVoices' (" << numVoices << "). Must be in range 1 - " << MAX_VOICES << "." << std::endl;
@@ -37,7 +49,7 @@ public:
         
         // Add all the voices to the vector
         for(int i=0; i<numVoices; i++) {
-            voices.push_back(new Voice());
+            voices.push_back(new Voice(g_attack, g_decay, g_sustain, g_release));
         }
 
     }
@@ -50,6 +62,7 @@ public:
             
             // If the voice is inactive, use it
             if (voices[i]->isInactive()) { // Inactive voices have noteNumbers of -1
+                voices[i]->setADSR(g_attack, g_decay, g_sustain, g_release);
                 voices[i]->activate(frequency, noteNumber);
                 activeNoteNumbers.push_back(noteNumber); // Add note number to the end of the vector
                 return;
@@ -157,6 +170,22 @@ public:
             voices[i]->changePhaseMode(wavePhase);
             voices[i]->forceDeactivate();
         }
+    }
+    
+    void changeAttackAmt(int newAttack) {
+        g_attack = newAttack;
+    }
+    
+    void changeDecayAmt(int newDecay) {
+        g_decay = newDecay;
+    }
+    
+    void changeSustainAmt(double newSustain) {
+        g_sustain = newSustain;
+    }
+    
+    void changeReleaseAmt(int newRelease) {
+        g_release = newRelease;
     }
 };
 
