@@ -1,19 +1,34 @@
 #ifndef __AUDIOCOMPONENTS__
 #define __AUDIOCOMPONENTS__
 
+#include <stdlib.h>
+#include <string>
+
 #include "IPlug_include_in_plug_hdr.h"
-#include "OscillatorGroup.hpp"
-#include "Filter.hpp"
-#include "SampleDelay.hpp"
+
+#include "BiquadFilter.hpp"
 #include "BlockDelay.hpp"
-#include "SampleEffectProcessingChain.hpp"
-#include "Flanger.hpp"
-#include "Distortion.hpp"
-#include "SymmetricalSoftClip.hpp"
-#include "Chorus.hpp"
+#include "BlockDistortion.hpp"
 #include "BlockEffectProcessingChain.hpp"
-#include "Symphony.hpp"
+#include "BlockFlanger.hpp"
+#include "BlockFormantFilter.hpp"
+#include "Chorus.hpp"
+#include "Distortion.hpp"
+#include "EnvelopeOpenGL.hpp"
+#include "Filter.hpp"
+#include "FilterEnvelopeOpenGL.hpp"
+#include "Flanger.hpp"
+#include "LFO.hpp"
+#include "Modulator.hpp"
+#include "OscillatorGroup.hpp"
 #include "OpenGLTestClass.hpp"
+#include "Parameter.hpp"
+#include "SampleDelay.hpp"
+#include "SampleEffectProcessingChain.hpp"
+#include "SpectralFilter.hpp"
+#include "SymmetricalSoftClip.hpp"
+#include "Symphony.hpp"
+#include "Transform.hpp"
 
 class AudioComponents : public IPlug
 {
@@ -25,41 +40,20 @@ public:
   void OnParamChange(int paramIdx);
   void ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames);
   void ProcessMidiMsg(IMidiMsg *pMsg);
+  
+  void connectModulator(Modulator* modulator, Parameter* parameter);
 
 private:
   double mGain;
-  SampleDelay *delayLeft;
-  SampleDelay *delayRight;
-  OscillatorGroup *oscillatorGroup;
-  Filter *filterLeft;
-  Filter *filterRight;
-  Oscillator *LFOLeft;
-  Oscillator *LFORight;
-  FormantFilter *formantFilterLeft;
-  FormantFilter *formantFilterRight;
-  BlockDelay *blockDelayLeft;
-  BlockDelay *blockDelayRight;
-  BlockDelay *blockDelayLeft2;
-  BlockDelay *blockDelayRight2;
-  SampleEffectProcessingChain *processingChainLeft;
-  SampleEffectProcessingChain *processingChainRight;
-  BlockEffectProcessingChain *blockProcessingChainLeft;
-  BlockEffectProcessingChain *blockProcessingChainRight;
-  Flanger *flangerLeft;
-  Flanger *flangerRight;
-  Distortion *distortionLeft;
-  Distortion *distortionRight;
-  SymmetricalSoftClip *softClipLeft;
-  SymmetricalSoftClip *softClipRight;
-  Chorus *chorusLeft;
-  Chorus *chorusRight;
-  Symphony *symphony;
-  bool flag;
-  IMidiMsg *midiMsg;
-  int cycleInterval;
-  int count;
-  OpenGLTestClass *openGLTestClass;
-  
+  BlockEffectProcessingChain* mainProcessingChain;
+  OscillatorGroup* oscillatorGroup;
+  BiquadFilter* biquadFilter;
+  Chorus* chorus;
+  BlockFormantFilter* blockFormantFilter;
+  BlockDistortion* blockDistortion;
+  BlockFlanger* blockFlanger;
+  SpectralFilter* spectralFilter;
+  LFO* lfo;
 };
 
 #endif

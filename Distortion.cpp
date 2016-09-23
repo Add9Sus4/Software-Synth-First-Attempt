@@ -7,7 +7,3 @@
 //
 
 #include "Distortion.hpp"
-
-double Distortion::process(double sample) {
-    return(sample /fabs(sample))*(1 - exp(alpha*pow(sample, 2)/fabs(sample)));
-}

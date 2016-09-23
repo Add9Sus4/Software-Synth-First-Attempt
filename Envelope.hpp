@@ -16,16 +16,16 @@
 
 #define ATTACK_MIN  10
 #define ATTACK_DEFAULT  661
-#define ATTACK_MAX  44100/2
+#define ATTACK_MAX  44100*5
 #define DECAY_MIN   10
 #define DECAY_DEFAULT   10000
-#define DECAY_MAX   44100/2
+#define DECAY_MAX   44100*5
 #define SUSTAIN_MIN 0.0
 #define SUSTAIN_DEFAULT 0.2
 #define SUSTAIN_MAX 1.0
 #define RELEASE_MIN 10
 #define RELEASE_DEFAULT 10100
-#define RELEASE_MAX 44100/2
+#define RELEASE_MAX 44100*5
 
 enum EnvelopeStage {
     INACTIVE,
@@ -193,6 +193,8 @@ public:
         currentValue = 0.0;
         sampleIndex = 0;
     }
+    
+    EnvelopeStage getStage() { return stage; }
 };
 
 #endif /* Envelope_hpp */

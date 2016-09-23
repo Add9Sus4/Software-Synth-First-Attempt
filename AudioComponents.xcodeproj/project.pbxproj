@@ -275,12 +275,180 @@
 		4FF016F8134E14E2001447BA /* ptrlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F5134E14E2001447BA /* ptrlist.h */; };
 		4FF016F9134E14E2001447BA /* wdlstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F6134E14E2001447BA /* wdlstring.h */; };
 		4FF0171A134E153A001447BA /* heapbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF01719134E153A001447BA /* heapbuf.h */; };
+		C203C2341D86303200CB9350 /* ZebraKnob2.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C2331D86303200CB9350 /* ZebraKnob2.png */; };
+		C203C2351D86303200CB9350 /* ZebraKnob2.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C2331D86303200CB9350 /* ZebraKnob2.png */; };
+		C203C2361D86303200CB9350 /* ZebraKnob2.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C2331D86303200CB9350 /* ZebraKnob2.png */; };
+		C203C2371D86303200CB9350 /* ZebraKnob2.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C2331D86303200CB9350 /* ZebraKnob2.png */; };
+		C203C2381D86303200CB9350 /* ZebraKnob2.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C2331D86303200CB9350 /* ZebraKnob2.png */; };
+		C203C2391D86303200CB9350 /* ZebraKnob2.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C2331D86303200CB9350 /* ZebraKnob2.png */; };
+		C203C23B1D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C23A1D86349A00CB9350 /* Add9NiceLookingKnob.png */; };
+		C203C23C1D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C23A1D86349A00CB9350 /* Add9NiceLookingKnob.png */; };
+		C203C23D1D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C23A1D86349A00CB9350 /* Add9NiceLookingKnob.png */; };
+		C203C23E1D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C23A1D86349A00CB9350 /* Add9NiceLookingKnob.png */; };
+		C203C23F1D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C23A1D86349A00CB9350 /* Add9NiceLookingKnob.png */; };
+		C203C2401D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C23A1D86349A00CB9350 /* Add9NiceLookingKnob.png */; };
+		C203C2431D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C203C2411D864F2D00CB9350 /* EnvelopeOpenGL.cpp */; };
+		C203C2441D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C203C2411D864F2D00CB9350 /* EnvelopeOpenGL.cpp */; };
+		C203C2451D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C203C2411D864F2D00CB9350 /* EnvelopeOpenGL.cpp */; };
+		C203C2461D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C203C2411D864F2D00CB9350 /* EnvelopeOpenGL.cpp */; };
+		C203C2471D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C203C2411D864F2D00CB9350 /* EnvelopeOpenGL.cpp */; };
+		C203C2481D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C203C2411D864F2D00CB9350 /* EnvelopeOpenGL.cpp */; };
+		C203C2491D864F2D00CB9350 /* EnvelopeOpenGL.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C203C2421D864F2D00CB9350 /* EnvelopeOpenGL.hpp */; };
+		C203C24A1D864F2D00CB9350 /* EnvelopeOpenGL.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C203C2421D864F2D00CB9350 /* EnvelopeOpenGL.hpp */; };
+		C203C24C1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C24B1D86FE9A00CB9350 /* TestSynthBackground.png */; };
+		C203C24D1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C24B1D86FE9A00CB9350 /* TestSynthBackground.png */; };
+		C203C24E1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C24B1D86FE9A00CB9350 /* TestSynthBackground.png */; };
+		C203C24F1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C24B1D86FE9A00CB9350 /* TestSynthBackground.png */; };
+		C203C2501D86FE9A00CB9350 /* TestSynthBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C24B1D86FE9A00CB9350 /* TestSynthBackground.png */; };
+		C203C2511D86FE9A00CB9350 /* TestSynthBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C203C24B1D86FE9A00CB9350 /* TestSynthBackground.png */; };
 		C22651561D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
 		C22651571D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
 		C22651581D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
 		C22651591D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
 		C226515A1D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
 		C226515B1D7F052C004E9A13 /* waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = C22651551D7F052C004E9A13 /* waveform.png */; };
+		C259F22D1D87001600B5EE51 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F22C1D87001600B5EE51 /* IFaderControl_Vert.png */; };
+		C259F22E1D87001600B5EE51 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F22C1D87001600B5EE51 /* IFaderControl_Vert.png */; };
+		C259F22F1D87001600B5EE51 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F22C1D87001600B5EE51 /* IFaderControl_Vert.png */; };
+		C259F2301D87001600B5EE51 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F22C1D87001600B5EE51 /* IFaderControl_Vert.png */; };
+		C259F2311D87001600B5EE51 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F22C1D87001600B5EE51 /* IFaderControl_Vert.png */; };
+		C259F2321D87001600B5EE51 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F22C1D87001600B5EE51 /* IFaderControl_Vert.png */; };
+		C259F2371D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2351D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp */; };
+		C259F2381D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2351D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp */; };
+		C259F2391D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2351D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp */; };
+		C259F23A1D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2351D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp */; };
+		C259F23B1D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2351D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp */; };
+		C259F23C1D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2351D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp */; };
+		C259F23D1D87058700B5EE51 /* FilterEnvelopeOpenGL.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2361D87058700B5EE51 /* FilterEnvelopeOpenGL.hpp */; };
+		C259F23E1D87058700B5EE51 /* FilterEnvelopeOpenGL.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2361D87058700B5EE51 /* FilterEnvelopeOpenGL.hpp */; };
+		C259F2401D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F23F1D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png */; };
+		C259F2411D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F23F1D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png */; };
+		C259F2421D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F23F1D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png */; };
+		C259F2431D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F23F1D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png */; };
+		C259F2441D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F23F1D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png */; };
+		C259F2451D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F23F1D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png */; };
+		C259F2471D8F888900B5EE51 /* SerumKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F2461D8F888900B5EE51 /* SerumKnob.png */; };
+		C259F2481D8F888900B5EE51 /* SerumKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F2461D8F888900B5EE51 /* SerumKnob.png */; };
+		C259F2491D8F888900B5EE51 /* SerumKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F2461D8F888900B5EE51 /* SerumKnob.png */; };
+		C259F24A1D8F888900B5EE51 /* SerumKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F2461D8F888900B5EE51 /* SerumKnob.png */; };
+		C259F24B1D8F888900B5EE51 /* SerumKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F2461D8F888900B5EE51 /* SerumKnob.png */; };
+		C259F24C1D8F888900B5EE51 /* SerumKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = C259F2461D8F888900B5EE51 /* SerumKnob.png */; };
+		C259F24F1D9047B800B5EE51 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F24D1D9047B800B5EE51 /* Transform.cpp */; };
+		C259F2501D9047B800B5EE51 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F24D1D9047B800B5EE51 /* Transform.cpp */; };
+		C259F2511D9047B800B5EE51 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F24D1D9047B800B5EE51 /* Transform.cpp */; };
+		C259F2521D9047B800B5EE51 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F24D1D9047B800B5EE51 /* Transform.cpp */; };
+		C259F2531D9047B800B5EE51 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F24D1D9047B800B5EE51 /* Transform.cpp */; };
+		C259F2541D9047B800B5EE51 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F24D1D9047B800B5EE51 /* Transform.cpp */; };
+		C259F2551D9047B800B5EE51 /* Transform.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F24E1D9047B800B5EE51 /* Transform.hpp */; };
+		C259F2561D9047B800B5EE51 /* Transform.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F24E1D9047B800B5EE51 /* Transform.hpp */; };
+		C259F2591D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2571D904A6D00B5EE51 /* SpectralFilter.cpp */; };
+		C259F25A1D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2571D904A6D00B5EE51 /* SpectralFilter.cpp */; };
+		C259F25B1D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2571D904A6D00B5EE51 /* SpectralFilter.cpp */; };
+		C259F25C1D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2571D904A6D00B5EE51 /* SpectralFilter.cpp */; };
+		C259F25D1D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2571D904A6D00B5EE51 /* SpectralFilter.cpp */; };
+		C259F25E1D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2571D904A6D00B5EE51 /* SpectralFilter.cpp */; };
+		C259F25F1D904A6D00B5EE51 /* SpectralFilter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2581D904A6D00B5EE51 /* SpectralFilter.hpp */; };
+		C259F2601D904A6D00B5EE51 /* SpectralFilter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2581D904A6D00B5EE51 /* SpectralFilter.hpp */; };
+		C259F2631D904D6100B5EE51 /* AudioWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2611D904D6100B5EE51 /* AudioWindow.cpp */; };
+		C259F2641D904D6100B5EE51 /* AudioWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2611D904D6100B5EE51 /* AudioWindow.cpp */; };
+		C259F2651D904D6100B5EE51 /* AudioWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2611D904D6100B5EE51 /* AudioWindow.cpp */; };
+		C259F2661D904D6100B5EE51 /* AudioWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2611D904D6100B5EE51 /* AudioWindow.cpp */; };
+		C259F2671D904D6100B5EE51 /* AudioWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2611D904D6100B5EE51 /* AudioWindow.cpp */; };
+		C259F2681D904D6100B5EE51 /* AudioWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2611D904D6100B5EE51 /* AudioWindow.cpp */; };
+		C259F2691D904D6100B5EE51 /* AudioWindow.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2621D904D6100B5EE51 /* AudioWindow.hpp */; };
+		C259F26A1D904D6100B5EE51 /* AudioWindow.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2621D904D6100B5EE51 /* AudioWindow.hpp */; };
+		C259F26D1D91986300B5EE51 /* BiquadFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F26B1D91986300B5EE51 /* BiquadFilter.cpp */; };
+		C259F26E1D91986300B5EE51 /* BiquadFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F26B1D91986300B5EE51 /* BiquadFilter.cpp */; };
+		C259F26F1D91986300B5EE51 /* BiquadFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F26B1D91986300B5EE51 /* BiquadFilter.cpp */; };
+		C259F2701D91986300B5EE51 /* BiquadFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F26B1D91986300B5EE51 /* BiquadFilter.cpp */; };
+		C259F2711D91986300B5EE51 /* BiquadFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F26B1D91986300B5EE51 /* BiquadFilter.cpp */; };
+		C259F2721D91986300B5EE51 /* BiquadFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F26B1D91986300B5EE51 /* BiquadFilter.cpp */; };
+		C259F2731D91986300B5EE51 /* BiquadFilter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F26C1D91986300B5EE51 /* BiquadFilter.hpp */; };
+		C259F2741D91986300B5EE51 /* BiquadFilter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F26C1D91986300B5EE51 /* BiquadFilter.hpp */; };
+		C259F2771D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2751D91A95400B5EE51 /* BlockFormantFilter.cpp */; };
+		C259F2781D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2751D91A95400B5EE51 /* BlockFormantFilter.cpp */; };
+		C259F2791D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2751D91A95400B5EE51 /* BlockFormantFilter.cpp */; };
+		C259F27A1D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2751D91A95400B5EE51 /* BlockFormantFilter.cpp */; };
+		C259F27B1D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2751D91A95400B5EE51 /* BlockFormantFilter.cpp */; };
+		C259F27C1D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2751D91A95400B5EE51 /* BlockFormantFilter.cpp */; };
+		C259F27D1D91A95400B5EE51 /* BlockFormantFilter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2761D91A95400B5EE51 /* BlockFormantFilter.hpp */; };
+		C259F27E1D91A95400B5EE51 /* BlockFormantFilter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2761D91A95400B5EE51 /* BlockFormantFilter.hpp */; };
+		C259F2811D91B11400B5EE51 /* BlockDistortion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F27F1D91B11400B5EE51 /* BlockDistortion.cpp */; };
+		C259F2821D91B11400B5EE51 /* BlockDistortion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F27F1D91B11400B5EE51 /* BlockDistortion.cpp */; };
+		C259F2831D91B11400B5EE51 /* BlockDistortion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F27F1D91B11400B5EE51 /* BlockDistortion.cpp */; };
+		C259F2841D91B11400B5EE51 /* BlockDistortion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F27F1D91B11400B5EE51 /* BlockDistortion.cpp */; };
+		C259F2851D91B11400B5EE51 /* BlockDistortion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F27F1D91B11400B5EE51 /* BlockDistortion.cpp */; };
+		C259F2861D91B11400B5EE51 /* BlockDistortion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F27F1D91B11400B5EE51 /* BlockDistortion.cpp */; };
+		C259F2871D91B11400B5EE51 /* BlockDistortion.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2801D91B11400B5EE51 /* BlockDistortion.hpp */; };
+		C259F2881D91B11400B5EE51 /* BlockDistortion.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2801D91B11400B5EE51 /* BlockDistortion.hpp */; };
+		C259F28B1D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2891D91B42D00B5EE51 /* BlockFlanger.cpp */; };
+		C259F28C1D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2891D91B42D00B5EE51 /* BlockFlanger.cpp */; };
+		C259F28D1D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2891D91B42D00B5EE51 /* BlockFlanger.cpp */; };
+		C259F28E1D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2891D91B42D00B5EE51 /* BlockFlanger.cpp */; };
+		C259F28F1D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2891D91B42D00B5EE51 /* BlockFlanger.cpp */; };
+		C259F2901D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2891D91B42D00B5EE51 /* BlockFlanger.cpp */; };
+		C259F2911D91B42D00B5EE51 /* BlockFlanger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F28A1D91B42D00B5EE51 /* BlockFlanger.hpp */; };
+		C259F2921D91B42D00B5EE51 /* BlockFlanger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F28A1D91B42D00B5EE51 /* BlockFlanger.hpp */; };
+		C259F2951D943AA000B5EE51 /* Parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2931D943AA000B5EE51 /* Parameter.cpp */; };
+		C259F2961D943AA000B5EE51 /* Parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2931D943AA000B5EE51 /* Parameter.cpp */; };
+		C259F2971D943AA000B5EE51 /* Parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2931D943AA000B5EE51 /* Parameter.cpp */; };
+		C259F2981D943AA000B5EE51 /* Parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2931D943AA000B5EE51 /* Parameter.cpp */; };
+		C259F2991D943AA000B5EE51 /* Parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2931D943AA000B5EE51 /* Parameter.cpp */; };
+		C259F29A1D943AA000B5EE51 /* Parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2931D943AA000B5EE51 /* Parameter.cpp */; };
+		C259F29B1D943AA000B5EE51 /* Parameter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2941D943AA000B5EE51 /* Parameter.hpp */; };
+		C259F29C1D943AA000B5EE51 /* Parameter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2941D943AA000B5EE51 /* Parameter.hpp */; };
+		C259F29F1D943B0200B5EE51 /* Modulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F29D1D943B0200B5EE51 /* Modulator.cpp */; };
+		C259F2A01D943B0200B5EE51 /* Modulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F29D1D943B0200B5EE51 /* Modulator.cpp */; };
+		C259F2A11D943B0200B5EE51 /* Modulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F29D1D943B0200B5EE51 /* Modulator.cpp */; };
+		C259F2A21D943B0200B5EE51 /* Modulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F29D1D943B0200B5EE51 /* Modulator.cpp */; };
+		C259F2A31D943B0200B5EE51 /* Modulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F29D1D943B0200B5EE51 /* Modulator.cpp */; };
+		C259F2A41D943B0200B5EE51 /* Modulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F29D1D943B0200B5EE51 /* Modulator.cpp */; };
+		C259F2A51D943B0200B5EE51 /* Modulator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F29E1D943B0200B5EE51 /* Modulator.hpp */; };
+		C259F2A61D943B0200B5EE51 /* Modulator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F29E1D943B0200B5EE51 /* Modulator.hpp */; };
+		C259F2A91D94AA2300B5EE51 /* LFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2A71D94AA2300B5EE51 /* LFO.cpp */; };
+		C259F2AA1D94AA2300B5EE51 /* LFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2A71D94AA2300B5EE51 /* LFO.cpp */; };
+		C259F2AB1D94AA2300B5EE51 /* LFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2A71D94AA2300B5EE51 /* LFO.cpp */; };
+		C259F2AC1D94AA2300B5EE51 /* LFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2A71D94AA2300B5EE51 /* LFO.cpp */; };
+		C259F2AD1D94AA2300B5EE51 /* LFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2A71D94AA2300B5EE51 /* LFO.cpp */; };
+		C259F2AE1D94AA2300B5EE51 /* LFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C259F2A71D94AA2300B5EE51 /* LFO.cpp */; };
+		C259F2AF1D94AA2300B5EE51 /* LFO.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2A81D94AA2300B5EE51 /* LFO.hpp */; };
+		C259F2B01D94AA2300B5EE51 /* LFO.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C259F2A81D94AA2300B5EE51 /* LFO.hpp */; };
+		C25A2E831D8605CA0080351D /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7D1D8605CA0080351D /* noise.png */; };
+		C25A2E841D8605CA0080351D /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7D1D8605CA0080351D /* noise.png */; };
+		C25A2E851D8605CA0080351D /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7D1D8605CA0080351D /* noise.png */; };
+		C25A2E861D8605CA0080351D /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7D1D8605CA0080351D /* noise.png */; };
+		C25A2E871D8605CA0080351D /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7D1D8605CA0080351D /* noise.png */; };
+		C25A2E881D8605CA0080351D /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7D1D8605CA0080351D /* noise.png */; };
+		C25A2E891D8605CA0080351D /* pulse.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7E1D8605CA0080351D /* pulse.png */; };
+		C25A2E8A1D8605CA0080351D /* pulse.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7E1D8605CA0080351D /* pulse.png */; };
+		C25A2E8B1D8605CA0080351D /* pulse.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7E1D8605CA0080351D /* pulse.png */; };
+		C25A2E8C1D8605CA0080351D /* pulse.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7E1D8605CA0080351D /* pulse.png */; };
+		C25A2E8D1D8605CA0080351D /* pulse.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7E1D8605CA0080351D /* pulse.png */; };
+		C25A2E8E1D8605CA0080351D /* pulse.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7E1D8605CA0080351D /* pulse.png */; };
+		C25A2E8F1D8605CA0080351D /* saw.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7F1D8605CA0080351D /* saw.png */; };
+		C25A2E901D8605CA0080351D /* saw.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7F1D8605CA0080351D /* saw.png */; };
+		C25A2E911D8605CA0080351D /* saw.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7F1D8605CA0080351D /* saw.png */; };
+		C25A2E921D8605CA0080351D /* saw.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7F1D8605CA0080351D /* saw.png */; };
+		C25A2E931D8605CA0080351D /* saw.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7F1D8605CA0080351D /* saw.png */; };
+		C25A2E941D8605CA0080351D /* saw.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E7F1D8605CA0080351D /* saw.png */; };
+		C25A2E951D8605CA0080351D /* sine.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E801D8605CA0080351D /* sine.png */; };
+		C25A2E961D8605CA0080351D /* sine.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E801D8605CA0080351D /* sine.png */; };
+		C25A2E971D8605CA0080351D /* sine.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E801D8605CA0080351D /* sine.png */; };
+		C25A2E981D8605CA0080351D /* sine.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E801D8605CA0080351D /* sine.png */; };
+		C25A2E991D8605CA0080351D /* sine.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E801D8605CA0080351D /* sine.png */; };
+		C25A2E9A1D8605CA0080351D /* sine.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E801D8605CA0080351D /* sine.png */; };
+		C25A2E9B1D8605CA0080351D /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E811D8605CA0080351D /* square.png */; };
+		C25A2E9C1D8605CA0080351D /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E811D8605CA0080351D /* square.png */; };
+		C25A2E9D1D8605CA0080351D /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E811D8605CA0080351D /* square.png */; };
+		C25A2E9E1D8605CA0080351D /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E811D8605CA0080351D /* square.png */; };
+		C25A2E9F1D8605CA0080351D /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E811D8605CA0080351D /* square.png */; };
+		C25A2EA01D8605CA0080351D /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E811D8605CA0080351D /* square.png */; };
+		C25A2EA11D8605CA0080351D /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E821D8605CA0080351D /* triangle.png */; };
+		C25A2EA21D8605CA0080351D /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E821D8605CA0080351D /* triangle.png */; };
+		C25A2EA31D8605CA0080351D /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E821D8605CA0080351D /* triangle.png */; };
+		C25A2EA41D8605CA0080351D /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E821D8605CA0080351D /* triangle.png */; };
+		C25A2EA51D8605CA0080351D /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E821D8605CA0080351D /* triangle.png */; };
+		C25A2EA61D8605CA0080351D /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = C25A2E821D8605CA0080351D /* triangle.png */; };
 		C25FEF211D73550D002D122F /* Oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF1F1D73550D002D122F /* Oscillator.cpp */; };
 		C25FEF221D73550D002D122F /* Oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF1F1D73550D002D122F /* Oscillator.cpp */; };
 		C25FEF231D73550D002D122F /* Oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEF1F1D73550D002D122F /* Oscillator.cpp */; };
@@ -339,15 +507,21 @@
 		C25FEFEF1D73DF6B002D122F /* BlockDelay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25FEFE81D73DF6B002D122F /* BlockDelay.cpp */; };
 		C25FEFF01D73DF6B002D122F /* BlockDelay.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEFE91D73DF6B002D122F /* BlockDelay.hpp */; };
 		C25FEFF11D73DF6B002D122F /* BlockDelay.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C25FEFE91D73DF6B002D122F /* BlockDelay.hpp */; };
+		C29A2E4B1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */ = {isa = PBXBuildFile; fileRef = C29A2E4A1D85BC7E002BEA5C /* Add9Synthesizer.png */; };
+		C29A2E4C1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */ = {isa = PBXBuildFile; fileRef = C29A2E4A1D85BC7E002BEA5C /* Add9Synthesizer.png */; };
+		C29A2E4D1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */ = {isa = PBXBuildFile; fileRef = C29A2E4A1D85BC7E002BEA5C /* Add9Synthesizer.png */; };
+		C29A2E4E1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */ = {isa = PBXBuildFile; fileRef = C29A2E4A1D85BC7E002BEA5C /* Add9Synthesizer.png */; };
+		C29A2E4F1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */ = {isa = PBXBuildFile; fileRef = C29A2E4A1D85BC7E002BEA5C /* Add9Synthesizer.png */; };
+		C29A2E501D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */ = {isa = PBXBuildFile; fileRef = C29A2E4A1D85BC7E002BEA5C /* Add9Synthesizer.png */; };
 		C2B90A331D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
 		C2B90A341D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
 		C2B90A351D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
 		C2B90A361D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
 		C2B90A371D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
 		C2B90A381D7F1C9A005D422E /* phaseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B90A321D7F1C9A005D422E /* phaseMode.png */; };
-		C2D82EB61D7EEEAD007948D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */; };
-		C2D82EB71D7EEEB4007948D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */; };
-		C2D82EB81D7EEEBD007948D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */; };
+		C2D554C21D8382B000E31E3B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D554C11D8382B000E31E3B /* OpenGL.framework */; };
+		C2D554C51D8382CF00E31E3B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D554C11D8382B000E31E3B /* OpenGL.framework */; };
+		C2D554C61D8382E400E31E3B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D554C11D8382B000E31E3B /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -722,7 +896,43 @@
 		52FBBED00D0CF139001C8B8A /* AudioComponents.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = AudioComponents.cpp; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		52FBBED20D0CF13D001C8B8A /* AudioComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = AudioComponents.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		52FBBED30D0CF143001C8B8A /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		C203C2331D86303200CB9350 /* ZebraKnob2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZebraKnob2.png; sourceTree = "<group>"; };
+		C203C23A1D86349A00CB9350 /* Add9NiceLookingKnob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add9NiceLookingKnob.png; sourceTree = "<group>"; };
+		C203C2411D864F2D00CB9350 /* EnvelopeOpenGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnvelopeOpenGL.cpp; sourceTree = "<group>"; };
+		C203C2421D864F2D00CB9350 /* EnvelopeOpenGL.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EnvelopeOpenGL.hpp; sourceTree = "<group>"; };
+		C203C24B1D86FE9A00CB9350 /* TestSynthBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestSynthBackground.png; sourceTree = "<group>"; };
 		C22651551D7F052C004E9A13 /* waveform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waveform.png; sourceTree = "<group>"; };
+		C259F22C1D87001600B5EE51 /* IFaderControl_Vert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IFaderControl_Vert.png; sourceTree = "<group>"; };
+		C259F2351D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterEnvelopeOpenGL.cpp; sourceTree = "<group>"; };
+		C259F2361D87058700B5EE51 /* FilterEnvelopeOpenGL.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterEnvelopeOpenGL.hpp; sourceTree = "<group>"; };
+		C259F23F1D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADD_Synthesizer_Template4.png; sourceTree = "<group>"; };
+		C259F2461D8F888900B5EE51 /* SerumKnob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SerumKnob.png; sourceTree = "<group>"; };
+		C259F24D1D9047B800B5EE51 /* Transform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Transform.cpp; sourceTree = "<group>"; };
+		C259F24E1D9047B800B5EE51 /* Transform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Transform.hpp; sourceTree = "<group>"; };
+		C259F2571D904A6D00B5EE51 /* SpectralFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpectralFilter.cpp; sourceTree = "<group>"; };
+		C259F2581D904A6D00B5EE51 /* SpectralFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpectralFilter.hpp; sourceTree = "<group>"; };
+		C259F2611D904D6100B5EE51 /* AudioWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioWindow.cpp; sourceTree = "<group>"; };
+		C259F2621D904D6100B5EE51 /* AudioWindow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioWindow.hpp; sourceTree = "<group>"; };
+		C259F26B1D91986300B5EE51 /* BiquadFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BiquadFilter.cpp; sourceTree = "<group>"; };
+		C259F26C1D91986300B5EE51 /* BiquadFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BiquadFilter.hpp; sourceTree = "<group>"; };
+		C259F2751D91A95400B5EE51 /* BlockFormantFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockFormantFilter.cpp; sourceTree = "<group>"; };
+		C259F2761D91A95400B5EE51 /* BlockFormantFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockFormantFilter.hpp; sourceTree = "<group>"; };
+		C259F27F1D91B11400B5EE51 /* BlockDistortion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockDistortion.cpp; sourceTree = "<group>"; };
+		C259F2801D91B11400B5EE51 /* BlockDistortion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockDistortion.hpp; sourceTree = "<group>"; };
+		C259F2891D91B42D00B5EE51 /* BlockFlanger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockFlanger.cpp; sourceTree = "<group>"; };
+		C259F28A1D91B42D00B5EE51 /* BlockFlanger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockFlanger.hpp; sourceTree = "<group>"; };
+		C259F2931D943AA000B5EE51 /* Parameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parameter.cpp; sourceTree = "<group>"; };
+		C259F2941D943AA000B5EE51 /* Parameter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Parameter.hpp; sourceTree = "<group>"; };
+		C259F29D1D943B0200B5EE51 /* Modulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Modulator.cpp; sourceTree = "<group>"; };
+		C259F29E1D943B0200B5EE51 /* Modulator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Modulator.hpp; sourceTree = "<group>"; };
+		C259F2A71D94AA2300B5EE51 /* LFO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LFO.cpp; sourceTree = "<group>"; };
+		C259F2A81D94AA2300B5EE51 /* LFO.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LFO.hpp; sourceTree = "<group>"; };
+		C25A2E7D1D8605CA0080351D /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
+		C25A2E7E1D8605CA0080351D /* pulse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pulse.png; sourceTree = "<group>"; };
+		C25A2E7F1D8605CA0080351D /* saw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saw.png; sourceTree = "<group>"; };
+		C25A2E801D8605CA0080351D /* sine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sine.png; sourceTree = "<group>"; };
+		C25A2E811D8605CA0080351D /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
+		C25A2E821D8605CA0080351D /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
 		C25FEF1F1D73550D002D122F /* Oscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillator.cpp; sourceTree = "<group>"; };
 		C25FEF201D73550D002D122F /* Oscillator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Oscillator.hpp; sourceTree = "<group>"; };
 		C25FEF341D7357E4002D122F /* AudioChannel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioChannel.hpp; sourceTree = "<group>"; };
@@ -738,7 +948,9 @@
 		C25FEFDF1D73D753002D122F /* SampleDelay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SampleDelay.hpp; sourceTree = "<group>"; };
 		C25FEFE81D73DF6B002D122F /* BlockDelay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockDelay.cpp; sourceTree = "<group>"; };
 		C25FEFE91D73DF6B002D122F /* BlockDelay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockDelay.hpp; sourceTree = "<group>"; };
+		C29A2E4A1D85BC7E002BEA5C /* Add9Synthesizer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add9Synthesizer.png; sourceTree = "<group>"; };
 		C2B90A321D7F1C9A005D422E /* phaseMode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phaseMode.png; sourceTree = "<group>"; };
+		C2D554C11D8382B000E31E3B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
 		C2D82E8F1D7EEE78007948D4 /* BlockEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockEffect.cpp; sourceTree = "<group>"; };
 		C2D82E901D7EEE78007948D4 /* BlockEffect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockEffect.hpp; sourceTree = "<group>"; };
 		C2D82E911D7EEE78007948D4 /* BlockEffectProcessingChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockEffectProcessingChain.cpp; sourceTree = "<group>"; };
@@ -775,7 +987,6 @@
 		C2D82EB01D7EEE78007948D4 /* Voice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Voice.hpp; sourceTree = "<group>"; };
 		C2D82EB11D7EEE78007948D4 /* WaveForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveForm.cpp; sourceTree = "<group>"; };
 		C2D82EB21D7EEE78007948D4 /* WaveForm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WaveForm.hpp; sourceTree = "<group>"; };
-		C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -784,7 +995,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D82EB71D7EEEB4007948D4 /* OpenGL.framework in Frameworks */,
+				C2D554C51D8382CF00E31E3B /* OpenGL.framework in Frameworks */,
 				4F8D4C2F13E97806004F7633 /* lice.a in Frameworks */,
 				4F20EF2D132C69FE0030E34C /* Cocoa.framework in Frameworks */,
 				4F20EF2E132C69FE0030E34C /* Carbon.framework in Frameworks */,
@@ -795,7 +1006,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D82EB81D7EEEBD007948D4 /* OpenGL.framework in Frameworks */,
+				C2D554C61D8382E400E31E3B /* OpenGL.framework in Frameworks */,
 				4F8D4C2813E9778D004F7633 /* lice.a in Frameworks */,
 				4F3AE1D412C0E5E2001FD7A4 /* Carbon.framework in Frameworks */,
 				4F3AE1D512C0E5E2001FD7A4 /* Cocoa.framework in Frameworks */,
@@ -844,7 +1055,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D82EB61D7EEEAD007948D4 /* OpenGL.framework in Frameworks */,
+				C2D554C21D8382B000E31E3B /* OpenGL.framework in Frameworks */,
 				4F8D4BCD13E97671004F7633 /* lice.a in Frameworks */,
 				4F78D87513B637E50032E0F3 /* Carbon.framework in Frameworks */,
 				4F78D7D013B637790032E0F3 /* CoreMIDI.framework in Frameworks */,
@@ -861,7 +1072,31 @@
 		089C166AFE841209C02AAC07 /* IPlugExample */ = {
 			isa = PBXGroup;
 			children = (
-				C2D82EB51D7EEEAD007948D4 /* OpenGL.framework */,
+				C259F2A71D94AA2300B5EE51 /* LFO.cpp */,
+				C259F2A81D94AA2300B5EE51 /* LFO.hpp */,
+				C259F29D1D943B0200B5EE51 /* Modulator.cpp */,
+				C259F29E1D943B0200B5EE51 /* Modulator.hpp */,
+				C259F2931D943AA000B5EE51 /* Parameter.cpp */,
+				C259F2941D943AA000B5EE51 /* Parameter.hpp */,
+				C259F2891D91B42D00B5EE51 /* BlockFlanger.cpp */,
+				C259F28A1D91B42D00B5EE51 /* BlockFlanger.hpp */,
+				C259F27F1D91B11400B5EE51 /* BlockDistortion.cpp */,
+				C259F2801D91B11400B5EE51 /* BlockDistortion.hpp */,
+				C259F2751D91A95400B5EE51 /* BlockFormantFilter.cpp */,
+				C259F2761D91A95400B5EE51 /* BlockFormantFilter.hpp */,
+				C259F26B1D91986300B5EE51 /* BiquadFilter.cpp */,
+				C259F26C1D91986300B5EE51 /* BiquadFilter.hpp */,
+				C259F2611D904D6100B5EE51 /* AudioWindow.cpp */,
+				C259F2621D904D6100B5EE51 /* AudioWindow.hpp */,
+				C259F2571D904A6D00B5EE51 /* SpectralFilter.cpp */,
+				C259F2581D904A6D00B5EE51 /* SpectralFilter.hpp */,
+				C259F24D1D9047B800B5EE51 /* Transform.cpp */,
+				C259F24E1D9047B800B5EE51 /* Transform.hpp */,
+				C259F2351D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp */,
+				C259F2361D87058700B5EE51 /* FilterEnvelopeOpenGL.hpp */,
+				C203C2411D864F2D00CB9350 /* EnvelopeOpenGL.cpp */,
+				C203C2421D864F2D00CB9350 /* EnvelopeOpenGL.hpp */,
+				C2D554C11D8382B000E31E3B /* OpenGL.framework */,
 				C2D82E8F1D7EEE78007948D4 /* BlockEffect.cpp */,
 				C2D82E901D7EEE78007948D4 /* BlockEffect.hpp */,
 				C2D82E911D7EEE78007948D4 /* BlockEffectProcessingChain.cpp */,
@@ -1434,6 +1669,19 @@
 		4FD16A0213B6303B001D0217 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				C259F2461D8F888900B5EE51 /* SerumKnob.png */,
+				C259F23F1D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png */,
+				C259F22C1D87001600B5EE51 /* IFaderControl_Vert.png */,
+				C203C24B1D86FE9A00CB9350 /* TestSynthBackground.png */,
+				C203C23A1D86349A00CB9350 /* Add9NiceLookingKnob.png */,
+				C203C2331D86303200CB9350 /* ZebraKnob2.png */,
+				C25A2E7D1D8605CA0080351D /* noise.png */,
+				C25A2E7E1D8605CA0080351D /* pulse.png */,
+				C25A2E7F1D8605CA0080351D /* saw.png */,
+				C25A2E801D8605CA0080351D /* sine.png */,
+				C25A2E811D8605CA0080351D /* square.png */,
+				C25A2E821D8605CA0080351D /* triangle.png */,
+				C29A2E4A1D85BC7E002BEA5C /* Add9Synthesizer.png */,
 				C2B90A321D7F1C9A005D422E /* phaseMode.png */,
 				C22651551D7F052C004E9A13 /* waveform.png */,
 				4F23B9E413B647A00097A67E /* knob.png */,
@@ -1520,6 +1768,8 @@
 			files = (
 				4F3AE17B12C0E5E2001FD7A4 /* resource.h in Headers */,
 				4F3AE17C12C0E5E2001FD7A4 /* AudioComponents.h in Headers */,
+				C259F2741D91986300B5EE51 /* BiquadFilter.hpp in Headers */,
+				C259F27E1D91A95400B5EE51 /* BlockFormantFilter.hpp in Headers */,
 				C25FEFB51D73978C002D122F /* OscillatorGroup.hpp in Headers */,
 				C25FEF3C1D7357E4002D122F /* AudioChannel.hpp in Headers */,
 				4FF016F7134E14E2001447BA /* mutex.h in Headers */,
@@ -1531,20 +1781,28 @@
 				4FD16D2413B6351C001D0217 /* swell-functions.h in Headers */,
 				4FD16D2D13B6353C001D0217 /* swell-internal.h in Headers */,
 				4FD16D3213B6355A001D0217 /* swell-types.h in Headers */,
+				C259F2881D91B11400B5EE51 /* BlockDistortion.hpp in Headers */,
 				4F78D8D913B63B5D0032E0F3 /* aeffect.h in Headers */,
 				4F78D8DA13B63B5D0032E0F3 /* aeffectx.h in Headers */,
+				C259F2561D9047B800B5EE51 /* Transform.hpp in Headers */,
 				4FF0171A134E153A001447BA /* heapbuf.h in Headers */,
 				4F1F1BEA135B1F60003A5BB2 /* wdlendian.h in Headers */,
 				C25FEF6E1D73733C002D122F /* Phasor.hpp in Headers */,
 				4F78D93E13B63BA50032E0F3 /* IPlug_include_in_plug_hdr.h in Headers */,
 				4F78D94013B63BA50032E0F3 /* IPlug_include_in_plug_src.h in Headers */,
+				C259F2B01D94AA2300B5EE51 /* LFO.hpp in Headers */,
 				4F78D94113B63BA50032E0F3 /* IControl.h in Headers */,
 				4F78D94213B63BA50032E0F3 /* IKeyboardControl.h in Headers */,
 				4F78D94413B63BA50032E0F3 /* IPlugBase.h in Headers */,
 				4F78D94613B63BA50032E0F3 /* IGraphicsMac.h in Headers */,
+				C259F29C1D943AA000B5EE51 /* Parameter.hpp in Headers */,
 				C25FEFC91D73B6E0002D122F /* FormantFilter.hpp in Headers */,
 				4F78D94913B63BA50032E0F3 /* Containers.h in Headers */,
+				C259F2921D91B42D00B5EE51 /* BlockFlanger.hpp in Headers */,
+				C259F2A61D943B0200B5EE51 /* Modulator.hpp in Headers */,
 				4F78D94A13B63BA50032E0F3 /* Hosts.h in Headers */,
+				C259F23E1D87058700B5EE51 /* FilterEnvelopeOpenGL.hpp in Headers */,
+				C203C24A1D864F2D00CB9350 /* EnvelopeOpenGL.hpp in Headers */,
 				C25FEF281D73550D002D122F /* Oscillator.hpp in Headers */,
 				C25FEFF11D73DF6B002D122F /* BlockDelay.hpp in Headers */,
 				4F78D95113B63BA50032E0F3 /* IGraphicsCocoa.h in Headers */,
@@ -1557,9 +1815,11 @@
 				4F78D95F13B63BA50032E0F3 /* IGraphicsCarbon.h in Headers */,
 				4F78D96013B63BA50032E0F3 /* IGraphics.h in Headers */,
 				4F78DA0713B63CD90032E0F3 /* IPlugAU.h in Headers */,
+				C259F2601D904A6D00B5EE51 /* SpectralFilter.hpp in Headers */,
 				4F3EE94913B65A350097B791 /* IPlugOSDetect.h in Headers */,
 				4FDA440913F3E4F2000B4551 /* IBitmapMonoText.h in Headers */,
 				4FA88B931444E4C4006CB8DA /* dfx-au-utilities.h in Headers */,
+				C259F26A1D904D6100B5EE51 /* AudioWindow.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1572,26 +1832,35 @@
 				4F78DAB813B640530032E0F3 /* RtAudio.h in Headers */,
 				4F78DAB913B640530032E0F3 /* RtError.h in Headers */,
 				4F78DABA13B640530032E0F3 /* RtMidi.h in Headers */,
+				C259F2551D9047B800B5EE51 /* Transform.hpp in Headers */,
 				4F78DAB113B640470032E0F3 /* swell-menugen.h in Headers */,
+				C259F2AF1D94AA2300B5EE51 /* LFO.hpp in Headers */,
 				C25FEFF01D73DF6B002D122F /* BlockDelay.hpp in Headers */,
 				4F78DAB213B640470032E0F3 /* swell-dlggen.h in Headers */,
 				4F78DAB313B640470032E0F3 /* swellappmain.h in Headers */,
 				4F78DA7713B640050032E0F3 /* resource.h in Headers */,
 				C25FEFB41D73978C002D122F /* OscillatorGroup.hpp in Headers */,
+				C259F2A51D943B0200B5EE51 /* Modulator.hpp in Headers */,
+				C203C2491D864F2D00CB9350 /* EnvelopeOpenGL.hpp in Headers */,
 				4F78DA7813B640050032E0F3 /* AudioComponents.h in Headers */,
 				4F78DA8A13B640050032E0F3 /* mutex.h in Headers */,
+				C259F2691D904D6100B5EE51 /* AudioWindow.hpp in Headers */,
+				C259F2911D91B42D00B5EE51 /* BlockFlanger.hpp in Headers */,
 				4F78DA8B13B640050032E0F3 /* ptrlist.h in Headers */,
 				4F78DA8C13B640050032E0F3 /* wdlstring.h in Headers */,
 				4F78DA8D13B640050032E0F3 /* heapbuf.h in Headers */,
 				4F78DA8E13B640050032E0F3 /* wdlendian.h in Headers */,
+				C259F27D1D91A95400B5EE51 /* BlockFormantFilter.hpp in Headers */,
 				4F78DA8F13B640050032E0F3 /* swell.h in Headers */,
 				4F78DA9013B640050032E0F3 /* swell-functions.h in Headers */,
+				C259F25F1D904A6D00B5EE51 /* SpectralFilter.hpp in Headers */,
 				C25FEFE61D73D753002D122F /* SampleDelay.hpp in Headers */,
 				C25FEF3B1D7357E4002D122F /* AudioChannel.hpp in Headers */,
 				C25FEF271D73550D002D122F /* Oscillator.hpp in Headers */,
 				C25FEFC81D73B6E0002D122F /* FormantFilter.hpp in Headers */,
 				4F78DA9113B640050032E0F3 /* swell-internal.h in Headers */,
 				4F78DA9213B640050032E0F3 /* swell-types.h in Headers */,
+				C259F29B1D943AA000B5EE51 /* Parameter.hpp in Headers */,
 				4F78DA9313B640050032E0F3 /* aeffect.h in Headers */,
 				4F78DA9413B640050032E0F3 /* aeffectx.h in Headers */,
 				4F78DA9513B640050032E0F3 /* IPlug_include_in_plug_hdr.h in Headers */,
@@ -1602,16 +1871,19 @@
 				4F78DA9A13B640050032E0F3 /* IGraphicsMac.h in Headers */,
 				4F78DA9C13B640050032E0F3 /* Containers.h in Headers */,
 				4F78DA9D13B640050032E0F3 /* Hosts.h in Headers */,
+				C259F2871D91B11400B5EE51 /* BlockDistortion.hpp in Headers */,
 				4F78DA9E13B640050032E0F3 /* IGraphicsCocoa.h in Headers */,
 				4F78DA9F13B640050032E0F3 /* Log.h in Headers */,
 				4F78DAA013B640050032E0F3 /* IPopupMenu.h in Headers */,
 				4F78DAA113B640050032E0F3 /* IPlugStructs.h in Headers */,
+				C259F23D1D87058700B5EE51 /* FilterEnvelopeOpenGL.hpp in Headers */,
 				4F78DAA213B640050032E0F3 /* IPlug_Prefix.pch in Headers */,
 				4F78DAA313B640050032E0F3 /* IParam.h in Headers */,
 				4F78DAA413B640050032E0F3 /* IMidiQueue.h in Headers */,
 				4F78DAA513B640050032E0F3 /* IGraphicsCarbon.h in Headers */,
 				4F78DAA613B640050032E0F3 /* IGraphics.h in Headers */,
 				4F3EE94613B65A350097B791 /* IPlugOSDetect.h in Headers */,
+				C259F2731D91986300B5EE51 /* BiquadFilter.hpp in Headers */,
 				4FDA440F13F3E4F2000B4551 /* IBitmapMonoText.h in Headers */,
 				C25FEF6D1D73733C002D122F /* Phasor.hpp in Headers */,
 			);
@@ -1848,8 +2120,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C203C23C1D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */,
+				C203C2351D86303200CB9350 /* ZebraKnob2.png in Resources */,
+				C29A2E4C1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
+				C203C24D1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
+				C25A2EA21D8605CA0080351D /* triangle.png in Resources */,
+				C25A2E9C1D8605CA0080351D /* square.png in Resources */,
+				C259F2481D8F888900B5EE51 /* SerumKnob.png in Resources */,
+				C25A2E901D8605CA0080351D /* saw.png in Resources */,
+				C259F22E1D87001600B5EE51 /* IFaderControl_Vert.png in Resources */,
+				C25A2E961D8605CA0080351D /* sine.png in Resources */,
+				C25A2E8A1D8605CA0080351D /* pulse.png in Resources */,
 				C2B90A341D7F1C9A005D422E /* phaseMode.png in Resources */,
 				C22651571D7F052C004E9A13 /* waveform.png in Resources */,
+				C25A2E841D8605CA0080351D /* noise.png in Resources */,
+				C259F2411D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */,
 				4F23B9F313B647A00097A67E /* knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1858,8 +2143,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C203C23E1D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */,
+				C203C2371D86303200CB9350 /* ZebraKnob2.png in Resources */,
+				C29A2E4E1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
+				C203C24F1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
+				C25A2EA41D8605CA0080351D /* triangle.png in Resources */,
+				C25A2E9E1D8605CA0080351D /* square.png in Resources */,
+				C259F24A1D8F888900B5EE51 /* SerumKnob.png in Resources */,
+				C25A2E921D8605CA0080351D /* saw.png in Resources */,
+				C259F2301D87001600B5EE51 /* IFaderControl_Vert.png in Resources */,
+				C25A2E981D8605CA0080351D /* sine.png in Resources */,
+				C25A2E8C1D8605CA0080351D /* pulse.png in Resources */,
 				C2B90A361D7F1C9A005D422E /* phaseMode.png in Resources */,
 				C22651591D7F052C004E9A13 /* waveform.png in Resources */,
+				C25A2E861D8605CA0080351D /* noise.png in Resources */,
+				C259F2431D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */,
 				4F23BA0C13B647A00097A67E /* knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1868,8 +2166,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C203C23F1D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */,
+				C203C2381D86303200CB9350 /* ZebraKnob2.png in Resources */,
+				C29A2E4F1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
+				C203C2501D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
+				C25A2EA51D8605CA0080351D /* triangle.png in Resources */,
+				C25A2E9F1D8605CA0080351D /* square.png in Resources */,
+				C259F24B1D8F888900B5EE51 /* SerumKnob.png in Resources */,
+				C25A2E931D8605CA0080351D /* saw.png in Resources */,
+				C259F2311D87001600B5EE51 /* IFaderControl_Vert.png in Resources */,
+				C25A2E991D8605CA0080351D /* sine.png in Resources */,
+				C25A2E8D1D8605CA0080351D /* pulse.png in Resources */,
 				C2B90A371D7F1C9A005D422E /* phaseMode.png in Resources */,
 				C226515A1D7F052C004E9A13 /* waveform.png in Resources */,
+				C25A2E871D8605CA0080351D /* noise.png in Resources */,
+				C259F2441D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */,
 				4F7F5C4613E95EC8002918FD /* knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1878,8 +2189,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C203C23D1D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */,
+				C203C2361D86303200CB9350 /* ZebraKnob2.png in Resources */,
+				C29A2E4D1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
+				C203C24E1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
+				C25A2EA31D8605CA0080351D /* triangle.png in Resources */,
+				C25A2E9D1D8605CA0080351D /* square.png in Resources */,
+				C259F2491D8F888900B5EE51 /* SerumKnob.png in Resources */,
+				C25A2E911D8605CA0080351D /* saw.png in Resources */,
+				C259F22F1D87001600B5EE51 /* IFaderControl_Vert.png in Resources */,
+				C25A2E971D8605CA0080351D /* sine.png in Resources */,
+				C25A2E8B1D8605CA0080351D /* pulse.png in Resources */,
 				C2B90A351D7F1C9A005D422E /* phaseMode.png in Resources */,
 				C22651581D7F052C004E9A13 /* waveform.png in Resources */,
+				C25A2E851D8605CA0080351D /* noise.png in Resources */,
+				C259F2421D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */,
 				4F9828B1140A9EB700F3FCC1 /* knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1888,8 +2212,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C203C2401D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */,
+				C203C2391D86303200CB9350 /* ZebraKnob2.png in Resources */,
+				C29A2E501D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
+				C203C2511D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
+				C25A2EA61D8605CA0080351D /* triangle.png in Resources */,
+				C25A2EA01D8605CA0080351D /* square.png in Resources */,
+				C259F24C1D8F888900B5EE51 /* SerumKnob.png in Resources */,
+				C25A2E941D8605CA0080351D /* saw.png in Resources */,
+				C259F2321D87001600B5EE51 /* IFaderControl_Vert.png in Resources */,
+				C25A2E9A1D8605CA0080351D /* sine.png in Resources */,
+				C25A2E8E1D8605CA0080351D /* pulse.png in Resources */,
 				C2B90A381D7F1C9A005D422E /* phaseMode.png in Resources */,
 				C226515B1D7F052C004E9A13 /* waveform.png in Resources */,
+				C25A2E881D8605CA0080351D /* noise.png in Resources */,
+				C259F2451D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */,
 				4FB600161567CB0A0020189A /* knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1898,11 +2235,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C203C24C1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
 				C2B90A331D7F1C9A005D422E /* phaseMode.png in Resources */,
 				4F78D88613B6382B0032E0F3 /* AudioComponents.icns in Resources */,
+				C259F2471D8F888900B5EE51 /* SerumKnob.png in Resources */,
+				C25A2E831D8605CA0080351D /* noise.png in Resources */,
+				C259F22D1D87001600B5EE51 /* IFaderControl_Vert.png in Resources */,
+				C203C2341D86303200CB9350 /* ZebraKnob2.png in Resources */,
+				C25A2E8F1D8605CA0080351D /* saw.png in Resources */,
+				C259F2401D8ECC2300B5EE51 /* ADD_Synthesizer_Template4.png in Resources */,
 				C22651561D7F052C004E9A13 /* waveform.png in Resources */,
 				4F78D89913B639100032E0F3 /* InfoPlist.strings in Resources */,
+				C29A2E4B1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
+				C25A2E951D8605CA0080351D /* sine.png in Resources */,
+				C203C23B1D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */,
+				C25A2EA11D8605CA0080351D /* triangle.png in Resources */,
 				4F78D89A13B639100032E0F3 /* MainMenu.xib in Resources */,
+				C25A2E891D8605CA0080351D /* pulse.png in Resources */,
+				C25A2E9B1D8605CA0080351D /* square.png in Resources */,
 				4F23B9FD13B647A00097A67E /* knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1953,26 +2303,38 @@
 			files = (
 				C25FEFB91D73ACFC002D122F /* Filter.cpp in Sources */,
 				C25FEFE11D73D753002D122F /* SampleDelay.cpp in Sources */,
+				C259F2641D904D6100B5EE51 /* AudioWindow.cpp in Sources */,
 				4F20EECB132C69FE0030E34C /* AudioComponents.cpp in Sources */,
 				4FD16D1213B634BF001D0217 /* swell-gdi.mm in Sources */,
 				4F78D9BB13B63BA50032E0F3 /* IPlugBase.cpp in Sources */,
+				C259F25A1D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */,
+				C203C2441D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */,
 				4F78D9BC13B63BA50032E0F3 /* IPlugStructs.cpp in Sources */,
+				C259F2AA1D94AA2300B5EE51 /* LFO.cpp in Sources */,
 				4F78D9BD13B63BA50032E0F3 /* Hosts.cpp in Sources */,
 				4F78D9BF13B63BA50032E0F3 /* IGraphicsMac.mm in Sources */,
 				4F78D9C013B63BA50032E0F3 /* IGraphics.cpp in Sources */,
 				4F78D9C113B63BA50032E0F3 /* IGraphicsCarbon.cpp in Sources */,
 				4F78D9C213B63BA50032E0F3 /* IGraphicsCocoa.mm in Sources */,
 				C25FEF681D73733C002D122F /* Phasor.cpp in Sources */,
+				C259F28C1D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */,
 				4F78D9C313B63BA50032E0F3 /* Log.cpp in Sources */,
 				4F78D9C413B63BA50032E0F3 /* IPopupMenu.cpp in Sources */,
 				C25FEF221D73550D002D122F /* Oscillator.cpp in Sources */,
 				4F78D9C813B63BA50032E0F3 /* IParam.cpp in Sources */,
 				4F78D9C913B63BA50032E0F3 /* IControl.cpp in Sources */,
+				C259F2821D91B11400B5EE51 /* BlockDistortion.cpp in Sources */,
+				C259F2381D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */,
+				C259F26E1D91986300B5EE51 /* BiquadFilter.cpp in Sources */,
 				4F78D9F313B63C6A0032E0F3 /* IPlugVST.cpp in Sources */,
+				C259F2501D9047B800B5EE51 /* Transform.cpp in Sources */,
 				C25FEFC31D73B6E0002D122F /* FormantFilter.cpp in Sources */,
+				C259F2A01D943B0200B5EE51 /* Modulator.cpp in Sources */,
 				4FDA440C13F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
 				C25FEFAF1D73978C002D122F /* OscillatorGroup.cpp in Sources */,
+				C259F2781D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */,
 				C25FEFEB1D73DF6B002D122F /* BlockDelay.cpp in Sources */,
+				C259F2961D943AA000B5EE51 /* Parameter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1980,10 +2342,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C259F2521D9047B800B5EE51 /* Transform.cpp in Sources */,
+				C259F2661D904D6100B5EE51 /* AudioWindow.cpp in Sources */,
+				C259F27A1D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */,
 				4F3AE1A312C0E5E2001FD7A4 /* AudioComponents.cpp in Sources */,
+				C259F2A21D943B0200B5EE51 /* Modulator.cpp in Sources */,
 				4FD16D0E13B634BF001D0217 /* swell-gdi.mm in Sources */,
 				4F78D94513B63BA50032E0F3 /* IPlugBase.cpp in Sources */,
 				4F78D94713B63BA50032E0F3 /* IPlugStructs.cpp in Sources */,
+				C259F2981D943AA000B5EE51 /* Parameter.cpp in Sources */,
+				C259F2AC1D94AA2300B5EE51 /* LFO.cpp in Sources */,
 				4F78D94B13B63BA50032E0F3 /* Hosts.cpp in Sources */,
 				C25FEFED1D73DF6B002D122F /* BlockDelay.cpp in Sources */,
 				C25FEF241D73550D002D122F /* Oscillator.cpp in Sources */,
@@ -1994,15 +2362,21 @@
 				4F78D95013B63BA50032E0F3 /* IGraphicsCocoa.mm in Sources */,
 				C25FEFBB1D73ACFC002D122F /* Filter.cpp in Sources */,
 				4F78D95313B63BA50032E0F3 /* Log.cpp in Sources */,
+				C259F25C1D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */,
+				C203C2461D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */,
 				C25FEFC51D73B6E0002D122F /* FormantFilter.cpp in Sources */,
 				4F78D95513B63BA50032E0F3 /* IPopupMenu.cpp in Sources */,
 				C25FEFB11D73978C002D122F /* OscillatorGroup.cpp in Sources */,
 				4F78D95C13B63BA50032E0F3 /* IParam.cpp in Sources */,
 				C25FEF6A1D73733C002D122F /* Phasor.cpp in Sources */,
+				C259F23A1D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */,
 				4F78D96113B63BA50032E0F3 /* IControl.cpp in Sources */,
+				C259F28E1D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */,
+				C259F2701D91986300B5EE51 /* BiquadFilter.cpp in Sources */,
 				4F78DA0813B63CD90032E0F3 /* IPlugAU.cpp in Sources */,
 				4F78DA0A13B63CD90032E0F3 /* IPlugAU_ViewFactory.mm in Sources */,
 				4FDA440813F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
+				C259F2841D91B11400B5EE51 /* BlockDistortion.cpp in Sources */,
 				4F296BDA1678E6C800C0F5C2 /* dfx-au-utilities.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2012,11 +2386,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F7F5C4913E95EC8002918FD /* AudioComponents.cpp in Sources */,
+				C259F2711D91986300B5EE51 /* BiquadFilter.cpp in Sources */,
 				4F7F5C5013E95EC8002918FD /* swell-gdi.mm in Sources */,
 				4F7F5C5113E95EC8002918FD /* IPlugBase.cpp in Sources */,
+				C259F2851D91B11400B5EE51 /* BlockDistortion.cpp in Sources */,
 				4F7F5C5213E95EC8002918FD /* IPlugStructs.cpp in Sources */,
 				4F7F5C5313E95EC8002918FD /* Hosts.cpp in Sources */,
+				C259F2671D904D6100B5EE51 /* AudioWindow.cpp in Sources */,
 				4F7F5C5413E95EC8002918FD /* IGraphicsMac.mm in Sources */,
+				C259F2AD1D94AA2300B5EE51 /* LFO.cpp in Sources */,
+				C259F2531D9047B800B5EE51 /* Transform.cpp in Sources */,
 				C25FEFE41D73D753002D122F /* SampleDelay.cpp in Sources */,
 				4F7F5C5513E95EC8002918FD /* IGraphics.cpp in Sources */,
 				4F7F5C5613E95EC8002918FD /* IGraphicsCarbon.cpp in Sources */,
@@ -2024,20 +2403,27 @@
 				C25FEFC61D73B6E0002D122F /* FormantFilter.cpp in Sources */,
 				C25FEFB21D73978C002D122F /* OscillatorGroup.cpp in Sources */,
 				4F7F5C5813E95EC8002918FD /* Log.cpp in Sources */,
+				C203C2471D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */,
 				4F7F5C5913E95EC8002918FD /* IPopupMenu.cpp in Sources */,
 				C25FEF251D73550D002D122F /* Oscillator.cpp in Sources */,
 				4F7F5C5A13E95EC8002918FD /* IParam.cpp in Sources */,
 				4F7F5C5B13E95EC8002918FD /* IControl.cpp in Sources */,
+				C259F23B1D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */,
 				4F7F5C7113E95FB2002918FD /* IPlugRTAS.cpp in Sources */,
+				C259F2A31D943B0200B5EE51 /* Modulator.cpp in Sources */,
 				4F7F5CAD13E9607A002918FD /* digicode1.cpp in Sources */,
 				4F7F5CAE13E9607A002918FD /* digicode2.cpp in Sources */,
+				C259F27B1D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */,
+				C259F25D1D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */,
 				4F7F5CAF13E9607A002918FD /* digicode3.cpp in Sources */,
 				C25FEFBC1D73ACFC002D122F /* Filter.cpp in Sources */,
 				4F7F5CB013E9607A002918FD /* IPlugCustomUI.cpp in Sources */,
+				C259F2991D943AA000B5EE51 /* Parameter.cpp in Sources */,
 				C25FEFEE1D73DF6B002D122F /* BlockDelay.cpp in Sources */,
 				4F7F5CB113E9607A002918FD /* IPlugGroup.cpp in Sources */,
 				4F7F5CB213E9607A002918FD /* IPlugProcess.cpp in Sources */,
 				C25FEF6B1D73733C002D122F /* Phasor.cpp in Sources */,
+				C259F28F1D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */,
 				4F7F5CB313E9607A002918FD /* IPlugProcessRTAS.cpp in Sources */,
 				4FDA440713F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
 				4F79A34E146304CD00744AED /* IPlugProcessAS.cpp in Sources */,
@@ -2048,28 +2434,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C259F2511D9047B800B5EE51 /* Transform.cpp in Sources */,
 				4F9828B6140A9EB700F3FCC1 /* AudioComponents.cpp in Sources */,
 				C25FEFC41D73B6E0002D122F /* FormantFilter.cpp in Sources */,
 				4F9828B7140A9EB700F3FCC1 /* swell-gdi.mm in Sources */,
 				4F9828B8140A9EB700F3FCC1 /* IPlugBase.cpp in Sources */,
 				C25FEFB01D73978C002D122F /* OscillatorGroup.cpp in Sources */,
+				C259F2391D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */,
 				4F9828B9140A9EB700F3FCC1 /* IPlugStructs.cpp in Sources */,
 				4F9828BA140A9EB700F3FCC1 /* Hosts.cpp in Sources */,
+				C259F2AB1D94AA2300B5EE51 /* LFO.cpp in Sources */,
+				C259F2A11D943B0200B5EE51 /* Modulator.cpp in Sources */,
+				C259F2831D91B11400B5EE51 /* BlockDistortion.cpp in Sources */,
 				4F9828BB140A9EB700F3FCC1 /* IGraphicsMac.mm in Sources */,
+				C259F28D1D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */,
+				C259F26F1D91986300B5EE51 /* BiquadFilter.cpp in Sources */,
 				C25FEF691D73733C002D122F /* Phasor.cpp in Sources */,
 				C25FEFE21D73D753002D122F /* SampleDelay.cpp in Sources */,
 				4F9828BC140A9EB700F3FCC1 /* IGraphics.cpp in Sources */,
 				4F9828BD140A9EB700F3FCC1 /* IGraphicsCarbon.cpp in Sources */,
 				4F9828BE140A9EB700F3FCC1 /* IGraphicsCocoa.mm in Sources */,
 				4F9828BF140A9EB700F3FCC1 /* Log.cpp in Sources */,
+				C203C2451D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */,
 				4F9828C0140A9EB700F3FCC1 /* IPopupMenu.cpp in Sources */,
 				4F9828C1140A9EB700F3FCC1 /* IParam.cpp in Sources */,
 				4F9828C2140A9EB700F3FCC1 /* IControl.cpp in Sources */,
 				4F9828C3140A9EB700F3FCC1 /* IBitmapMonoText.cpp in Sources */,
 				C25FEFEC1D73DF6B002D122F /* BlockDelay.cpp in Sources */,
+				C259F25B1D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */,
 				4F9828C4140A9EB700F3FCC1 /* IPlugVST3.cpp in Sources */,
 				4F9828C5140A9EB700F3FCC1 /* memorystream.cpp in Sources */,
 				4F9828C6140A9EB700F3FCC1 /* pluginview.cpp in Sources */,
+				C259F2651D904D6100B5EE51 /* AudioWindow.cpp in Sources */,
 				4F9828C7140A9EB700F3FCC1 /* macmain.cpp in Sources */,
 				4F9828C8140A9EB700F3FCC1 /* pluginfactoryvst3.cpp in Sources */,
 				4F9828C9140A9EB700F3FCC1 /* vstaudioeffect.cpp in Sources */,
@@ -2079,10 +2475,12 @@
 				4F9828CE140A9EB700F3FCC1 /* vstinitiids.cpp in Sources */,
 				C25FEFBA1D73ACFC002D122F /* Filter.cpp in Sources */,
 				4F9828CF140A9EB700F3FCC1 /* vstnoteexpressiontypes.cpp in Sources */,
+				C259F2971D943AA000B5EE51 /* Parameter.cpp in Sources */,
 				4F9828D0140A9EB700F3FCC1 /* vstparameters.cpp in Sources */,
 				C25FEF231D73550D002D122F /* Oscillator.cpp in Sources */,
 				4F9828D1140A9EB700F3FCC1 /* vstpresetfile.cpp in Sources */,
 				4F9828D2140A9EB700F3FCC1 /* vstrepresentation.cpp in Sources */,
+				C259F2791D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */,
 				4F9828D3140A9EB700F3FCC1 /* vstsinglecomponenteffect.cpp in Sources */,
 				4F9828D4140A9EB700F3FCC1 /* conststringtable.cpp in Sources */,
 				4F9828D5140A9EB700F3FCC1 /* funknown.cpp in Sources */,
@@ -2095,21 +2493,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				C25FEF6C1D73733C002D122F /* Phasor.cpp in Sources */,
+				C259F25E1D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */,
 				4FB600181567CB0A0020189A /* AudioComponents.cpp in Sources */,
 				4FB600191567CB0A0020189A /* swell-gdi.mm in Sources */,
+				C259F23C1D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */,
 				4FB6001A1567CB0A0020189A /* IPlugBase.cpp in Sources */,
 				4FB6001B1567CB0A0020189A /* IPlugStructs.cpp in Sources */,
+				C259F2901D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */,
 				4FB6001C1567CB0A0020189A /* Hosts.cpp in Sources */,
+				C259F2A41D943B0200B5EE51 /* Modulator.cpp in Sources */,
+				C259F2861D91B11400B5EE51 /* BlockDistortion.cpp in Sources */,
 				C25FEFEF1D73DF6B002D122F /* BlockDelay.cpp in Sources */,
+				C259F29A1D943AA000B5EE51 /* Parameter.cpp in Sources */,
 				4FB6001D1567CB0A0020189A /* IGraphicsMac.mm in Sources */,
 				4FB6001E1567CB0A0020189A /* IGraphics.cpp in Sources */,
+				C259F2AE1D94AA2300B5EE51 /* LFO.cpp in Sources */,
 				4FB6001F1567CB0A0020189A /* IGraphicsCarbon.cpp in Sources */,
 				4FB600201567CB0A0020189A /* IGraphicsCocoa.mm in Sources */,
 				4FB600211567CB0A0020189A /* Log.cpp in Sources */,
+				C203C2481D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */,
+				C259F27C1D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */,
+				C259F2541D9047B800B5EE51 /* Transform.cpp in Sources */,
 				4FB600221567CB0A0020189A /* IPopupMenu.cpp in Sources */,
 				4FB600231567CB0A0020189A /* IParam.cpp in Sources */,
 				C25FEFBD1D73ACFC002D122F /* Filter.cpp in Sources */,
 				C25FEFC71D73B6E0002D122F /* FormantFilter.cpp in Sources */,
+				C259F2681D904D6100B5EE51 /* AudioWindow.cpp in Sources */,
 				4FB600241567CB0A0020189A /* IControl.cpp in Sources */,
 				4FB600251567CB0A0020189A /* IBitmapMonoText.cpp in Sources */,
 				4FB600261567CB0A0020189A /* AAX_Exports.cpp in Sources */,
@@ -2119,6 +2528,7 @@
 				C25FEFB31D73978C002D122F /* OscillatorGroup.cpp in Sources */,
 				C25FEF261D73550D002D122F /* Oscillator.cpp in Sources */,
 				4FB600291567CB0A0020189A /* AAX_CIPlugParameters.cpp in Sources */,
+				C259F2721D91986300B5EE51 /* BiquadFilter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2130,18 +2540,24 @@
 				C25FEFEA1D73DF6B002D122F /* BlockDelay.cpp in Sources */,
 				4FD16D0513B634AA001D0217 /* swell-dlg.mm in Sources */,
 				4FD16D0C13B634BF001D0217 /* swell-gdi.mm in Sources */,
+				C203C2431D864F2D00CB9350 /* EnvelopeOpenGL.cpp in Sources */,
 				4FD16D1613B634D2001D0217 /* swell-ini.cpp in Sources */,
 				4FD16D3A13B63582001D0217 /* swell-kb.mm in Sources */,
 				4FD16D3C13B6358C001D0217 /* swell-miscdlg.mm in Sources */,
 				4FD16D3E13B63595001D0217 /* swell-menu.mm in Sources */,
 				4FD16D4013B635A0001D0217 /* swell-misc.mm in Sources */,
+				C259F26D1D91986300B5EE51 /* BiquadFilter.cpp in Sources */,
+				C259F24F1D9047B800B5EE51 /* Transform.cpp in Sources */,
 				4FD16D4213B635AB001D0217 /* swell-wnd.mm in Sources */,
 				4FD16D4413B635B2001D0217 /* swell.cpp in Sources */,
 				4FD16D4713B635C8001D0217 /* swellappmain.mm in Sources */,
+				C259F2771D91A95400B5EE51 /* BlockFormantFilter.cpp in Sources */,
 				4F78D8C413B63A700032E0F3 /* RtAudio.cpp in Sources */,
 				C25FEF671D73733C002D122F /* Phasor.cpp in Sources */,
 				C25FEFAE1D73978C002D122F /* OscillatorGroup.cpp in Sources */,
 				4F78D8C513B63A700032E0F3 /* RtMidi.cpp in Sources */,
+				C259F2811D91B11400B5EE51 /* BlockDistortion.cpp in Sources */,
+				C259F29F1D943B0200B5EE51 /* Modulator.cpp in Sources */,
 				4F78D90A13B63BA50032E0F3 /* IPlugStandalone.cpp in Sources */,
 				4F78D90B13B63BA50032E0F3 /* IPlugBase.cpp in Sources */,
 				4F78D90C13B63BA50032E0F3 /* IPlugStructs.cpp in Sources */,
@@ -2150,15 +2566,21 @@
 				4F78D91013B63BA50032E0F3 /* IGraphics.cpp in Sources */,
 				C25FEFB81D73ACFC002D122F /* Filter.cpp in Sources */,
 				4F78D91113B63BA50032E0F3 /* IGraphicsCarbon.cpp in Sources */,
+				C259F2631D904D6100B5EE51 /* AudioWindow.cpp in Sources */,
 				4F78D91213B63BA50032E0F3 /* IGraphicsCocoa.mm in Sources */,
+				C259F28B1D91B42D00B5EE51 /* BlockFlanger.cpp in Sources */,
 				4F78D91313B63BA50032E0F3 /* Log.cpp in Sources */,
 				4F78D91413B63BA50032E0F3 /* IPopupMenu.cpp in Sources */,
 				C25FEFC21D73B6E0002D122F /* FormantFilter.cpp in Sources */,
 				4F78D91813B63BA50032E0F3 /* IParam.cpp in Sources */,
+				C259F2591D904A6D00B5EE51 /* SpectralFilter.cpp in Sources */,
+				C259F2951D943AA000B5EE51 /* Parameter.cpp in Sources */,
 				4F78D91913B63BA50032E0F3 /* IControl.cpp in Sources */,
 				4F78DA5A13B63F150032E0F3 /* AudioComponents.cpp in Sources */,
 				4FD16CA213B6327D001D0217 /* app_main.cpp in Sources */,
+				C259F2371D87058700B5EE51 /* FilterEnvelopeOpenGL.cpp in Sources */,
 				4FD16CA313B6327D001D0217 /* app_dialog.cpp in Sources */,
+				C259F2A91D94AA2300B5EE51 /* LFO.cpp in Sources */,
 				4FB3624F13B648FE00DB6B76 /* main.mm in Sources */,
 				4FDA440E13F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
 				C25FEFE01D73D753002D122F /* SampleDelay.cpp in Sources */,
@@ -2307,7 +2729,7 @@
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "$(BINARY_NAME)";
-				SDKROOT = "$(BASE_SDK)";
+				SDKROOT = macosx10.5;
 				SKIP_INSTALL = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
 				VALID_ARCHS = "i386 x86_64";
@@ -2356,7 +2778,7 @@
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "$(BINARY_NAME)";
-				SDKROOT = "$(BASE_SDK)";
+				SDKROOT = macosx10.5;
 				SKIP_INSTALL = NO;
 				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = "";
@@ -2942,7 +3364,7 @@
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "$(BINARY_NAME)";
-				SDKROOT = "$(BASE_SDK)";
+				SDKROOT = macosx10.5;
 				SKIP_INSTALL = NO;
 				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = "";

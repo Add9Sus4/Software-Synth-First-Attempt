@@ -26,6 +26,8 @@
 #include <OpenGL/glu.h>
 #include <stdlib.h>
 #include "time.h"
+#include "Symphony.hpp"
+#include "WaveForm.hpp"
 
 class OpenGLTestClass : public IControl {
 private:
@@ -42,9 +44,10 @@ private:
     float mRotateTri, mRotateQuad;
     IRECT currentRect;
     int counter;
+    Symphony *symphony;
     
 public:
-    OpenGLTestClass(IPlugBase* pPlug, IRECT pR)
+    OpenGLTestClass(IPlugBase* pPlug, IRECT pR, Symphony *symphony)
     :	IControl(pPlug, pR, -1)
     {
         //        currentfilter = filter;
@@ -54,6 +57,7 @@ public:
         createContext();
         mData.Resize(mRECT.W() * mRECT.H() * 4);
         counter = 0;
+        this->symphony = symphony;
         srand(time(NULL));
     }
     
@@ -277,7 +281,8 @@ public:
         glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, GL_ONE, GL_ONE);
         //glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
         
-        glClearColor(0., 0., 0., 0.);
+//        glClearColor(0., 0., 0., 0.);
+        glClearColor(BACKGROUND_COLOR_1_R, BACKGROUND_COLOR_1_G, BACKGROUND_COLOR_1_B, 1.0);
         glClear(GL_COLOR_BUFFER_BIT);
         
         glLineWidth(1.1);
@@ -285,20 +290,40 @@ public:
         
         // ----------------- DRAW ----------------- ALL DRAWING HAPPENS BELOW THIS LINE
         
-        // Diagonal line across the viewing area
-        glColor3f(1.0, 0.0, 0.0);
-        glBegin(GL_LINE_STRIP);
-        glVertex2d(0, 0);
-        glVertex2d(width, height);
-        glEnd();
+        // Draw the waveform associated with the current wave type
+//        glBegin(GL_LINE_STRIP);
+//        for (int i=0; i<WAVETABLE_SIZE; i++) {
+//            double x_value = ((double)(width*0.9*i)/(double)WAVETABLE_SIZE) + width*0.05;
+//            double y_value = (1.0 - ((symphony->getWaveTableValueAtIndex(i) + 1.0)/2.0))*height*0.9 + height*0.05;
+//            double distFromCenter = fabs(y_value - height/2);
+//            glColor4f(0.0, 1.0, 0.0, 1.0*distFromCenter*2.0/(double)height);
+//            glVertex2d(x_value, y_value);
+//        }
+//        glEnd();
         
-        // LOL, the code below makes random points flash all over the view area (utterly pointless, but fun to look at)
-        glBegin(GL_POINTS);
-        for (int i=0; i<100; i++) {
-            glColor3f((float)(rand()%1000)/999., (float)(rand()%1000)/999., (float)(rand()%1000)/999.);
-            glVertex2d(rand()%width, rand()%height);
+        // Draw the line in the center of the waveform
+//        glBegin(GL_LINE_STRIP);
+//        glColor4f(0.0, 1.0, 0.0, 0.25);
+//        glVertex2d(0, height/2);
+//        glVertex2d(width, height/2);
+//        glEnd();
+        
+        // Draw vertical lines from the waveform to the center
+        glColor4f(0.0, 1.0, 0.0, 0.25);
+        for (int i=0; i<WAVETABLE_SIZE; i += 100) {
+            glBegin(GL_LINE_STRIP);
+            double waveform_y = (1.0 - ((symphony->getWaveTableValueAtIndex(i) + 1.0)/2.0))*height*0.9 + height*0.05;
+            double center_y = height/2;
+            double offset_y = waveform_y - center_y;
+            int numSegs = 5;
+            double inc_y = offset_y/(double)numSegs;
+            double waveform_x = ((double)(width*0.9*i)/(double)WAVETABLE_SIZE) + width*0.05;
+            for (int j=0; j<numSegs+1; j++) {
+                glColor4f(0.0, 1.0, 0.0, 1.0*(double)j/(double)numSegs);
+                glVertex2d(waveform_x, center_y + inc_y*(double)j);
+            }
+            glEnd();
         }
-        glEnd();
         
         // ----------------- END DRAW ----------------- ALL DRAWING HAPPENS ABOVE THIS LINE
         

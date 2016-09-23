@@ -27,6 +27,8 @@
 #include <stdio.h>
 #include "Phasor.hpp"
 
+#define WAVETABLE_SIZE  4096
+
 
 class WaveForm {
 private:
@@ -41,7 +43,7 @@ protected:
     // The number of samples to be stored in the waveForm
     int length;
     
-    // Buffer containing the samples in the waveForm
+    // Buffer containing the samples in the waveForm (length = WAVETABLE_SIZE)
     double *samples = NULL;
     
     // Is the waveForm phase-inverted?
@@ -51,14 +53,14 @@ public:
     
     // Constructor for the waveForm
     WaveForm(double frequency) {
-        length = 4096;
+        length = WAVETABLE_SIZE;
         phasor = new Phasor(frequency, WavePhase::SYNC);
         inverted = false;
     };
     
     // Constructor for the waveForm
     WaveForm(double frequency, double initialPhase) {
-        length = 4096;
+        length = WAVETABLE_SIZE;
         phasor = new Phasor(frequency, initialPhase);
         inverted = false;
     };
@@ -91,6 +93,10 @@ public:
     void setFrequency(double frequency) { phasor->setFrequency(frequency); }
     
     void setPhase(double phase) { phasor->setPhase(phase); }
+    
+    double getSampleAtIndex(int i) {
+        return samples[i];
+    }
 };
 
 #endif /* WaveForm_hpp */

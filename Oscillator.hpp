@@ -220,6 +220,10 @@ public:
         waveFormRight->setPhase(newPhase);
     }
     
+    double getWaveTableValueAtIndex(int i) {
+        return waveFormLeft->getSampleAtIndex(i);
+    }
+    
 };
 
 

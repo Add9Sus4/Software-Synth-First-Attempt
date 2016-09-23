@@ -12,7 +12,14 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#include <iostream>
 #include "SampleEffect.hpp"
+
+#define FILTER_FREQ_MIN             10
+#define FILTER_FREQ_MAX             15000
+#define FILTER_FREQ_DEFAULT         500
+
+#define FILTER_CUTOFF_CHANGE_LENGTH 2000
 
 /* filter types */
 enum {
@@ -32,9 +39,14 @@ private:
     int type;
     double dbGain;
     double freq;
+    double currentOffset;
     double srate;
     double bandwidth;
     double centerFreq;
+    
+    double centerFreqChangeIncrement;
+    int centerFreqChangeCount;
+    bool changingFreq;
     
 public:
     Filter(int type, double dbGain, double freq,
@@ -43,10 +55,26 @@ public:
     
     double getFreq() { return freq; }
     
-    void updateCoefficients(double freq);
+    void updateCoefficients(double freqOffset);
     
     /* Computes a BiQuad filter on a sample */
-    double process(double sample);
+    double processSample(double sample);
+    
+    void changeCutoff(double newCutoff) {
+        if (newCutoff <= FILTER_FREQ_MAX && newCutoff >= FILTER_FREQ_MIN) {
+            // Find out how much the frequency should change by
+            double change = newCutoff - centerFreq;
+        
+            // Determine increment that the gain will have to change with each sample in order to achieve change
+            centerFreqChangeIncrement = change/(double)FILTER_CUTOFF_CHANGE_LENGTH;
+        
+            // Set count to zero
+            centerFreqChangeCount = 0;
+        
+            // Start changing gain
+            changingFreq = true;
+        }
+    }
 
 };
 

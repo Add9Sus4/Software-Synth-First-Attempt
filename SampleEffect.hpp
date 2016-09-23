@@ -16,7 +16,7 @@ class SampleEffect {
 private:
     
 public:
-    double process(double sample) { return sample; };
+    double processSample(double sample) { return sample; };
 };
 
 #endif /* SampleEffect_hpp */

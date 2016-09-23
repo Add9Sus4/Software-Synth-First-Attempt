@@ -11,10 +11,10 @@
 
 #include <stdio.h>
 
-enum AudioChannel {
-    LEFT,
-    RIGHT
-};
+//enum AudioChannel {
+//    LEFT,
+//    RIGHT
+//};
 
 enum NumChannels {
     MONO,

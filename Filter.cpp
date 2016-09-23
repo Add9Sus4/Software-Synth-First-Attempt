@@ -43,11 +43,16 @@
 Filter::Filter(int type, double dbGain, double freq,
                double srate, double bandwidth) {
     
+    centerFreqChangeIncrement = 0.0;
+    centerFreqChangeCount = 0;
+    changingFreq = false;
+    
     this->type = type;
     this->dbGain = dbGain;
     this->freq = freq;
     this->srate = srate;
     this->bandwidth = bandwidth;
+    currentOffset = 0.0;
     centerFreq = freq;
     
     double A, omega, sn, cs, alpha, beta;
@@ -138,7 +143,16 @@ void Filter::updateCoefficients(double freqOffset) {
     double A, omega, sn, cs, alpha, beta;
     double a0, a1, a2, b0, b1, b2;
     
+    currentOffset = freqOffset;
     freq = centerFreq + freqOffset;
+    
+    if (freq >= FILTER_FREQ_MAX) {
+        freq = FILTER_FREQ_MAX;
+    }
+    
+    if (freq <= FILTER_FREQ_MIN) {
+        freq = FILTER_FREQ_MIN;
+    }
     
     /* setup variables */
     A = pow(10, dbGain /40);
@@ -217,14 +231,34 @@ void Filter::updateCoefficients(double freqOffset) {
     filter_a4 = a2 /a0;
     
     /* zero initial samples */
-    filter_x1 = filter_x2 = 0;
-    filter_y1 = filter_y2 = 0;
+//    filter_x1 = filter_x2 = 0;
+//    filter_y1 = filter_y2 = 0;
 
 }
 
 /* Computes a BiQuad filter on a sample */
-double Filter::process(double sample)
+double Filter::processSample(double sample)
 {
+    // Change freq, if applicable
+    if (changingFreq) {
+        
+        // Update freq
+        centerFreq += centerFreqChangeIncrement;
+        
+        // Update coefficients
+        updateCoefficients(currentOffset);
+        
+        // Increment the counter
+        centerFreqChangeCount++;
+        
+        // If the limit is reached, stop changing, reset values
+        if (centerFreqChangeCount >= FILTER_CUTOFF_CHANGE_LENGTH) {
+            centerFreqChangeCount = 0;
+            centerFreqChangeIncrement = 0.0;
+            changingFreq = false;
+        }
+    }
+    
     double result;
     
     /* compute result */
@@ -237,6 +271,5 @@ double Filter::process(double sample)
     /* shift y1 to y2, result to y1 */
     filter_y2 = filter_y1;
     filter_y1 = result;
-    
     return result;
 }

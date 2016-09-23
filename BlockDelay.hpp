@@ -17,7 +17,8 @@
 class BlockDelay : public BlockEffect {
 private:
     int length;
-    double *data;
+    double* dataLeft;
+    double* dataRight;
     int blockSize;
     double feedback;
     
@@ -35,13 +36,15 @@ public:
             this->feedback = 0;
         }
         this->feedback = feedback;
-        data = new double[length + blockSize]; // Need to have at least one block past the delay length
+        dataLeft = new double[length + blockSize]; // Need to have at least one block past the delay length
+        dataRight = new double[length + blockSize]; // Need to have at least one block past the delay length
         for (int i=0; i<length + blockSize; i++) {
-            data[i] = 0.0f;
+            dataLeft[i] = 0.0f;
+            dataRight[i] = 0.0f;
         }
     }
     
-    void process(double *inBlock, double *outBlock, int blockSize);
+    double** process(double** outBlock, int blockSize);
 };
 
 #endif /* BlockDelay_hpp */

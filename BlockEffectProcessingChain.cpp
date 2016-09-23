@@ -8,11 +8,9 @@
 
 #include "BlockEffectProcessingChain.hpp"
 
-void BlockEffectProcessingChain::process(double *inBlock, double *outBlock, int blockSize) {
-    for(std::vector<int>::size_type i = 0; i != effects.size(); i++) {
-        effects[i]->process(inBlock, inBlock, blockSize);
-    }
-    for (int i=0; i<blockSize; i++) {
-        outBlock[i] = inBlock[i];
-    }
-}
+//double* BlockEffectProcessingChain::process(double* inBlock, int blockSize) {
+//    
+//    double *outBlock = effects.back()->process(inBlock, blockSize);
+//    
+//    return outBlock;
+//}

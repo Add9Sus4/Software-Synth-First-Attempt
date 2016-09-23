@@ -13,6 +13,7 @@
 #define CHORUS_MIN_LENGTH   441
 #define CHORUS_MAX_DELAYS   10
 #define CHORUS_MIN_DELAYS   4
+#define CHORUS_MAX_FEEDBACK 0.5
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,13 +30,21 @@ private:
     
     // The size of the audio processing block
     int blockSize;
+    double feedback;
     
 public:
     // Create new chorus object
     Chorus(int blockSize, int numDelays, int centerLength, double spread, double feedback) {
         
+        if (feedback > (double)CHORUS_MAX_FEEDBACK) {
+            this->feedback = (double)CHORUS_MAX_FEEDBACK;
+        } else {
+            this->feedback = feedback;
+        }
+
         // Store value of blockSize for later use
         this->blockSize = blockSize;
+        
         
         // Restrict number of delays to use in chorus
         if (numDelays > 10 || numDelays < 4) {
@@ -68,16 +77,17 @@ public:
         // Now we have to create numDelays delays between centerLength - range and centerLength + range
         for (int i=0; i<numDelays; i++) {
             int length = rand() % (range*2) + (centerLength - range);
-            BlockDelay *delay = new BlockDelay(length, blockSize, feedback);
+            BlockDelay *delay = new BlockDelay(length, blockSize, this->feedback);
             delays.push_back(delay);
         }
     }
     
     // Process a block of audio
-    void process(double *inBlock, double *outBlock, int blockSize) {
+    double** process(double** outBlock, int blockSize) {
         for(std::vector<int>::size_type i = 0; i != delays.size(); i++) {
-            delays[i]->process(inBlock, outBlock, blockSize);
+            outBlock = delays[i]->process(outBlock, blockSize);
         }
+        return outBlock;
     }
 };
 

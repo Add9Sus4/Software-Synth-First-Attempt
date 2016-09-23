@@ -8,8 +8,6 @@
 
 #include "BlockEffect.hpp"
 
-void BlockEffect::process(double *inBlock, double *outBlock, int blockSize) {
-    for (int i=0; i<blockSize; i++) {
-        outBlock[i] = inBlock[i];
-    }
+double** BlockEffect::process(double** outBlock, int blockSize) {
+
 }

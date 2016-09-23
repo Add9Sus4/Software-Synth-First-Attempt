@@ -11,12 +11,15 @@
 
 #include <stdio.h>
 #include <vector>
-#include "Oscillator.hpp"
+#include "AudioChannel.hpp"
+#include "BlockEffect.hpp"
 #include "Filter.hpp"
 #include "FormantFilter.hpp"
-#include "AudioChannel.hpp"
+#include "LFO.hpp"
+#include "Oscillator.hpp"
+#include "Parameter.hpp"
 
-class OscillatorGroup {
+class OscillatorGroup : public BlockEffect {
     
     // Vector containging all the oscillators for this group
     std::vector<Oscillator *> oscillators;
@@ -26,13 +29,14 @@ class OscillatorGroup {
     double detune;
     double pan; // 0 (mono) to 1 (full width)
     
-    double frequency;
+    Parameter* frequencyParam;
+    LFO* lfo;
     
 public:
     
     // Create a new oscillator group with specified number of oscillators, frequency, and wave type
     OscillatorGroup(int numOscillators, double frequency, WaveType waveType) {
-        this->frequency = frequency;
+        frequencyParam = new Parameter(frequency);
         this->waveType = waveType;
         detune = 1.0;
         pan = 1.0;
@@ -79,13 +83,12 @@ public:
         }
         
         // free pointers
-        delete pans;
-        delete frequencies;
+        delete[] pans;
+        delete[] frequencies;
     }
     
     // Get combined output samples from oscillators
-    double *getSamplesLeft(int blockSize);
-    double *getSamplesRight(int blockSize);
+    double** process(double** outBlock, int blockSize);
     
     // Sets the pulse width for the oscillators. This only has an effect if the wave type is a pulse wave.
     void setPulseWidth(double pulseWidth);
@@ -104,7 +107,7 @@ public:
     
     void changeDetuneAmt(double newDetune) {
         detune = newDetune;
-        setFrequency(frequency);
+        setFrequency(frequencyParam->getValue());
     }
     
     void changePanAmt(double newPan) {
@@ -124,13 +127,17 @@ public:
         for(std::vector<int>::size_type i = 0; i != oscillators.size(); i++) {
             oscillators[i]->setPan(pans[i]*pan);
         }
-        delete pans;
+        delete[] pans;
     }
     
     void changePhaseMode(WavePhase wavePhase) {
         for(std::vector<int>::size_type i = 0; i != oscillators.size(); i++) {
             oscillators[i]->setPhaseMode(wavePhase);
         }
+    }
+    
+    double getWaveTableValueAtIndex(int i) {
+        return oscillators[0]->getWaveTableValueAtIndex(i);
     }
     
 };

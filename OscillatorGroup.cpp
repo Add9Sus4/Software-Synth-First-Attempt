@@ -9,37 +9,19 @@
 #include "OscillatorGroup.hpp"
 
 // Get combined output samples from oscillators (left channel only)
-double *OscillatorGroup::getSamplesLeft(int blockSize) {
-    double *samples = new double[blockSize];
-    for (int i=0; i<blockSize; i++) {
-        samples[i] = 0.0;
-    }
+double** OscillatorGroup::process(double** outBlock, int blockSize) {
     
     for(std::vector<int>::size_type j = 0; j != oscillators.size(); j++) {
-        double *oscSamples = oscillators[j]->getSamplesLeft(blockSize);
+        double *oscSamplesLeft = oscillators[j]->getSamplesLeft(blockSize);
+        double *oscSamplesRight = oscillators[j]->getSamplesRight(blockSize);
         for (int i=0; i<blockSize; i++) {
-            samples[i] += oscSamples[i]/(double)oscillators.size();
+            outBlock[LEFT][i] += oscSamplesLeft[i]/(double)oscillators.size();
+            outBlock[RIGHT][i] += oscSamplesRight[i]/(double)oscillators.size();
         }
-        delete oscSamples;
+        delete[] oscSamplesLeft;
+        delete[] oscSamplesRight;
     }
-    return samples;
-}
-
-// Get combined output samples from oscillators (right channel only)
-double *OscillatorGroup::getSamplesRight(int blockSize) {
-    double *samples = new double[blockSize];
-    for (int i=0; i<blockSize; i++) {
-        samples[i] = 0.0;
-    }
-    
-    for(std::vector<int>::size_type j = 0; j != oscillators.size(); j++) {
-        double *oscSamples = oscillators[j]->getSamplesRight(blockSize);
-        for (int i=0; i<blockSize; i++) {
-            samples[i] += oscSamples[i]/(double)oscillators.size();
-        }
-        delete oscSamples;
-    }
-    return samples;
+    return outBlock;
 }
 
 // Sets the pulse width for the oscillators. This only has an effect if the wave type is a pulse wave.
@@ -50,7 +32,7 @@ void OscillatorGroup::setPulseWidth(double pulseWidth) {
 }
 
 void OscillatorGroup::setFrequency(double frequency ) {
-    this->frequency = frequency;
+    frequencyParam->setValue(frequency);
     
     double *frequencies = new double[oscillators.size()];
     
@@ -81,5 +63,5 @@ void OscillatorGroup::setFrequency(double frequency ) {
         oscillators[i]->setFrequency(frequencies[i]);
     }
     
-    delete frequencies;
+    delete[] frequencies;
 }
