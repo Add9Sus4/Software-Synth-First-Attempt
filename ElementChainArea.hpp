@@ -204,13 +204,12 @@ public:
         if (mouseIsInSlotArea(x + calculateSlotOffset(),y) != -1) {
             int index = mouseIsInSlotArea(x + calculateSlotOffset(),y);
             std::cout << "You clicked slot " << index << std::endl;
-            if (plug->GetParam(23)->Value() == 1) {
-                highlightSlot(index, SlotMode::ACTIVE);
-                plug->GetParam(23)->Set(0);
-                plug->GetGUI()->GetControl(6)->Hide(true);
-                std::cout << "Oscillator set to slot " << index << std::endl;
-                voiceManager->addEffect(EffectID::kOscillatorGroup1);
-            }
+            highlightSlot(index, SlotMode::ACTIVE);
+            plug->GetParam(23)->Set(0);
+            plug->GetGUI()->GetControl(6)->Hide(true);
+            std::cout << "Oscillator set to slot " << index << std::endl;
+            voiceManager->addEffect(EffectID::kOscillatorGroup1);
+            
         }
         scrollbar->setDragging(false);
     }

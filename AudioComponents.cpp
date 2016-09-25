@@ -112,11 +112,11 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   // Different sections of the overall view area
   viewTypeArea = new ViewTypeArea(this, IRECT(kViewTypeAreaLeftBound, kViewTypeAreaUpperBound, kViewTypeAreaRightBound, kViewTypeAreaLowerBound), voiceManager);
   
-  elementSelectArea = new ElementSelectArea(this, IRECT(kElementSelectAreaLeftBound, kElementSelectAreaUpperBound, kElementSelectAreaRightBound, kElementSelectAreaLowerBound), voiceManager);
+    elementChainArea = new ElementChainArea(this, IRECT(kElementChainAreaLeftBound, kElementChainAreaUpperBound, kElementChainAreaRightBound, kElementChainAreaLowerBound), voiceManager);
+  
+  elementSelectArea = new ElementSelectArea(this, IRECT(kElementSelectAreaLeftBound, kElementSelectAreaUpperBound, kElementSelectAreaRightBound, kElementSelectAreaLowerBound), voiceManager, elementChainArea);
   
   modulatorViewArea = new ModulatorViewArea(this, IRECT(kModulatorViewAreaLeftBound, kModulatorViewAreaUpperBound, kModulatorViewAreaRightBound, kModulatorViewAreaLowerBound), voiceManager);
-  
-  elementChainArea = new ElementChainArea(this, IRECT(kElementChainAreaLeftBound, kElementChainAreaUpperBound, kElementChainAreaRightBound, kElementChainAreaLowerBound), voiceManager);
   
   mainViewArea = new MainViewArea(this, IRECT(kMainViewAreaLeftBound, kMainViewAreaUpperBound, kMainViewAreaRightBound, kMainViewAreaLowerBound), voiceManager);
   
@@ -124,12 +124,14 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   IBitmap osc = pGraphics->LoadIBitmap(OSC_ID, OSC_FN, 2);
   //  IBitmap knob = pGraphics->LoadIBitmap(KNOB4_ID, KNOB4_FN, 60); // Knob bitmap
   
+  ISwitchControl* oscControl = new ISwitchControl(this, 5, kElementSelectAreaUpperBound + 10, kOsc, &osc);
+  
   pGraphics->AttachControl(viewTypeArea);
   pGraphics->AttachControl(elementSelectArea);
   pGraphics->AttachControl(modulatorViewArea);
   pGraphics->AttachControl(elementChainArea);
   pGraphics->AttachControl(mainViewArea);
-  pGraphics->AttachControl(new ISwitchControl(this, 5, kElementSelectAreaUpperBound + 10, kOsc, &osc));
+  pGraphics->AttachControl(oscControl);
 
   // Background
   pGraphics->AttachPanelBackground(&COLOR_BLACK);
@@ -162,6 +164,8 @@ void AudioComponents::ProcessMidiMsg(IMidiMsg *pMsg) {
 
   }
 }
+
+
 
 void AudioComponents::Reset()
 {
