@@ -51,6 +51,9 @@ private:
     double memory[10]={0,0,0,0,0,0,0,0,0,0};
 
 public:
+    FormantFilter() {
+        FormantFilter(A);
+    }
     FormantFilter(Vowel vowel) {
         this->vowel = vowel;
     }

@@ -81,6 +81,8 @@ instrument determined by PLUG _IS _INST
 #define BACKGROUND3_ID      115
 #define KNOB4_ID            116
 
+#define OSC_ID              117
+
 // Image resource locations for this plug.
 #define KNOB_FN             "resources/img/knob.png"
 #define ISWITCHCONTROL_6_FN "resources/img/waveform.png"
@@ -98,6 +100,8 @@ instrument determined by PLUG _IS _INST
 #define FADER_FN            "resources/img/IFaderControl_Vert.png"
 #define BACKGROUND3_FN      "resources/img/ADD_Synthesizer_Template4.png"
 #define KNOB4_FN            "resources/img/SerumKnob.png"
+
+#define OSC_FN              "resources/img/Osc2.png"
 
 // Colors
 #define BACKGROUND_COLOR_1_R  31./255.

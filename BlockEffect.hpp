@@ -58,10 +58,14 @@ public:
         }
         return outBlock;
     }
+    
+    void setId(int id) { this->id = id; }
+    int getId() { return id; }
+    
 protected:
     std::vector<BlockEffect*> inputs;
 private:
-    
+    int id;
 };
 
 #endif /* BlockEffect_hpp */

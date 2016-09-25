@@ -16,11 +16,15 @@
 #include "Parameter.hpp"
 
 typedef enum FilterParam {
-    FREQUENCY
+    CUTOFF_FREQUENCY
 } FilterParam;
 
 class BiquadFilter : public BlockEffect {
 public:
+    BiquadFilter() {
+        BiquadFilter(LPF, 0.0, 500, SAMPLE_RATE, 2);
+    }
+    
     BiquadFilter(int type, double dbGain, double freq,
                  double srate, double bandwidth) {
         
@@ -32,7 +36,7 @@ public:
     double** process(double** outBlock, int blockSize);
     Parameter* getParam(FilterParam filterParam) {
         switch (filterParam) {
-            case FREQUENCY:
+            case CUTOFF_FREQUENCY:
                 return frequency;
                 break;
                 

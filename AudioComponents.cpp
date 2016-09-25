@@ -40,6 +40,8 @@ enum EParams
   
   kFilterModAmt,
   
+  kOsc,
+  
   kNumParams
 };
 
@@ -47,44 +49,31 @@ enum ELayout
 {
   kWidth = GUI_WIDTH,
   kHeight = GUI_HEIGHT,
-
-  kGainX = 25,
-  kGainY = 25,
   
-  kDetuneX = 25,
-  kDetuneY = 300,
+  kViewTypeAreaLeftBound = 0,
+  kViewTypeAreaUpperBound = 0,
+  kViewTypeAreaRightBound = GUI_WIDTH,
+  kViewTypeAreaLowerBound = 80,
   
-  kPanX = 125,
-  kPanY = 350,
+  kElementSelectAreaLeftBound = 0,
+  kElementSelectAreaUpperBound = 80,
+  kElementSelectAreaRightBound = 240,
+  kElementSelectAreaLowerBound = 480,
   
-  kFilterCutoffX = 200,
-  kFilterCutoffY = 350,
+  kModulatorViewAreaLeftBound = 720,
+  kModulatorViewAreaUpperBound = 80,
+  kModulatorViewAreaRightBound = GUI_WIDTH,
+  kModulatorViewAreaLowerBound = 480,
   
-  kWaveformX = 25,
-  kWaveformY = 350,
+  kElementChainAreaLeftBound = 0,
+  kElementChainAreaUpperBound = 480,
+  kElementChainAreaRightBound = GUI_WIDTH,
+  kElementChainAreaLowerBound = GUI_HEIGHT,
   
-  kPhaseModeX = 25,
-  kPhaseModeY = 400,
-  
-  kAttackX = 400,
-  kAttackY = 25,
-  kDecayX = 450,
-  kDecayY = 25,
-  kSustainX = 500,
-  kSustainY = 25,
-  kReleaseX = 550,
-  kReleaseY = 25,
-  
-  kFilterAttackX = 400,
-  kFilterAttackY = 125,
-  kFilterDecayX = 450,
-  kFilterDecayY = 125,
-  kFilterSustainX = 500,
-  kFilterSustainY = 125,
-  kFilterReleaseX = 550,
-  kFilterReleaseY = 125,
-  
-  kKnobFrames = 60
+  kMainViewAreaLeftBound = 240,
+  kMainViewAreaUpperBound = 80,
+  kMainViewAreaRightBound = 720,
+  kMainViewAreaLowerBound = 480
 };
 
 /* CONSTRUCTOR */
@@ -98,17 +87,8 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
    Parameters are initialized here.
    
    ----------------------------------------------------------------------------------*/
-  
-  oscillatorGroup = new OscillatorGroup(16, Bb_1, WaveType::SAW);
-  biquadFilter = new BiquadFilter(LPF, 0.0, 500, SAMPLE_RATE, 2);
-  blockFormantFilter = new BlockFormantFilter(Vowel::U);
-  chorus = new Chorus(512, 6, 800, 0.3, 0.25);
-  blockDistortion = new BlockDistortion(DistortionType::DISTORTION);
-  blockFlanger = new BlockFlanger(75, 0.5, 0.3, 0.85, WaveType::SINE);
-  spectralFilter = new SpectralFilter(512);
-  
-  lfo = new LFO(1.0);
-  connectModulator(lfo, biquadFilter->getParam(FREQUENCY));
+
+  GetParam(kOsc)->InitBool("Osc", 0);
   
   /* --------------------------CREATE THE PROCESSING CHAINS ---------------------------   
    
@@ -117,19 +97,8 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
    
    ----------------------------------------------------------------------------------*/
   
-  // Sample Processing Chains
-  
-  // Block Processing Chains
-  mainProcessingChain = new BlockEffectProcessingChain();
-  mainProcessingChain->addEffect(oscillatorGroup);
-//  mainProcessingChain->addEffect(blockFormantFilter);
-//  mainProcessingChain->addEffect(blockFlanger);
-//  mainProcessingChain->addEffect(chorus);
-  mainProcessingChain->addEffect(biquadFilter);
-//  mainProcessingChain->addEffect(blockDistortion);
-//  mainProcessingChain->addEffect(spectralFilter);
-  
-//  mainProcessingChain->addEffect(chorus);
+  // Voice Manager
+  voiceManager = new VoiceManager();
   
   /* --------------------------CREATE THE GRAPHICS ---------------------------
    ----------------------------------------------------------------------------------*/
@@ -137,11 +106,33 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   // Create graphics
   IGraphics* pGraphics = MakeGraphics(this, kWidth, kHeight);
   
-  // Bitmaps for all the images
-//  IBitmap knob = pGraphics->LoadIBitmap(KNOB4_ID, KNOB4_FN, kKnobFrames); // Knob bitmap
+  // Handle mouseover
+  pGraphics->HandleMouseOver(true);
   
+  // Different sections of the overall view area
+  viewTypeArea = new ViewTypeArea(this, IRECT(kViewTypeAreaLeftBound, kViewTypeAreaUpperBound, kViewTypeAreaRightBound, kViewTypeAreaLowerBound));
+  
+  elementSelectArea = new ElementSelectArea(this, IRECT(kElementSelectAreaLeftBound, kElementSelectAreaUpperBound, kElementSelectAreaRightBound, kElementSelectAreaLowerBound));
+  
+  modulatorViewArea = new ModulatorViewArea(this, IRECT(kModulatorViewAreaLeftBound, kModulatorViewAreaUpperBound, kModulatorViewAreaRightBound, kModulatorViewAreaLowerBound));
+  
+  elementChainArea = new ElementChainArea(this, IRECT(kElementChainAreaLeftBound, kElementChainAreaUpperBound, kElementChainAreaRightBound, kElementChainAreaLowerBound));
+  
+  mainViewArea = new MainViewArea(this, IRECT(kMainViewAreaLeftBound, kMainViewAreaUpperBound, kMainViewAreaRightBound, kMainViewAreaLowerBound));
+  
+  // Knobs, sliders, other controls
+  IBitmap osc = pGraphics->LoadIBitmap(OSC_ID, OSC_FN, 2);
+  //  IBitmap knob = pGraphics->LoadIBitmap(KNOB4_ID, KNOB4_FN, 60); // Knob bitmap
+  
+  pGraphics->AttachControl(viewTypeArea);
+  pGraphics->AttachControl(elementSelectArea);
+  pGraphics->AttachControl(modulatorViewArea);
+  pGraphics->AttachControl(elementChainArea);
+  pGraphics->AttachControl(mainViewArea);
+  pGraphics->AttachControl(new ISwitchControl(this, 5, kElementSelectAreaUpperBound + 10, kOsc, &osc));
+
   // Background
-  pGraphics->AttachBackground(BACKGROUND3_ID, BACKGROUND3_FN);
+  pGraphics->AttachPanelBackground(&COLOR_BLACK);
   
   AttachGraphics(pGraphics);
 
@@ -153,7 +144,8 @@ AudioComponents::~AudioComponents() {}
 
 void AudioComponents::ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames)
 {
-  outputs = mainProcessingChain->process(outputs, nFrames);
+  outputs = voiceManager->process(outputs, nFrames);
+  
 }
 
 /*
@@ -183,6 +175,15 @@ void AudioComponents::OnParamChange(int paramIdx)
 
   switch (paramIdx)
   {
+    case kOsc:
+      if ((int)GetParam(kOsc)->Value() == 1) {
+        elementChainArea->highlightNextSlot(SlotMode::HIGHLIGHTED);
+//        GetGUI()->GetControl(5)->Hide(true);
+      } else {
+        elementChainArea->highlightNextSlot(SlotMode::EMPTY);
+//        GetGUI()->GetControl(5)->Hide(false);
+      }
+      break;
       default:
       break;
   }

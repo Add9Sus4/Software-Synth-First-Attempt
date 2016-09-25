@@ -13,7 +13,11 @@
 
 class Modulator {
 public:
+    void setId(int id) { this->id = id; }
+    int getId() { return id; }
     virtual double modulate(double value) = 0;
+private:
+    int id;
 };
 
 #endif /* Modulator_hpp */

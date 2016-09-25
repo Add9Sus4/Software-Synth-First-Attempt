@@ -27,6 +27,9 @@ class Flanger : public SampleEffect {
     double feedback;
     
 public:
+    Flanger() {
+        Flanger(75, 0.5, 0.3, 0.85, WaveType::SINE);
+    }
     Flanger(int length, double modAmount, double frequency, double feedback, WaveType waveType) {
         this->length = length;
         

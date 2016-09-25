@@ -18,6 +18,10 @@
 
 class SpectralFilter : public BlockEffect {
 public:
+    SpectralFilter() {
+        SpectralFilter(512);
+    }
+    
     SpectralFilter(int blockSize) {
         this->blockSize = blockSize;
         bufferLeft = new double[blockSize*2];

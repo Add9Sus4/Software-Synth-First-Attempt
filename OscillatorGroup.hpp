@@ -33,6 +33,10 @@ class OscillatorGroup : public BlockEffect {
     LFO* lfo;
     
 public:
+    // Default constructor
+    OscillatorGroup() {
+        OscillatorGroup(16, 100.0, WaveType::SAW);
+    }
     
     // Create a new oscillator group with specified number of oscillators, frequency, and wave type
     OscillatorGroup(int numOscillators, double frequency, WaveType waveType) {
@@ -88,7 +92,21 @@ public:
     }
     
     // Get combined output samples from oscillators
-    double** process(double** outBlock, int blockSize);
+    // Get combined output samples from oscillators (left channel only)
+    double** process(double** outBlock, int blockSize) {
+        
+        for(std::vector<int>::size_type j = 0; j != oscillators.size(); j++) {
+            double *oscSamplesLeft = oscillators[j]->getSamplesLeft(blockSize);
+            double *oscSamplesRight = oscillators[j]->getSamplesRight(blockSize);
+            for (int i=0; i<blockSize; i++) {
+                outBlock[LEFT][i] += oscSamplesLeft[i]/(double)oscillators.size();
+                outBlock[RIGHT][i] += oscSamplesRight[i]/(double)oscillators.size();
+            }
+            delete[] oscSamplesLeft;
+            delete[] oscSamplesRight;
+        }
+        return outBlock;
+    }
     
     // Sets the pulse width for the oscillators. This only has an effect if the wave type is a pulse wave.
     void setPulseWidth(double pulseWidth);

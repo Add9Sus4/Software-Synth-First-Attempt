@@ -1,5 +1,7 @@
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/swell-appstub.o
+/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/ElementChainArea.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/BlockDelay.o
+/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/ElementSelectArea.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/swell-dlg.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/swell-gdi.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/EnvelopeOpenGL.o
@@ -8,16 +10,21 @@
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/swell-miscdlg.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/swell-menu.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/swell-misc.o
+/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/BlockFormantFilter.o
+/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/Envelope.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/BiquadFilter.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/Transform.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/swell-wnd.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/swell.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/swellappmain.o
-/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/BlockFormantFilter.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/RtAudio.o
+/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/Voice.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/Phasor.o
+/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/VoiceManager.o
+/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/View.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/OscillatorGroup.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/RtMidi.o
+/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/ModulatorViewArea.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/BlockDistortion.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/Modulator.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/IPlugStandalone.o
@@ -25,6 +32,7 @@
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/IPlugStructs.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/Hosts.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/IGraphicsMac.o
+/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/ViewTypeArea.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/IGraphics.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/Filter.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/IGraphicsCarbon.o
@@ -46,4 +54,5 @@
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/main.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/IBitmapMonoText.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/SampleDelay.o
+/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/MainViewArea.o
 /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/build/AudioComponents.build/Debug/APP.build/Objects-normal/x86_64/Oscillator.o

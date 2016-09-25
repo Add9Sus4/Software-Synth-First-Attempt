@@ -8,22 +8,6 @@
 
 #include "OscillatorGroup.hpp"
 
-// Get combined output samples from oscillators (left channel only)
-double** OscillatorGroup::process(double** outBlock, int blockSize) {
-    
-    for(std::vector<int>::size_type j = 0; j != oscillators.size(); j++) {
-        double *oscSamplesLeft = oscillators[j]->getSamplesLeft(blockSize);
-        double *oscSamplesRight = oscillators[j]->getSamplesRight(blockSize);
-        for (int i=0; i<blockSize; i++) {
-            outBlock[LEFT][i] += oscSamplesLeft[i]/(double)oscillators.size();
-            outBlock[RIGHT][i] += oscSamplesRight[i]/(double)oscillators.size();
-        }
-        delete[] oscSamplesLeft;
-        delete[] oscSamplesRight;
-    }
-    return outBlock;
-}
-
 // Sets the pulse width for the oscillators. This only has an effect if the wave type is a pulse wave.
 void OscillatorGroup::setPulseWidth(double pulseWidth) {
     for(std::vector<int>::size_type i = 0; i != oscillators.size(); i++) {

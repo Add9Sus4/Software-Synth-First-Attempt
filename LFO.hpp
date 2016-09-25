@@ -18,6 +18,9 @@
 class LFO : public Modulator {
     WaveForm* waveForm;
 public:
+    LFO() {
+        LFO(1.0);
+    }
     LFO(double frequency) {
         waveForm = new SineWaveForm(frequency);
     }
