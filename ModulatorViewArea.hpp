@@ -15,7 +15,7 @@
 
 class ModulatorViewArea : public View {
 public:
-    ModulatorViewArea(IPlugBase* pPlug, IRECT pR) : View(pPlug, pR) {
+    ModulatorViewArea(IPlugBase* pPlug, IRECT pR, VoiceManager* voiceManager) : View(pPlug, pR, voiceManager) {
         bgColor1red = 0.40;
         bgColor1green = 0.45;
         bgColor1blue = 0.35;

@@ -33,11 +33,6 @@ class OscillatorGroup : public BlockEffect {
     LFO* lfo;
     
 public:
-    // Default constructor
-    OscillatorGroup() {
-        OscillatorGroup(16, 100.0, WaveType::SAW);
-    }
-    
     // Create a new oscillator group with specified number of oscillators, frequency, and wave type
     OscillatorGroup(int numOscillators, double frequency, WaveType waveType) {
         frequencyParam = new Parameter(frequency);
@@ -94,7 +89,6 @@ public:
     // Get combined output samples from oscillators
     // Get combined output samples from oscillators (left channel only)
     double** process(double** outBlock, int blockSize) {
-        
         for(std::vector<int>::size_type j = 0; j != oscillators.size(); j++) {
             double *oscSamplesLeft = oscillators[j]->getSamplesLeft(blockSize);
             double *oscSamplesRight = oscillators[j]->getSamplesRight(blockSize);

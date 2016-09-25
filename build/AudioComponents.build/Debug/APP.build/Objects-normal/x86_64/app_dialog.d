@@ -63,18 +63,18 @@ dependencies: \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../Chorus.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../ElementChainArea.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../View.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../VoiceManager.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../Voice.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../Envelope.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../OscillatorGroup.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../SpectralFilter.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../AudioWindow.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../Transform.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../ElementSelectArea.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../EnvelopeOpenGL.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../FilterEnvelopeOpenGL.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../MainViewArea.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../ModulatorViewArea.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../OscillatorGroup.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../OpenGLTestClass.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../SampleEffectProcessingChain.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../SpectralFilter.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../AudioWindow.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../Transform.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../ViewTypeArea.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../VoiceManager.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../Voice.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../Envelope.hpp
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../ViewTypeArea.hpp

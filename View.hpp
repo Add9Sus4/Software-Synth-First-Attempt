@@ -16,6 +16,8 @@
 #include <OpenGL/glu.h>
 #include <stdlib.h>
 
+#include "VoiceManager.hpp"
+
 
 class View : public IControl {
 private:
@@ -46,10 +48,13 @@ protected:
     
     IPlugBase* plug;
     
+    VoiceManager* voiceManager;
+    
 public:
-    View(IPlugBase* pPlug, IRECT pR)
+    View(IPlugBase* pPlug, IRECT pR, VoiceManager* voiceManager)
     :	IControl(pPlug, pR, -1)
     {
+        this->voiceManager = voiceManager;
         this->plug = pPlug;
         bgColor1red = 0.321;
         bgColor1green = 0.4;

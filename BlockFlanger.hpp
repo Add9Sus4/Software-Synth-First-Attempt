@@ -16,9 +16,6 @@
 class BlockFlanger : public BlockEffect {
     
 public:
-    BlockFlanger() {
-        BlockFlanger(75, 0.5, 0.3, 0.85, WaveType::SINE);
-    }
     BlockFlanger(int length, double modAmount, double frequency, double feedback, WaveType waveType) {
         flangerLeft = new Flanger(length, modAmount, frequency, feedback, waveType);
         flangerRight = new Flanger(length, modAmount, frequency, feedback, waveType);

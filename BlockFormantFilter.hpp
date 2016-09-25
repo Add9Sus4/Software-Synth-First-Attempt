@@ -15,10 +15,6 @@
 
 class BlockFormantFilter : public BlockEffect {
 public:
-    BlockFormantFilter() {
-        formantFilterLeft = new FormantFilter(Vowel::O);
-        formantFilterRight = new FormantFilter(Vowel::O);
-    }
     BlockFormantFilter(Vowel vowel) {
         formantFilterLeft = new FormantFilter(vowel);
         formantFilterRight = new FormantFilter(vowel);

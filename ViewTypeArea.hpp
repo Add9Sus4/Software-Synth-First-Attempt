@@ -16,7 +16,7 @@
 class ViewTypeArea : public View {
     
 public:
-    ViewTypeArea(IPlugBase* pPlug, IRECT pR) : View(pPlug, pR) {
+    ViewTypeArea(IPlugBase* pPlug, IRECT pR, VoiceManager* voiceManager) : View(pPlug, pR, voiceManager) {
         bgColor1red = 0.35;
         bgColor1green = 0.40;
         bgColor1blue = 0.45;

@@ -57,39 +57,39 @@ public:
         chain = new BlockEffectProcessingChain();
         
         // Create all effects
-        oscillatorGroup1 = new OscillatorGroup();
+        oscillatorGroup1 = new OscillatorGroup(16, 100.0, WaveType::SAW);
         oscillatorGroup1->setId(kOscillatorGroup1);
-        oscillatorGroup2 = new OscillatorGroup();
+        oscillatorGroup2 = new OscillatorGroup(16, 100.0, WaveType::SAW);
         oscillatorGroup1->setId(kOscillatorGroup2);
-        biquadFilter1 = new BiquadFilter();
+        biquadFilter1 = new BiquadFilter(LPF, 0.0, 500, SAMPLE_RATE, 2);
         biquadFilter1->setId(kBiquadFilter1);
-        biquadFilter2 = new BiquadFilter();
+        biquadFilter2 = new BiquadFilter(LPF, 0.0, 500, SAMPLE_RATE, 2);
         biquadFilter2->setId(kBiquadFilter2);
-        spectralFilter1 = new SpectralFilter();
+        spectralFilter1 = new SpectralFilter(512);
         spectralFilter1->setId(kSpectralFilter1);
-        spectralFilter2 = new SpectralFilter();
+        spectralFilter2 = new SpectralFilter(512);
         spectralFilter2->setId(kSpectralFilter2);
-        formantFilter1 = new BlockFormantFilter();
+        formantFilter1 = new BlockFormantFilter(Vowel::O);
         formantFilter1->setId(kFormantFilter1);
-        formantFilter2 = new BlockFormantFilter();
+        formantFilter2 = new BlockFormantFilter(Vowel::O);
         formantFilter2->setId(kFormantFilter2);
-        chorus1 = new Chorus();
+        chorus1 = new Chorus(512, 6, 800, 0.3, 0.1);
         chorus1->setId(kChorus1);
-        chorus2 = new Chorus();
+        chorus2 = new Chorus(512, 6, 800, 0.3, 0.1);
         chorus2->setId(kChorus2);
-        flanger1 = new BlockFlanger();
+        flanger1 = new BlockFlanger(75, 0.5, 0.3, 0.85, WaveType::SINE);
         flanger1->setId(kFlanger1);
-        flanger2 = new BlockFlanger();
+        flanger2 = new BlockFlanger(75, 0.5, 0.3, 0.85, WaveType::SINE);
         flanger2->setId(kFlanger2);
         
         // Create all modulators
-        lfo1 = new LFO();
+        lfo1 = new LFO(1.0);
         lfo1->setId(kLfo1);
-        lfo2 = new LFO();
+        lfo2 = new LFO(1.0);
         lfo2->setId(kLfo2);
-        lfo3 = new LFO();
+        lfo3 = new LFO(1.0);
         lfo3->setId(kLfo3);
-        lfo4 = new LFO();
+        lfo4 = new LFO(1.0);
         lfo4->setId(kLfo4);
         ampEnvelope = new Envelope();
         ampEnvelope->setId(kAmpEnvelope);
@@ -125,6 +125,23 @@ public:
         unusedModulators.push_back(modEnvelope3);
 
     }
+    
+    void addEffect(EffectID effectId) {
+        BlockEffect* effect;
+        for (int i=0; i<unusedEffects.size(); i++) {
+            if (unusedEffects[i]->getId() == effectId) {
+                effect = unusedEffects[i];
+                break;
+            }
+        }
+        chain->addEffect(effect);
+    }
+    
+    double** process(double** outBlock, int blockSize) {
+        outBlock = chain->process(outBlock, blockSize);
+        return outBlock;
+    }
+    
 private:
     BlockEffectProcessingChain* chain;
     

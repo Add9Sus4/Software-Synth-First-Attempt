@@ -31,7 +31,7 @@ typedef enum SlotMode {
 
 class ElementChainArea : public View {
 public:
-    ElementChainArea(IPlugBase* pPlug, IRECT pR) : View(pPlug, pR) {
+    ElementChainArea(IPlugBase* pPlug, IRECT pR, VoiceManager* voiceManager) : View(pPlug, pR, voiceManager) {
         
         scrollbar = new Scrollbar();
         scrollbar->setLength(currentRect.R - SLOT_PADDING_RIGHT - SLOT_PADDING_LEFT - 10);
@@ -209,6 +209,7 @@ public:
                 plug->GetParam(23)->Set(0);
                 plug->GetGUI()->GetControl(6)->Hide(true);
                 std::cout << "Oscillator set to slot " << index << std::endl;
+                voiceManager->addEffect(EffectID::kOscillatorGroup1);
             }
         }
         scrollbar->setDragging(false);

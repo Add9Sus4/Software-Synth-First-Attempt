@@ -110,15 +110,15 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   pGraphics->HandleMouseOver(true);
   
   // Different sections of the overall view area
-  viewTypeArea = new ViewTypeArea(this, IRECT(kViewTypeAreaLeftBound, kViewTypeAreaUpperBound, kViewTypeAreaRightBound, kViewTypeAreaLowerBound));
+  viewTypeArea = new ViewTypeArea(this, IRECT(kViewTypeAreaLeftBound, kViewTypeAreaUpperBound, kViewTypeAreaRightBound, kViewTypeAreaLowerBound), voiceManager);
   
-  elementSelectArea = new ElementSelectArea(this, IRECT(kElementSelectAreaLeftBound, kElementSelectAreaUpperBound, kElementSelectAreaRightBound, kElementSelectAreaLowerBound));
+  elementSelectArea = new ElementSelectArea(this, IRECT(kElementSelectAreaLeftBound, kElementSelectAreaUpperBound, kElementSelectAreaRightBound, kElementSelectAreaLowerBound), voiceManager);
   
-  modulatorViewArea = new ModulatorViewArea(this, IRECT(kModulatorViewAreaLeftBound, kModulatorViewAreaUpperBound, kModulatorViewAreaRightBound, kModulatorViewAreaLowerBound));
+  modulatorViewArea = new ModulatorViewArea(this, IRECT(kModulatorViewAreaLeftBound, kModulatorViewAreaUpperBound, kModulatorViewAreaRightBound, kModulatorViewAreaLowerBound), voiceManager);
   
-  elementChainArea = new ElementChainArea(this, IRECT(kElementChainAreaLeftBound, kElementChainAreaUpperBound, kElementChainAreaRightBound, kElementChainAreaLowerBound));
+  elementChainArea = new ElementChainArea(this, IRECT(kElementChainAreaLeftBound, kElementChainAreaUpperBound, kElementChainAreaRightBound, kElementChainAreaLowerBound), voiceManager);
   
-  mainViewArea = new MainViewArea(this, IRECT(kMainViewAreaLeftBound, kMainViewAreaUpperBound, kMainViewAreaRightBound, kMainViewAreaLowerBound));
+  mainViewArea = new MainViewArea(this, IRECT(kMainViewAreaLeftBound, kMainViewAreaUpperBound, kMainViewAreaRightBound, kMainViewAreaLowerBound), voiceManager);
   
   // Knobs, sliders, other controls
   IBitmap osc = pGraphics->LoadIBitmap(OSC_ID, OSC_FN, 2);

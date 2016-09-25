@@ -16,7 +16,7 @@
 
 class ElementSelectArea : public View {
 public:
-    ElementSelectArea(IPlugBase* pPlug, IRECT pR) : View(pPlug, pR) {
+    ElementSelectArea(IPlugBase* pPlug, IRECT pR, VoiceManager* voiceManager) : View(pPlug, pR, voiceManager) {
         bgColor1red = 0.35;
         bgColor1green = 0.45;
         bgColor1blue = 0.40;

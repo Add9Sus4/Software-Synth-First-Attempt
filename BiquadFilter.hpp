@@ -21,10 +21,6 @@ typedef enum FilterParam {
 
 class BiquadFilter : public BlockEffect {
 public:
-    BiquadFilter() {
-        BiquadFilter(LPF, 0.0, 500, SAMPLE_RATE, 2);
-    }
-    
     BiquadFilter(int type, double dbGain, double freq,
                  double srate, double bandwidth) {
         

@@ -19,7 +19,7 @@
 
 class MainViewArea : public View {
 public:
-    MainViewArea(IPlugBase* pPlug, IRECT pR) : View(pPlug, pR) {
+    MainViewArea(IPlugBase* pPlug, IRECT pR, VoiceManager* voiceManager) : View(pPlug, pR, voiceManager) {
         width = pR.W();
         height = pR.H();
         

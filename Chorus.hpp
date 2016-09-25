@@ -33,9 +33,6 @@ private:
     double feedback;
     
 public:
-    Chorus() {
-        Chorus(512, 6, 800, 0.3, 0.1);
-    }
     // Create new chorus object
     Chorus(int blockSize, int numDelays, int centerLength, double spread, double feedback) {
         
