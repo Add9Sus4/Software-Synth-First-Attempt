@@ -7,6 +7,10 @@
 
 const int kNumPrograms = 1;
 
+enum EParams {
+  kNumParams
+};
+
 /* CONSTRUCTOR */
 AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   :	IPLUG_CTOR(kNumParams, kNumPrograms, instanceInfo), mGain(1.)
@@ -30,10 +34,6 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   // View manager (handles views for the plugin)
   viewManager = new ViewManager(this, voiceManager);
   viewManager->attachControls(pGraphics);
-  
-
-  
-
   
   // Icon bitmaps
   IBitmap osc1 = pGraphics->LoadIBitmap(OSC1_ID, OSC1_FN, 1);

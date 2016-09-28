@@ -22,9 +22,7 @@ public:
         bgColor1green = 0.45;
         bgColor1blue = 0.40;
     }
-    void drawStuff() {
-
-    }
+    void drawStuff();
     
     void OnMouseDrag(int x, int y, int dX, int dY, IMouseMod *pMod);
     

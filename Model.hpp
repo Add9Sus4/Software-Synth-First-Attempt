@@ -24,39 +24,8 @@
 #include "OscillatorGroup.hpp"
 #include "SpectralFilter.hpp"
 
-enum EParams
+enum Icons
 {
-    kGain = 0,
-    kWaveform,
-    kPhaseMode,
-    kDetune,
-    kPan,
-    
-    kOsc1Sine,
-    kOsc1Saw,
-    kOsc1Tri,
-    kOsc1Square,
-    kOsc1Pulse,
-    kOsc1Noise,
-    
-    kFader_Vert,
-    
-    kDistortionAmt,
-    
-    kAttack,
-    kDecay,
-    kSustain,
-    kRelease,
-    
-    kFilterAttack,
-    kFilterDecay,
-    kFilterSustain,
-    kFilterRelease,
-    
-    kFilterCutoff,
-    
-    kFilterModAmt,
-    
     kOsc1,
     kOsc2,
     kBqf1,
@@ -78,9 +47,7 @@ enum EParams
     kSpf1,
     kSpf2,
     
-    kOscillator1SlotDisplay,
-    
-    kNumParams
+    kNumIcons
 };
 
 class Model {

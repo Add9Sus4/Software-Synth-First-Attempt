@@ -99,7 +99,7 @@ public:
         glColor3f(0.8, 0.7, 0.6);
         // SOIL
         for (int i=0; i<16; i++) {
-            slots[i]->drawSlotView();
+            slots[i]->drawSlotView(slotOffset);
         }
     }
     
@@ -275,9 +275,9 @@ private:
             B = pR.H() - SLOT_PADDING_BOTTOM;
             currentEffect = 0;
         }
-        void drawSlotView() {
+        void drawSlotView(double slotOffset) {
             if (currentEffect != 0) {
-                currentEffect->drawSlotView(IRECT(L,T,R,B));
+                currentEffect->drawSlotView(IRECT(L - slotOffset,T,R - slotOffset,B));
             }
         }
         void setCurrentEffect(BlockEffect* effect) { currentEffect = effect; }

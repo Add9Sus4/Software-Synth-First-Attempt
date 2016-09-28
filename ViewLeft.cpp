@@ -10,6 +10,20 @@
 
 #include "ViewLeft.hpp"
 
+void ViewLeft::drawStuff() {
+    int offset = 0;
+    for (int i=0; i<kNumIcons; i++) {
+        IControl* control = plug->GetGUI()->GetControl(i+6);
+        if (control == viewManager->getSelectedIcon() || control->IsHidden()) {
+            offset++;
+        } else {
+            int x = ((i - offset) % 4)*60 + 20;
+            int y = HEIGHT_OF_VIEW_TOP + 15 + floor((i-offset)/4)*50;
+            control->move(x,y);
+        }
+    }
+}
+
 void ViewLeft::OnMouseDrag(int x, int y, int dX, int dY, IMouseMod *pMod) {
     if (viewManager->getSelectedIcon() != 0) {
         viewManager->moveSelectedIcon(x, y);
