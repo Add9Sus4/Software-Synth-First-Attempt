@@ -7,131 +7,98 @@
 
 const int kNumPrograms = 1;
 
-enum EParams
-{
-  kGain = 0,
-  kWaveform,
-  kPhaseMode,
-  kDetune,
-  kPan,
-  
-  kOsc1Sine,
-  kOsc1Saw,
-  kOsc1Tri,
-  kOsc1Square,
-  kOsc1Pulse,
-  kOsc1Noise,
-  
-  kFader_Vert,
-  
-  kDistortionAmt,
-  
-  kAttack,
-  kDecay,
-  kSustain,
-  kRelease,
-  
-  kFilterAttack,
-  kFilterDecay,
-  kFilterSustain,
-  kFilterRelease,
-  
-  kFilterCutoff,
-  
-  kFilterModAmt,
-  
-  kOsc,
-  
-  kNumParams
-};
-
-enum ELayout
-{
-  kWidth = GUI_WIDTH,
-  kHeight = GUI_HEIGHT,
-  
-  kViewTypeAreaLeftBound = 0,
-  kViewTypeAreaUpperBound = 0,
-  kViewTypeAreaRightBound = GUI_WIDTH,
-  kViewTypeAreaLowerBound = 80,
-  
-  kElementSelectAreaLeftBound = 0,
-  kElementSelectAreaUpperBound = 80,
-  kElementSelectAreaRightBound = 240,
-  kElementSelectAreaLowerBound = 480,
-  
-  kModulatorViewAreaLeftBound = 720,
-  kModulatorViewAreaUpperBound = 80,
-  kModulatorViewAreaRightBound = GUI_WIDTH,
-  kModulatorViewAreaLowerBound = 480,
-  
-  kElementChainAreaLeftBound = 0,
-  kElementChainAreaUpperBound = 480,
-  kElementChainAreaRightBound = GUI_WIDTH,
-  kElementChainAreaLowerBound = GUI_HEIGHT,
-  
-  kMainViewAreaLeftBound = 240,
-  kMainViewAreaUpperBound = 80,
-  kMainViewAreaRightBound = 720,
-  kMainViewAreaLowerBound = 480
-};
-
 /* CONSTRUCTOR */
 AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   :	IPLUG_CTOR(kNumParams, kNumPrograms, instanceInfo), mGain(1.)
 {
   TRACE;
   
-  /* --------------------------INITIALIZE THE PARAMETERS ---------------------------
-   
-   Parameters are initialized here.
-   
-   ----------------------------------------------------------------------------------*/
-
-  GetParam(kOsc)->InitBool("Osc", 0);
-  
-  /* --------------------------CREATE THE PROCESSING CHAINS ---------------------------   
-   
-              Effects must be added to the chain in order to affect the sound.
-              Each effect will be called in the order it was added to the chain.
-   
-   ----------------------------------------------------------------------------------*/
-  
-  // Voice Manager
-  voiceManager = new VoiceManager();
-  
-  /* --------------------------CREATE THE GRAPHICS ---------------------------
-   ----------------------------------------------------------------------------------*/
-  
   // Create graphics
-  IGraphics* pGraphics = MakeGraphics(this, kWidth, kHeight);
+  IGraphics* pGraphics = MakeGraphics(this, GUI_WIDTH, GUI_HEIGHT);
   
   // Handle mouseover
   pGraphics->HandleMouseOver(true);
   
-  // Different sections of the overall view area
-  viewTypeArea = new ViewTypeArea(this, IRECT(kViewTypeAreaLeftBound, kViewTypeAreaUpperBound, kViewTypeAreaRightBound, kViewTypeAreaLowerBound), voiceManager);
+  // TODO: add model to view sections so they can query the model state and draw their views appropriately
   
-    elementChainArea = new ElementChainArea(this, IRECT(kElementChainAreaLeftBound, kElementChainAreaUpperBound, kElementChainAreaRightBound, kElementChainAreaLowerBound), voiceManager);
+  // Model (this contains all the effects and modulators for the entire plugin)
+  model = new Model();
   
-  elementSelectArea = new ElementSelectArea(this, IRECT(kElementSelectAreaLeftBound, kElementSelectAreaUpperBound, kElementSelectAreaRightBound, kElementSelectAreaLowerBound), voiceManager, elementChainArea);
+  // Voice Manager
+  voiceManager = new VoiceManager(model);
   
-  modulatorViewArea = new ModulatorViewArea(this, IRECT(kModulatorViewAreaLeftBound, kModulatorViewAreaUpperBound, kModulatorViewAreaRightBound, kModulatorViewAreaLowerBound), voiceManager);
+  // View manager (handles views for the plugin)
+  viewManager = new ViewManager(this, voiceManager);
+  viewManager->attachControls(pGraphics);
   
-  mainViewArea = new MainViewArea(this, IRECT(kMainViewAreaLeftBound, kMainViewAreaUpperBound, kMainViewAreaRightBound, kMainViewAreaLowerBound), voiceManager);
+
   
-  // Knobs, sliders, other controls
-  IBitmap osc = pGraphics->LoadIBitmap(OSC_ID, OSC_FN, 2);
-  //  IBitmap knob = pGraphics->LoadIBitmap(KNOB4_ID, KNOB4_FN, 60); // Knob bitmap
+
   
-  ISwitchControl* oscControl = new ISwitchControl(this, 5, kElementSelectAreaUpperBound + 10, kOsc, &osc);
+  // Icon bitmaps
+  IBitmap osc1 = pGraphics->LoadIBitmap(OSC1_ID, OSC1_FN, 1);
+  IBitmap osc2 = pGraphics->LoadIBitmap(OSC2_ID, OSC2_FN, 1);
+  IBitmap bqf1 = pGraphics->LoadIBitmap(BQF1_ID, BQF1_FN, 1);
+  IBitmap bqf2 = pGraphics->LoadIBitmap(BQF2_ID, BQF2_FN, 1);
+  IBitmap cho1 = pGraphics->LoadIBitmap(CHO1_ID, CHO1_FN, 1);
+  IBitmap cho2 = pGraphics->LoadIBitmap(CHO2_ID, CHO2_FN, 1);
+  IBitmap enva = pGraphics->LoadIBitmap(ENVA_ID, ENVA_FN, 1);
+  IBitmap env1 = pGraphics->LoadIBitmap(ENV1_ID, ENV1_FN, 1);
+  IBitmap env2 = pGraphics->LoadIBitmap(ENV2_ID, ENV2_FN, 1);
+  IBitmap env3 = pGraphics->LoadIBitmap(ENV3_ID, ENV3_FN, 1);
+  IBitmap fln1 = pGraphics->LoadIBitmap(FLN1_ID, FLN1_FN, 1);
+  IBitmap fln2 = pGraphics->LoadIBitmap(FLN2_ID, FLN2_FN, 1);
+  IBitmap fmf1 = pGraphics->LoadIBitmap(FMF1_ID, FMF1_FN, 1);
+  IBitmap fmf2 = pGraphics->LoadIBitmap(FMF2_ID, FMF2_FN, 1);
+  IBitmap lfo1 = pGraphics->LoadIBitmap(LFO1_ID, LFO1_FN, 1);
+  IBitmap lfo2 = pGraphics->LoadIBitmap(LFO2_ID, LFO2_FN, 1);
+  IBitmap lfo3 = pGraphics->LoadIBitmap(LFO3_ID, LFO3_FN, 1);
+  IBitmap lfo4 = pGraphics->LoadIBitmap(LFO4_ID, LFO4_FN, 1);
+  IBitmap spf1 = pGraphics->LoadIBitmap(SPF1_ID, SPF1_FN, 1);
+  IBitmap spf2 = pGraphics->LoadIBitmap(SPF2_ID, SPF2_FN, 1);
   
-  pGraphics->AttachControl(viewTypeArea);
-  pGraphics->AttachControl(elementSelectArea);
-  pGraphics->AttachControl(modulatorViewArea);
-  pGraphics->AttachControl(elementChainArea);
-  pGraphics->AttachControl(mainViewArea);
-  pGraphics->AttachControl(oscControl);
+  // Icon controls
+  ISwitchControl* osc1Control = new ISwitchControl(this, 20, kViewLeftT + 15, kOsc1, &osc1);
+  ISwitchControl* osc2Control = new ISwitchControl(this, 80, kViewLeftT + 15, kOsc2, &osc2);
+  ISwitchControl* bqf1Control = new ISwitchControl(this, 140, kViewLeftT + 15, kBqf1, &bqf1);
+  ISwitchControl* bqf2Control = new ISwitchControl(this, 200, kViewLeftT + 15, kBqf2, &bqf2);
+  ISwitchControl* cho1Control = new ISwitchControl(this, 20, kViewLeftT + 65, kCho1, &cho1);
+  ISwitchControl* cho2Control = new ISwitchControl(this, 80, kViewLeftT + 65, kCho2, &cho2);
+  ISwitchControl* envaControl = new ISwitchControl(this, 140, kViewLeftT + 65, kEnva, &enva);
+  ISwitchControl* env1Control = new ISwitchControl(this, 200, kViewLeftT + 65, kEnv1, &env1);
+  ISwitchControl* env2Control = new ISwitchControl(this, 20, kViewLeftT + 115, kEnv2, &env2);
+  ISwitchControl* env3Control = new ISwitchControl(this, 80, kViewLeftT + 115, kEnv3, &env3);
+  ISwitchControl* fln1Control = new ISwitchControl(this, 140, kViewLeftT + 115, kFln1, &fln1);
+  ISwitchControl* fln2Control = new ISwitchControl(this, 200, kViewLeftT + 115, kFln2, &fln2);
+  ISwitchControl* fmf1Control = new ISwitchControl(this, 20, kViewLeftT + 165, kFmf1, &fmf1);
+  ISwitchControl* fmf2Control = new ISwitchControl(this, 80, kViewLeftT + 165, kFmf2, &fmf2);
+  ISwitchControl* lfo1Control = new ISwitchControl(this, 140, kViewLeftT + 165, kLfoo1, &lfo1);
+  ISwitchControl* lfo2Control = new ISwitchControl(this, 200, kViewLeftT + 165, kLfoo2, &lfo2);
+  ISwitchControl* lfo3Control = new ISwitchControl(this, 20, kViewLeftT + 215, kLfoo3, &lfo3);
+  ISwitchControl* lfo4Control = new ISwitchControl(this, 80, kViewLeftT + 215, kLfoo4, &lfo4);
+  ISwitchControl* spf1Control = new ISwitchControl(this, 140, kViewLeftT + 215, kSpf1, &spf1);
+  ISwitchControl* spf2Control = new ISwitchControl(this, 200, kViewLeftT + 215, kSpf2, &spf2);
+  
+  pGraphics->AttachControl(osc1Control);
+  pGraphics->AttachControl(osc2Control);
+  pGraphics->AttachControl(bqf1Control);
+  pGraphics->AttachControl(bqf2Control);
+  pGraphics->AttachControl(cho1Control);
+  pGraphics->AttachControl(cho2Control);
+  pGraphics->AttachControl(envaControl);
+  pGraphics->AttachControl(env1Control);
+  pGraphics->AttachControl(env2Control);
+  pGraphics->AttachControl(env3Control);
+  pGraphics->AttachControl(fln1Control);
+  pGraphics->AttachControl(fln2Control);
+  pGraphics->AttachControl(fmf1Control);
+  pGraphics->AttachControl(fmf2Control);
+  pGraphics->AttachControl(lfo1Control);
+  pGraphics->AttachControl(lfo2Control);
+  pGraphics->AttachControl(lfo3Control);
+  pGraphics->AttachControl(lfo4Control);
+  pGraphics->AttachControl(spf1Control);
+  pGraphics->AttachControl(spf2Control);
 
   // Background
   pGraphics->AttachPanelBackground(&COLOR_BLACK);
@@ -176,17 +143,10 @@ void AudioComponents::Reset()
 void AudioComponents::OnParamChange(int paramIdx)
 {
   IMutexLock lock(this);
-
+  
   switch (paramIdx)
   {
-    case kOsc:
-      if ((int)GetParam(kOsc)->Value() == 1) {
-        elementChainArea->highlightNextSlot(SlotMode::HIGHLIGHTED);
-//        GetGUI()->GetControl(5)->Hide(true);
-      } else {
-        elementChainArea->highlightNextSlot(SlotMode::EMPTY);
-//        GetGUI()->GetControl(5)->Hide(false);
-      }
+    case kOsc1:
       break;
       default:
       break;

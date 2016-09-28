@@ -44,6 +44,10 @@ public:
         }
     }
     
+    void drawSlotView(IRECT rect) {
+        
+    }
+    
     double** process(double** outBlock, int blockSize);
 };
 

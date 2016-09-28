@@ -82,6 +82,10 @@ public:
         }
     }
     
+    void drawSlotView(IRECT rect) {
+        
+    }
+    
     // Process a block of audio
     double** process(double** outBlock, int blockSize) {
         for(std::vector<int>::size_type i = 0; i != delays.size(); i++) {

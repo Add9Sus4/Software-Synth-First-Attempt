@@ -77,6 +77,10 @@ public:
         }
     }
     
+    void drawSlotView(IRECT rect) {
+        
+    }
+    
     // Process a block of audio
     double** process(double** outBlock, int blockSize) {
         

@@ -20,6 +20,10 @@ public:
         formantFilterRight = new FormantFilter(vowel);
     }
     double** process(double** outBlock, int blockSize);
+    
+    void drawSlotView(IRECT rect) {
+        
+    }
 private:
     
     FormantFilter* formantFilterLeft;

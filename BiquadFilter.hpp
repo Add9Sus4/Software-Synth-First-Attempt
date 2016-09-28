@@ -30,6 +30,9 @@ public:
         filterRight = new Filter(type, dbGain, freq, srate, bandwidth);
     }
     double** process(double** outBlock, int blockSize);
+    void drawSlotView(IRECT rect) {
+        
+    }
     Parameter* getParam(FilterParam filterParam) {
         switch (filterParam) {
             case CUTOFF_FREQUENCY:

@@ -38,9 +38,12 @@ public:
         return outBlock;
     }
     
+    void drawSlotView(IRECT rect) {
+        
+    }
+    
     // Adds an effect to the vector of effects
     void addEffect(BlockEffect* effect) {
-        std::cout << "Adding effect to chain" << std::endl;
         // Add the last effect in the vector as an input for this new effect
         if (effects.size() > 0) {
             effect->addInput(effects.back());

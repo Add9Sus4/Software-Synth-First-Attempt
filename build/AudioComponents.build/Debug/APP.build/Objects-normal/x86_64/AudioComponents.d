@@ -32,6 +32,7 @@ dependencies: \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/../../WDL/IPlug/IControl.h \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/BiquadFilter.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/BlockEffect.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/SOIL.h \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Modulator.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Parameter.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Filter.hpp \
@@ -57,21 +58,23 @@ dependencies: \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/BlockFormantFilter.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/FormantFilter.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Chorus.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/ElementChainArea.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/View.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/VoiceManager.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Voice.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/EnvelopeOpenGL.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/FilterEnvelopeOpenGL.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Model.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Envelope.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/OscillatorGroup.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/SpectralFilter.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/AudioWindow.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Transform.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/ElementSelectArea.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/EnvelopeOpenGL.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/FilterEnvelopeOpenGL.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/MainViewArea.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/ModulatorViewArea.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/OpenGLTestClass.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/SampleEffectProcessingChain.hpp \
-  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/ViewTypeArea.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/ViewManager.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/ViewBottom.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/View.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/VoiceManager.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Voice.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/ViewCenter.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/ViewLeft.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/ViewRight.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/ViewTop.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/../../WDL/IPlug/IPlug_include_in_plug_src.h

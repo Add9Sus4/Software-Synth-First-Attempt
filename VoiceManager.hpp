@@ -9,17 +9,22 @@
 #ifndef VoiceManager_hpp
 #define VoiceManager_hpp
 
-#define MAX_VOICES  16
-
 #include <stdio.h>
+#include <vector>
 
 #include "BlockEffect.hpp"
+#include "Model.hpp"
 #include "Voice.hpp"
 
 class VoiceManager : public BlockEffect {
 public:
-    VoiceManager() {
-        voices = new Voice[MAX_VOICES + 1];
+    VoiceManager(Model* model) {
+        for (int i=0; i<MAX_VOICES+1; i++) {
+            std::cout << "adding new voice" << std::endl;
+           voices.push_back(new Voice(model, i));
+        }
+        std::cout << "voices size: " << voices.size() << std::endl;
+        this->model = model;
     }
     double** process(double** outBlock, int blockSize) {
         
@@ -28,17 +33,27 @@ public:
             outBlock[RIGHT][i] = 0.0;
         }
         
-        outBlock = voices[0].process(outBlock, blockSize);
+        outBlock = voices[0]->process(outBlock, blockSize);
         
         return outBlock;
     }
-    void addEffect(EffectID effectId) {
+    
+    BlockEffect* getEffectByControlParamIdx(int paramIndex) {
+        return voices[0]->getEffectByControlParamIdx(paramIndex);
+    }
+    
+    void addEffect(int effectId) {
         for (int i=0; i<MAX_VOICES + 1; i++) {
-            voices[i].addEffect(effectId);
+            voices[i]->addEffect(effectId);
         }
     }
+    
+    void drawSlotView(IRECT rect) {
+        
+    }
 private:
-    Voice *voices;
+    std::vector<Voice*> voices;
+    Model* model;
 };
 
 #endif /* VoiceManager_hpp */

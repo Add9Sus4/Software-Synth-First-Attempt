@@ -14,16 +14,13 @@
 #include "BlockFormantFilter.hpp"
 #include "Chorus.hpp"
 #include "Distortion.hpp"
-#include "ElementChainArea.hpp"
-#include "ElementSelectArea.hpp"
 #include "EnvelopeOpenGL.hpp"
 #include "Filter.hpp"
 #include "FilterEnvelopeOpenGL.hpp"
 #include "Flanger.hpp"
 #include "LFO.hpp"
-#include "MainViewArea.hpp"
+#include "Model.hpp"
 #include "Modulator.hpp"
-#include "ModulatorViewArea.hpp"
 #include "OscillatorGroup.hpp"
 #include "OpenGLTestClass.hpp"
 #include "Parameter.hpp"
@@ -32,7 +29,7 @@
 #include "SpectralFilter.hpp"
 #include "SymmetricalSoftClip.hpp"
 #include "Transform.hpp"
-#include "ViewTypeArea.hpp"
+#include "ViewManager.hpp"
 #include "VoiceManager.hpp"
 
 class AudioComponents : public IPlug
@@ -51,13 +48,17 @@ public:
 private:
   double mGain;
   
-  ElementChainArea* elementChainArea;
-  ElementSelectArea* elementSelectArea;
-  MainViewArea* mainViewArea;
-  ModulatorViewArea* modulatorViewArea;
-  ViewTypeArea* viewTypeArea;
+  ViewBottom* elementChainArea;
+  ViewLeft* elementSelectArea;
+  ViewCenter* mainViewArea;
+  ViewRight* modulatorViewArea;
+  ViewTop* viewTypeArea;
   
   VoiceManager* voiceManager;
+  
+  ViewManager* viewManager;
+  
+  Model* model;
 };
 
 #endif

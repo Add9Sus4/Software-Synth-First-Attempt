@@ -81,7 +81,35 @@ instrument determined by PLUG _IS _INST
 #define BACKGROUND3_ID      115
 #define KNOB4_ID            116
 
-#define OSC_ID              117
+#define OSC1_ID             117
+#define OSC2_ID             118
+
+#define SPF1_ID             119
+#define SPF2_ID             120
+
+#define LFO1_ID             121
+#define LFO2_ID             122
+#define LFO3_ID             123
+#define LFO4_ID             124
+
+#define FMF1_ID             125
+#define FMF2_ID             126
+
+#define FLN1_ID             127
+#define FLN2_ID             128
+
+#define ENVA_ID             129
+#define ENV1_ID             130
+#define ENV2_ID             131
+#define ENV3_ID             132
+
+#define CHO1_ID             133
+#define CHO2_ID             134
+
+#define BQF1_ID             135
+#define BQF2_ID             136
+
+#define OSCILLATOR1SLOTDISPLAY_ID 137
 
 // Image resource locations for this plug.
 #define KNOB_FN             "resources/img/knob.png"
@@ -101,7 +129,35 @@ instrument determined by PLUG _IS _INST
 #define BACKGROUND3_FN      "resources/img/ADD_Synthesizer_Template4.png"
 #define KNOB4_FN            "resources/img/SerumKnob.png"
 
-#define OSC_FN              "resources/img/Osc2.png"
+#define OSC1_FN             "resources/img/Osc1.png"
+#define OSC2_FN             "resources/img/Osc2.png"
+
+#define SPF1_FN             "resources/img/Spf1.png"
+#define SPF2_FN             "resources/img/Spf2.png"
+
+#define LFO1_FN             "resources/img/Lfo1.png"
+#define LFO2_FN             "resources/img/Lfo2.png"
+#define LFO3_FN             "resources/img/Lfo3.png"
+#define LFO4_FN             "resources/img/Lfo4.png"
+
+#define FMF1_FN             "resources/img/Fmf1.png"
+#define FMF2_FN             "resources/img/Fmf2.png"
+
+#define FLN1_FN             "resources/img/Fln1.png"
+#define FLN2_FN             "resources/img/Fln2.png"
+
+#define ENVA_FN             "resources/img/Enva.png"
+#define ENV1_FN             "resources/img/Env1.png"
+#define ENV2_FN             "resources/img/Env2.png"
+#define ENV3_FN             "resources/img/Env3.png"
+
+#define CHO1_FN             "resources/img/Cho1.png"
+#define CHO2_FN             "resources/img/Cho2.png"
+
+#define BQF1_FN             "resources/img/Bqf1.png"
+#define BQF2_FN             "resources/img/Bqf2.png"
+
+#define OSCILLATOR1SLOTDISPLAY_FN "Oscillator1SlotDisplay.png"
 
 // Colors
 #define BACKGROUND_COLOR_1_R  31./255.

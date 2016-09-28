@@ -12,6 +12,11 @@
 #include <stdio.h>
 #include <vector>
 
+#include <OpenGL/OpenGL.h>
+#include <OpenGL/glu.h>
+#include "SOIL.h"
+
+#include "IControl.h"
 #include "Modulator.hpp"
 #include "Parameter.hpp"
 
@@ -31,6 +36,8 @@ public:
      outputs of these effects are later recombined.
      */
     virtual double** process(double** outBlock, int blockSize) = 0;
+    
+    virtual void drawSlotView(IRECT rect) = 0;
     
     double** getSamples(double** outBlock, int blockSize) {
         // Get the input data, if applicable
@@ -59,13 +66,13 @@ public:
         return outBlock;
     }
     
-    void setId(int id) { this->id = id; }
-    int getId() { return id; }
+    void setId(int effectId) { this->effectId = effectId; }
+    int getId() { return this->effectId; }
     
 protected:
     std::vector<BlockEffect*> inputs;
 private:
-    int id;
+    int effectId;
 };
 
 #endif /* BlockEffect_hpp */

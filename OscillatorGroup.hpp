@@ -102,6 +102,27 @@ public:
         return outBlock;
     }
     
+    void drawSlotView(IRECT rect) {
+        GLuint tex_2d = SOIL_load_OGL_texture ("/Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Oscillator1SlotDisplay.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID,
+                                               SOIL_FLAG_MIPMAPS | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT);
+        glBindTexture(GL_TEXTURE_2D, tex_2d);
+        
+        glEnable(GL_TEXTURE_2D);
+        glBegin(GL_QUADS);
+        glTexCoord2d(0,0);
+        glVertex2d(rect.L,rect.T);
+        glTexCoord2d(0,1);
+        glVertex2d(rect.L,rect.B);
+        glTexCoord2d(1,1);
+        glVertex2d(rect.R,rect.B);
+        glTexCoord2d(1,0);
+        glVertex2d(rect.R,rect.T);
+        glEnd();
+        glDisable(GL_TEXTURE_2D);
+        
+        glDeleteTextures(1, &tex_2d);
+    }
+    
     // Sets the pulse width for the oscillators. This only has an effect if the wave type is a pulse wave.
     void setPulseWidth(double pulseWidth);
     

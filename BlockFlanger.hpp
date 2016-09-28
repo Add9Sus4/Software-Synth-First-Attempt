@@ -21,6 +21,9 @@ public:
         flangerRight = new Flanger(length, modAmount, frequency, feedback, waveType);
     }
     double** process(double** outBlock, int blockSize);
+    void drawSlotView(IRECT rect) {
+        
+    }
 private:
     Flanger* flangerLeft;
     Flanger* flangerRight;
