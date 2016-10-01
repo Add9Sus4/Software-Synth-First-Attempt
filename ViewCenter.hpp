@@ -9,7 +9,7 @@
 #ifndef ViewCenter_hpp
 #define ViewCenter_hpp
 
-#define NUM_PAST_VALS   200
+#define NUM_PAST_VALS   100
 
 #include <stdio.h>
 #include <vector>
@@ -27,7 +27,7 @@ public:
         bgColor1green = 0.40/3.0;
         bgColor1blue = 0.35/3.0;
         
-        numParticles = 25;
+        numParticles = 50;
         
         srand(time(NULL));
         
@@ -42,7 +42,7 @@ public:
                 y_sign = -1.0;
             }
             
-            particles.push_back(new Particle((float)(rand()%1000)/1000., (float)(rand()%1000)/1000., (float)(rand()%1000)/1000., rand()%(pR.W()), rand()%(pR.H()), x_sign*(rand()%5), y_sign*(rand()%5), 0, 0, pR.W(), pR.H()));
+            particles.push_back(new Particle((float)(rand()%1000)/1000., (float)(rand()%1000)/1000., (float)(rand()%1000)/1000., rand()%(pR.W()/2)+ pR.W()/4, rand()%(pR.H()/2) + pR.H()/4, x_sign*((double)(rand()%1000)/1000.), y_sign*((double)(rand()%1000)/1000.), 0, 0, pR.W(), pR.H()));
         }
     }
     void drawStuff() {
@@ -129,7 +129,7 @@ private:
         double past_x[NUM_PAST_VALS];
         double past_y[NUM_PAST_VALS];
         
-        void applyGravity(int center_of_mass_x, int center_of_mass_y) {
+        void applyGravity(double center_of_mass_x, double center_of_mass_y) {
             
             double x_distance = (double)(center_of_mass_x - x);
             double y_distance = (double)(center_of_mass_y - y);
@@ -140,7 +140,7 @@ private:
                 distance = 0.00001;
             }
             
-            double gravitationalForce = 10000.0;
+            double gravitationalForce = 100.0;
             
             double force = gravitationalForce/pow((double)(distance), 2);
             

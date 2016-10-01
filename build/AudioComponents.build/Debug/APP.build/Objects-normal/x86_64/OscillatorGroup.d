@@ -28,6 +28,8 @@ dependencies: \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/../../WDL/IPlug/IPopupMenu.h \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Modulator.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Parameter.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/resource.h \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/app_resource.h \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/Filter.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/SampleEffect.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/FormantFilter.hpp \

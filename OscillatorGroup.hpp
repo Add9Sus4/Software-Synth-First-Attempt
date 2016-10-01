@@ -24,17 +24,19 @@ class OscillatorGroup : public BlockEffect {
     // Vector containging all the oscillators for this group
     std::vector<Oscillator *> oscillators;
     
+    // Wave type (Saw, Square, Sine, etc)
     WaveType waveType;
     
+    // Parameters
     double detune;
     double pan; // 0 (mono) to 1 (full width)
-    
     Parameter* frequencyParam;
-    LFO* lfo;
     
 public:
+    // IControls
+    IKnobMultiControl* knobControl;
     // Create a new oscillator group with specified number of oscillators, frequency, and wave type
-    OscillatorGroup(int numOscillators, double frequency, WaveType waveType) {
+    OscillatorGroup(int numOscillators, double frequency, WaveType waveType) : BlockEffect() {
         frequencyParam = new Parameter(frequency);
         this->waveType = waveType;
         detune = 1.0;
@@ -121,6 +123,14 @@ public:
         glDisable(GL_TEXTURE_2D);
         
         glDeleteTextures(1, &tex_2d);
+        if (isActive()) {
+            knobControl->Hide(false);
+            knobControl->move(rect.L + kViewBottomL, rect.T + kViewBottomT);
+        } else {
+            knobControl->Hide(true);
+            knobControl->move(-100, -100);
+        }
+        
     }
     
     // Sets the pulse width for the oscillators. This only has an effect if the wave type is a pulse wave.

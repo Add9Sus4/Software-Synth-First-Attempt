@@ -265,14 +265,15 @@ private:
     Scrollbar* scrollbar;
     double ratioOfWindowWidthToTotalSlotWidth;
     
+    // Slot dimensions: Height: 120, Width: 150
     class Slot {
     public:
         Slot(int index, IRECT pR) {
             this->index = index;
-            L = SLOT_WIDTH*index + SLOT_PADDING_LEFT;
-            T = SLOT_PADDING_TOP;
-            R = SLOT_WIDTH*(index + 1) - SLOT_PADDING_RIGHT;
-            B = pR.H() - SLOT_PADDING_BOTTOM;
+            L = SLOT_WIDTH*index + SLOT_PADDING_LEFT; // 5
+            T = SLOT_PADDING_TOP; // 10
+            R = SLOT_WIDTH*(index + 1) - SLOT_PADDING_RIGHT; // 155
+            B = pR.H() - SLOT_PADDING_BOTTOM; // 130
             currentEffect = 0;
         }
         void drawSlotView(double slotOffset) {

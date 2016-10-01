@@ -23,9 +23,12 @@
 #include "LFO.hpp"
 #include "OscillatorGroup.hpp"
 #include "SpectralFilter.hpp"
+#include "resource.h"
 
-enum Icons
+enum Controls
 {
+    
+    // Draggable icons
     kOsc1,
     kOsc2,
     kBqf1,
@@ -47,7 +50,10 @@ enum Icons
     kSpf1,
     kSpf2,
     
-    kNumIcons
+    
+    kKnob,
+    
+    kNumControls
 };
 
 class Model {
@@ -96,6 +102,14 @@ public:
             modEnvelope3[i] = new Envelope();
             modEnvelope3[i]->setId(kEnv3);
         }
+    }
+    
+    void loadGUIElements(IGraphics* pGraphics, IPlugBase* pPlug) {
+        IBitmap knob = pGraphics->LoadIBitmap(KNOB_ID, KNOB_FN, 60);
+        oscillatorGroup1[0]->knobControl = new IKnobMultiControl(pPlug, -100, -100, kKnob, &knob);
+        pGraphics->AttachControl(oscillatorGroup1[0]->knobControl);
+        oscillatorGroup1[0]->knobControl->Hide(true);
+        oscillatorGroup1[0]->knobControl->move(-100, -100);
     }
     
     OscillatorGroup* oscillatorGroup1[MAX_VOICES+1];

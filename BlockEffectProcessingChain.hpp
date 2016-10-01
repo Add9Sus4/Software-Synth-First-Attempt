@@ -27,8 +27,6 @@ public:
         }
         // Otherwise, return zeros
         else {
-            outBlock[LEFT] = new double[blockSize];
-            outBlock[RIGHT] = new double[blockSize];
             for (int i=0; i<blockSize; i++) {
                 outBlock[LEFT][i] = 0.0;
                 outBlock[RIGHT][i] = 0.0;

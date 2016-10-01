@@ -77,6 +77,7 @@ public:
             }
         }
         chain->addEffect(effect);
+        effect->setActive(true);
     }
     
     double** process(double** outBlock, int blockSize) {
@@ -88,23 +89,9 @@ private:
     BlockEffectProcessingChain* chain;
     
     /*
-     
      This vector contains all the effects that are available to be added to the processing chain.
      All effects start out in this vector. If an effect is added to the chain, it is removed
      from the vector. If it is removed from the chain, it is added back into the vector.
-     
-     The available effects include:
-     
-     2x OscillatorGroup
-     2x BiquadFilter
-     2x SpectralFilter
-     2x FormantFilter
-     1x AmpEnvelope
-     3x ModEnvelope
-     4x LFO
-     2x Chorus
-     2x Flanger
-     
      */
     std::vector<BlockEffect*> unusedEffects;
     std::vector<Modulator*> unusedModulators;

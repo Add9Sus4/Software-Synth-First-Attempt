@@ -39,6 +39,7 @@ dependencies: \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../SOIL.h \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../Modulator.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../Parameter.hpp \
+  /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../resource.h \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../Filter.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../SampleEffect.hpp \
   /Users/aarondawson/Dev/AudioPlugins/wdl-ol/IPlugExamples/AudioComponents/app_wrapper/../LFO.hpp \

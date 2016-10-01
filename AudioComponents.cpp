@@ -13,17 +13,17 @@ enum EParams {
 
 /* CONSTRUCTOR */
 AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
-  :	IPLUG_CTOR(kNumParams, kNumPrograms, instanceInfo), mGain(1.)
+  :	IPLUG_CTOR(kNumControls, kNumPrograms, instanceInfo), mGain(1.)
 {
   TRACE;
+  
+  GetParam(kKnob)->InitDouble("Knob", 0.5, 0.0, 1.0, 0.01);
   
   // Create graphics
   IGraphics* pGraphics = MakeGraphics(this, GUI_WIDTH, GUI_HEIGHT);
   
   // Handle mouseover
   pGraphics->HandleMouseOver(true);
-  
-  // TODO: add model to view sections so they can query the model state and draw their views appropriately
   
   // Model (this contains all the effects and modulators for the entire plugin)
   model = new Model();
@@ -34,6 +34,10 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   // View manager (handles views for the plugin)
   viewManager = new ViewManager(this, voiceManager);
   viewManager->attachControls(pGraphics);
+  
+  // Knobs
+//  IBitmap knob = pGraphics->LoadIBitmap(KNOB_ID, KNOB_FN, 60);
+//  IKnobMultiControl* knobControl = new IKnobMultiControl(this, 200, 200, kKnob, &knob);
   
   // Icon bitmaps
   IBitmap osc1 = pGraphics->LoadIBitmap(OSC1_ID, OSC1_FN, 1);
@@ -99,6 +103,8 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   pGraphics->AttachControl(lfo4Control);
   pGraphics->AttachControl(spf1Control);
   pGraphics->AttachControl(spf2Control);
+  
+  model->loadGUIElements(pGraphics, this);
 
   // Background
   pGraphics->AttachPanelBackground(&COLOR_BLACK);
@@ -147,6 +153,12 @@ void AudioComponents::OnParamChange(int paramIdx)
   switch (paramIdx)
   {
     case kOsc1:
+      break;
+    case kKnob:
+      std::cout << "Knob value: " << GetParam(kKnob)->Value() << std::endl;
+      for (int i=0; i<MAX_VOICES+1; i++) {
+        model->oscillatorGroup1[i]->changeDetuneAmt(GetParam(kKnob)->Value());
+      }
       break;
       default:
       break;

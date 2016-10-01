@@ -12,14 +12,18 @@
 
 void ViewLeft::drawStuff() {
     int offset = 0;
-    for (int i=0; i<kNumIcons; i++) {
+    for (int i=0; i<kNumControls; i++) {
         IControl* control = plug->GetGUI()->GetControl(i+6);
-        if (control == viewManager->getSelectedIcon() || control->IsHidden()) {
-            offset++;
+        if (control != 0) {
+            if (control == viewManager->getSelectedIcon() || control->IsHidden()) {
+                offset++;
+            } else {
+                int x = ((i - offset) % 4)*60 + 20;
+                int y = HEIGHT_OF_VIEW_TOP + 15 + floor((i-offset)/4)*50;
+                control->move(x,y);
+            }
         } else {
-            int x = ((i - offset) % 4)*60 + 20;
-            int y = HEIGHT_OF_VIEW_TOP + 15 + floor((i-offset)/4)*50;
-            control->move(x,y);
+            std::cout << "control is null" << std::endl;
         }
     }
 }
