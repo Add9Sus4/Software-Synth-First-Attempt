@@ -110,6 +110,9 @@ instrument determined by PLUG _IS _INST
 #define BQF2_ID             136
 
 #define OSCILLATOR1SLOTDISPLAY_ID 137
+#define OSCILLATOR1_ID            138
+
+#define FADER2_ID                  139
 
 // Image resource locations for this plug.
 #define KNOB_FN             "resources/img/knob.png"
@@ -158,6 +161,9 @@ instrument determined by PLUG _IS _INST
 #define BQF2_FN             "resources/img/Bqf2.png"
 
 #define OSCILLATOR1SLOTDISPLAY_FN "Oscillator1SlotDisplay.png"
+#define OSCILLATOR1_FN      "resources/img/Oscillator1.png"
+
+#define FADER2_FN            "resources/img/Fader.png"
 
 // Colors
 #define BACKGROUND_COLOR_1_R  31./255.

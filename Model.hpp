@@ -52,6 +52,8 @@ enum Controls
     
     
     kKnob,
+    kPan,
+    kVolume,
     
     kNumControls
 };
@@ -105,11 +107,20 @@ public:
     }
     
     void loadGUIElements(IGraphics* pGraphics, IPlugBase* pPlug) {
-        IBitmap knob = pGraphics->LoadIBitmap(KNOB_ID, KNOB_FN, 60);
+        IBitmap knob = pGraphics->LoadIBitmap(KNOB4_ID, KNOB4_FN, 60);
+        IBitmap fader = pGraphics->LoadIBitmap(FADER2_ID, FADER2_FN, 60);
         oscillatorGroup1[0]->knobControl = new IKnobMultiControl(pPlug, -100, -100, kKnob, &knob);
+        oscillatorGroup1[0]->panControl = new IKnobMultiControl(pPlug, -100, -100, kPan, &knob);
+        oscillatorGroup1[0]->volumeFader = new IKnobMultiControl(pPlug, -100, -100, kVolume, &fader);
         pGraphics->AttachControl(oscillatorGroup1[0]->knobControl);
+        pGraphics->AttachControl(oscillatorGroup1[0]->panControl);
+        pGraphics->AttachControl(oscillatorGroup1[0]->volumeFader);
         oscillatorGroup1[0]->knobControl->Hide(true);
+        oscillatorGroup1[0]->panControl->Hide(true);
+        oscillatorGroup1[0]->volumeFader->Hide(true);
         oscillatorGroup1[0]->knobControl->move(-100, -100);
+        oscillatorGroup1[0]->panControl->move(-100, -100);
+        oscillatorGroup1[0]->volumeFader->move(-100, -100);
     }
     
     OscillatorGroup* oscillatorGroup1[MAX_VOICES+1];

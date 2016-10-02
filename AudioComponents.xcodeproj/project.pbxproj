@@ -749,6 +749,18 @@
 		C2D554C21D8382B000E31E3B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D554C11D8382B000E31E3B /* OpenGL.framework */; };
 		C2D554C51D8382CF00E31E3B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D554C11D8382B000E31E3B /* OpenGL.framework */; };
 		C2D554C61D8382E400E31E3B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D554C11D8382B000E31E3B /* OpenGL.framework */; };
+		C2FA932D1DA09BB700E3DF02 /* Oscillator1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA932C1DA09BB700E3DF02 /* Oscillator1.png */; };
+		C2FA932E1DA09BB700E3DF02 /* Oscillator1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA932C1DA09BB700E3DF02 /* Oscillator1.png */; };
+		C2FA932F1DA09BB700E3DF02 /* Oscillator1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA932C1DA09BB700E3DF02 /* Oscillator1.png */; };
+		C2FA93301DA09BB700E3DF02 /* Oscillator1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA932C1DA09BB700E3DF02 /* Oscillator1.png */; };
+		C2FA93311DA09BB700E3DF02 /* Oscillator1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA932C1DA09BB700E3DF02 /* Oscillator1.png */; };
+		C2FA93321DA09BB700E3DF02 /* Oscillator1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA932C1DA09BB700E3DF02 /* Oscillator1.png */; };
+		C2FA93361DA0A51C00E3DF02 /* Fader.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA93351DA0A51C00E3DF02 /* Fader.png */; };
+		C2FA93371DA0A51C00E3DF02 /* Fader.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA93351DA0A51C00E3DF02 /* Fader.png */; };
+		C2FA93381DA0A51C00E3DF02 /* Fader.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA93351DA0A51C00E3DF02 /* Fader.png */; };
+		C2FA93391DA0A51C00E3DF02 /* Fader.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA93351DA0A51C00E3DF02 /* Fader.png */; };
+		C2FA933A1DA0A51C00E3DF02 /* Fader.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA93351DA0A51C00E3DF02 /* Fader.png */; };
+		C2FA933B1DA0A51C00E3DF02 /* Fader.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA93351DA0A51C00E3DF02 /* Fader.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1258,6 +1270,8 @@
 		C2D82EAE1D7EEE78007948D4 /* TriangleWaveForm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TriangleWaveForm.hpp; sourceTree = "<group>"; };
 		C2D82EB11D7EEE78007948D4 /* WaveForm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveForm.cpp; sourceTree = "<group>"; };
 		C2D82EB21D7EEE78007948D4 /* WaveForm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WaveForm.hpp; sourceTree = "<group>"; };
+		C2FA932C1DA09BB700E3DF02 /* Oscillator1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Oscillator1.png; sourceTree = "<group>"; };
+		C2FA93351DA0A51C00E3DF02 /* Fader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fader.png; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -1964,6 +1978,8 @@
 		4FD16A0213B6303B001D0217 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				C2FA93351DA0A51C00E3DF02 /* Fader.png */,
+				C2FA932C1DA09BB700E3DF02 /* Oscillator1.png */,
 				C2596E101D9995BC00521C17 /* Oscillator1SlotDisplay.png */,
 				C2596D7A1D98274D00521C17 /* Bqf1.png */,
 				C2596D7B1D98274D00521C17 /* Bqf2.png */,
@@ -2479,6 +2495,8 @@
 				C203C2351D86303200CB9350 /* ZebraKnob2.png in Resources */,
 				C2596DB31D98274D00521C17 /* Env3.png in Resources */,
 				C2596E121D9995BC00521C17 /* Oscillator1SlotDisplay.png in Resources */,
+				C2FA932E1DA09BB700E3DF02 /* Oscillator1.png in Resources */,
+				C2FA93371DA0A51C00E3DF02 /* Fader.png in Resources */,
 				C29A2E4C1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
 				C203C24D1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
 				C25A2EA21D8605CA0080351D /* triangle.png in Resources */,
@@ -2523,6 +2541,8 @@
 				C203C2371D86303200CB9350 /* ZebraKnob2.png in Resources */,
 				C2596DB51D98274D00521C17 /* Env3.png in Resources */,
 				C2596E141D9995BC00521C17 /* Oscillator1SlotDisplay.png in Resources */,
+				C2FA93301DA09BB700E3DF02 /* Oscillator1.png in Resources */,
+				C2FA93391DA0A51C00E3DF02 /* Fader.png in Resources */,
 				C29A2E4E1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
 				C203C24F1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
 				C25A2EA41D8605CA0080351D /* triangle.png in Resources */,
@@ -2567,6 +2587,8 @@
 				C203C2381D86303200CB9350 /* ZebraKnob2.png in Resources */,
 				C2596DB61D98274D00521C17 /* Env3.png in Resources */,
 				C2596E151D9995BC00521C17 /* Oscillator1SlotDisplay.png in Resources */,
+				C2FA93311DA09BB700E3DF02 /* Oscillator1.png in Resources */,
+				C2FA933A1DA0A51C00E3DF02 /* Fader.png in Resources */,
 				C29A2E4F1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
 				C203C2501D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
 				C25A2EA51D8605CA0080351D /* triangle.png in Resources */,
@@ -2611,6 +2633,8 @@
 				C203C2361D86303200CB9350 /* ZebraKnob2.png in Resources */,
 				C2596DB41D98274D00521C17 /* Env3.png in Resources */,
 				C2596E131D9995BC00521C17 /* Oscillator1SlotDisplay.png in Resources */,
+				C2FA932F1DA09BB700E3DF02 /* Oscillator1.png in Resources */,
+				C2FA93381DA0A51C00E3DF02 /* Fader.png in Resources */,
 				C29A2E4D1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
 				C203C24E1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
 				C25A2EA31D8605CA0080351D /* triangle.png in Resources */,
@@ -2655,6 +2679,8 @@
 				C203C2391D86303200CB9350 /* ZebraKnob2.png in Resources */,
 				C2596DB71D98274D00521C17 /* Env3.png in Resources */,
 				C2596E161D9995BC00521C17 /* Oscillator1SlotDisplay.png in Resources */,
+				C2FA93321DA09BB700E3DF02 /* Oscillator1.png in Resources */,
+				C2FA933B1DA0A51C00E3DF02 /* Fader.png in Resources */,
 				C29A2E501D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
 				C203C2511D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
 				C25A2EA61D8605CA0080351D /* triangle.png in Resources */,
@@ -2691,6 +2717,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2596E001D98274D00521C17 /* Spf2.png in Resources */,
+				C2FA932D1DA09BB700E3DF02 /* Oscillator1.png in Resources */,
 				C2596DB81D98274D00521C17 /* Enva.png in Resources */,
 				C2596E111D9995BC00521C17 /* Oscillator1SlotDisplay.png in Resources */,
 				C203C24C1D86FE9A00CB9350 /* TestSynthBackground.png in Resources */,
@@ -2717,6 +2744,7 @@
 				C29A2E4B1D85BC7E002BEA5C /* Add9Synthesizer.png in Resources */,
 				C2596DBE1D98274D00521C17 /* Fln1.png in Resources */,
 				C2596D941D98274D00521C17 /* Bqf2.png in Resources */,
+				C2FA93361DA0A51C00E3DF02 /* Fader.png in Resources */,
 				C25A2E951D8605CA0080351D /* sine.png in Resources */,
 				C203C23B1D86349A00CB9350 /* Add9NiceLookingKnob.png in Resources */,
 				C25A2EA11D8605CA0080351D /* triangle.png in Resources */,

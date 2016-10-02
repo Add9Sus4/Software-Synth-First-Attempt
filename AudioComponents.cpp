@@ -18,6 +18,9 @@ AudioComponents::AudioComponents(IPlugInstanceInfo instanceInfo)
   TRACE;
   
   GetParam(kKnob)->InitDouble("Knob", 0.5, 0.0, 1.0, 0.01);
+  GetParam(kPan)->InitDouble("Pan", 0.5, 0.01, 1.0, 0.01);
+  GetParam(kVolume)->InitDouble("Volume", 1.0, 0.0, 1.0, 0.01);
+  GetParam(kVolume)->SetShape(2.0);
   
   // Create graphics
   IGraphics* pGraphics = MakeGraphics(this, GUI_WIDTH, GUI_HEIGHT);
@@ -155,9 +158,20 @@ void AudioComponents::OnParamChange(int paramIdx)
     case kOsc1:
       break;
     case kKnob:
-      std::cout << "Knob value: " << GetParam(kKnob)->Value() << std::endl;
+//      std::cout << "Detune value: " << GetParam(kKnob)->Value() << std::endl;
       for (int i=0; i<MAX_VOICES+1; i++) {
         model->oscillatorGroup1[i]->changeDetuneAmt(GetParam(kKnob)->Value());
+      }
+      break;
+    case kPan:
+//      std::cout << "Pan value: " << GetParam(kPan)->Value() << std::endl;
+      for (int i=0; i<MAX_VOICES+1; i++) {
+        model->oscillatorGroup1[i]->changePanAmt(GetParam(kPan)->Value());
+      }
+    case kVolume:
+//      std::cout << "Pan value: " << GetParam(kVolume)->Value() << std::endl;
+      for (int i=0; i<MAX_VOICES+1; i++) {
+        model->oscillatorGroup1[i]->changeVolume(GetParam(kVolume)->Value());
       }
       break;
       default:
